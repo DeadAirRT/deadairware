@@ -1,0 +1,855 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<!-- Legalize-->
+	<remove sel="//wares/ware[@id='inv_agidevice_01']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_agidevice_02']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_agidevice_03']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_decryptionmodule']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_hallucinogenics']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_harddrug_01']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_securitybypasssystem']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_securitydecryptionsystem']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_securityslicer']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_spaceflycaviar']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_spaceflyeggs']/@illegal"/>
+	<remove sel="//wares/ware[@id='inv_unstablecrystal']/@illegal"/>
+	
+	<!-- Increase Production
+	<replace sel="/wares/ware[@id='X']/production/@amount">90</replace>
+	-->
+	<!-- 5 minute production -->
+	<!-- advancedcomposites -->
+	<replace sel="//wares/ware[@id='advancedcomposites']/production[@method='default']/@amount">120</replace>
+	<replace sel="//wares/ware[@id='advancedcomposites']/production[@method='teladi']/@amount">120</replace>
+	<!-- advancedelectronics -->
+	<replace sel="//wares/ware[@id='advancedelectronics']/production[@method='default']/@amount">120</replace>
+	<replace sel="//wares/ware[@id='advancedelectronics']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='advancedelectronics']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="25" />
+        <ware ware="microchips" amount="19" />
+        <ware ware="quantumtubes" amount="9" />
+      </primary>
+	</replace>
+	<!-- antimattercells -->
+	<!-- antimatterconverters -->
+	<replace sel="//wares/ware[@id='antimatterconverters']/production[@method='default']/@amount">300</replace>
+	<!-- claytronics -->
+	<replace sel="//wares/ware[@id='claytronics']/production[@method='default']/@amount">80</replace>
+	<replace sel="//wares/ware[@id='claytronics']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='claytronics']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="antimattercells" amount="34" />
+        <ware ware="energycells" amount="47" />
+        <ware ware="microchips" amount="54" />
+        <ware ware="quantumtubes" amount="34" />
+      </primary>
+	</replace>
+	<!-- dronecomponents -->
+	<replace sel="//wares/ware[@id='dronecomponents']/production[@method='default']/@amount">60</replace>
+	<replace sel="//wares/ware[@id='dronecomponents']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='dronecomponents']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="15" />
+        <ware ware="engineparts" amount="5" />
+        <ware ware="hullparts" amount="5" />
+        <ware ware="microchips" amount="5" />
+        <ware ware="scanningarrays" amount="10" />
+      </primary>
+	</replace>
+	<!-- energycells -->
+	<replace sel="//wares/ware[@id='energycells']/production[@method='default']/@amount">400</replace>
+	<!-- engineparts -->
+	<replace sel="//wares/ware[@id='engineparts']/production[@method='default']/@amount">120</replace>
+	<replace sel="//wares/ware[@id='engineparts']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='engineparts']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="antimattercells" amount="27" />
+        <ware ware="energycells" amount="20" />
+        <ware ware="refinedmetals" amount="32" />
+      </primary>
+	</replace>
+	<replace sel="//wares/ware[@id='engineparts']/production[@method='teladi']/@amount">120</replace>
+	<replace sel="//wares/ware[@id='engineparts']/production[@method='teladi']/@time">300</replace>
+	<replace sel="//wares/ware[@id='engineparts']/production[@method='teladi']/primary">
+	  <primary>
+        <ware ware="antimattercells" amount="27" />
+        <ware ware="energycells" amount="20" />
+        <ware ware="teladianium" amount="24" />
+      </primary>
+	</replace>
+	<!-- fieldcoils -->
+	<replace sel="//wares/ware[@id='fieldcoils']/production[@method='default']/@amount">200</replace>
+	<replace sel="//wares/ware[@id='fieldcoils']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='fieldcoils']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="30" />
+        <ware ware="plasmaconductors" amount="20" />
+        <ware ware="quantumtubes" amount="22" />
+      </primary>
+	</replace>
+	<!-- foodrations -->
+	<!-- graphene -->
+	<!-- hullparts -->
+	<replace sel="//wares/ware[@id='hullparts']/production[@method='default']/@amount">146</replace>
+	<replace sel="//wares/ware[@id='hullparts']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='hullparts']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="27" />
+        <ware ware="graphene" amount="14" />
+        <ware ware="refinedmetals" amount="94" />
+      </primary>
+	</replace>
+	<replace sel="//wares/ware[@id='hullparts']/production[@method='teladi']/@amount">146</replace>
+	<replace sel="//wares/ware[@id='hullparts']/production[@method='teladi']/@time">300</replace>
+	<replace sel="//wares/ware[@id='hullparts']/production[@method='teladi']/primary">
+	  <primary>
+        <ware ware="energycells" amount="27" />
+        <ware ware="graphene" amount="14" />
+        <ware ware="teladianium" amount="68" />
+      </primary>
+	</replace>
+	<!-- majadust -->
+	<!-- majasnails -->
+	<!-- meat -->
+	<replace sel="//wares/ware[@id='meat']/production[@method='default']/@amount">146</replace>
+	<replace sel="//wares/ware[@id='meat']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='meat']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="27" />
+        <ware ware="water" amount="67" />
+      </primary>
+	</replace>
+	<!-- medicalsupplies -->
+	<!-- microchips -->
+	<replace sel="//wares/ware[@id='microchips']/production[@method='default']/@amount">80</replace>
+	<replace sel="//wares/ware[@id='microchips']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='microchips']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="25" />
+        <ware ware="siliconwafers" amount="100" />
+      </primary>
+	</replace>
+	<!-- missilecomponents -->
+	<replace sel="//wares/ware[@id='missilecomponents']/production[@method='default']/@amount">220</replace>
+	<replace sel="//wares/ware[@id='missilecomponents']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='missilecomponents']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="advancedcomposites" amount="1" />
+        <ware ware="energycells" amount="7" />
+        <ware ware="hullparts" amount="1" />
+      </primary>
+	</replace>
+	<!-- nostropoil -->
+	<!-- plasmaconductors -->
+	<replace sel="//wares/ware[@id='plasmaconductors']/production[@method='default']/@amount">34</replace>
+	<replace sel="//wares/ware[@id='plasmaconductors']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='plasmaconductors']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="20" />
+        <ware ware="graphene" amount="33" />
+        <ware ware="superfluidcoolant" amount="47" />
+      </primary>
+	</replace>
+	<replace sel="//wares/ware[@id='plasmaconductors']/production[@method='teladi']/@amount">34</replace>
+	<replace sel="//wares/ware[@id='plasmaconductors']/production[@method='teladi']/@time">300</replace>
+	<replace sel="//wares/ware[@id='plasmaconductors']/production[@method='teladi']/primary">
+	  <primary>
+        <ware ware="energycells" amount="20" />
+        <ware ware="graphene" amount="33" />
+        <ware ware="superfluidcoolant" amount="47" />
+      </primary>
+	</replace>
+	<!-- quantumtubes -->
+	<replace sel="//wares/ware[@id='quantumtubes']/production[@method='default']/@amount">50</replace>
+	<replace sel="//wares/ware[@id='quantumtubes']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='quantumtubes']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="17" />
+        <ware ware="graphene" amount="49" />
+        <ware ware="superfluidcoolant" amount="13" />
+      </primary>
+	</replace>
+	<replace sel="//wares/ware[@id='quantumtubes']/production[@method='teladi']/@amount">50</replace>
+	<replace sel="//wares/ware[@id='quantumtubes']/production[@method='teladi']/@time">300</replace>
+	<replace sel="//wares/ware[@id='quantumtubes']/production[@method='teladi']/primary">
+	<primary>
+        <ware ware="energycells" amount="17" />
+        <ware ware="graphene" amount="49" />
+        <ware ware="superfluidcoolant" amount="13" />
+      </primary>
+	</replace>
+	<!-- refinedmetals -->
+	<!-- scanningarrays -->
+	<replace sel="//wares/ware[@id='scanningarrays']/production[@method='default']/@amount">40</replace>
+	<replace sel="//wares/ware[@id='scanningarrays']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='scanningarrays']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="30" />
+        <ware ware="refinedmetals" amount="50" />
+        <ware ware="siliconwafers" amount="30" />
+      </primary>
+	</replace>
+	<replace sel="//wares/ware[@id='scanningarrays']/production[@method='teladi']/@amount">40</replace>
+	<replace sel="//wares/ware[@id='scanningarrays']/production[@method='teladi']/@time">300</replace>
+	<replace sel="//wares/ware[@id='scanningarrays']/production[@method='teladi']/primary">
+	  <primary>
+        <ware ware="energycells" amount="30" />
+        <ware ware="siliconwafers" amount="30" />
+        <ware ware="teladianium" amount="37" />
+      </primary>
+	</replace>
+	<!-- shieldcomponents -->
+	<replace sel="//wares/ware[@id='shieldcomponents']/production[@method='default']/@amount">110</replace>
+	<replace sel="//wares/ware[@id='shieldcomponents']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='shieldcomponents']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="18" />
+        <ware ware="plasmaconductors" amount="5" />
+        <ware ware="quantumtubes" amount="5" />
+      </primary>
+	</replace>
+	<!-- siliconwafers -->
+	<!-- smartchips -->
+	<replace sel="//wares/ware[@id='smartchips']/production[@method='default']/@amount">80</replace>
+	<replace sel="//wares/ware[@id='smartchips']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='smartchips']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="25" />
+        <ware ware="siliconwafers" amount="10" />
+      </primary>
+	</replace>
+	<!-- sojabeans -->
+	<!-- sojahusk -->
+	<!-- spacefuel -->
+	<replace sel="//wares/ware[@id='spacefuel']/production[@method='default']/@amount">75</replace>
+	<replace sel="//wares/ware[@id='spacefuel']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='spacefuel']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="25" />
+        <ware ware="water" amount="62" />
+        <ware ware="wheat" amount="50" />
+      </primary>
+	</replace>
+	<!-- spaceweed -->
+	<replace sel="//wares/ware[@id='spaceweed']/production[@method='default']/@amount">113</replace>
+	<replace sel="//wares/ware[@id='spaceweed']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='spaceweed']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="70" />
+        <ware ware="spices" amount="20" />
+        <ware ware="swampplant" amount="60" />
+      </primary>
+	</replace>
+	<!-- spices -->
+	<replace sel="//wares/ware[@id='spices']/production[@method='default']/@amount">240</replace>
+	<replace sel="//wares/ware[@id='spices']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='spices']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="20" />
+        <ware ware="water" amount="40" />
+      </primary>
+	</replace>
+	<!-- sunriseflowers -->
+	<!-- superfluidcoolant -->
+	<!-- swampplant -->
+	<replace sel="//wares/ware[@id='swampplant']/production[@method='default']/@amount">80</replace>
+	<replace sel="//wares/ware[@id='swampplant']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='swampplant']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="26" />
+        <ware ware="water" amount="66" />
+      </primary>
+	</replace>
+	<!-- teladianium -->
+	<!-- turretcomponents -->
+	<replace sel="//wares/ware[@id='turretcomponents']/production[@method='default']/@amount">67</replace>
+	<replace sel="//wares/ware[@id='turretcomponents']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='turretcomponents']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="10" />
+        <ware ware="microchips" amount="4" />
+        <ware ware="quantumtubes" amount="4" />
+        <ware ware="scanningarrays" amount="2" />
+      </primary>
+	</replace>
+	<!-- water -->
+	<!-- weaponcomponents -->
+	<replace sel="//wares/ware[@id='weaponcomponents']/production[@method='default']/@amount">67</replace>
+	<replace sel="//wares/ware[@id='weaponcomponents']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='weaponcomponents']/production[@method='default']/primary">
+	  <primary>
+        <ware ware="energycells" amount="10" />
+        <ware ware="hullparts" amount="4" />
+        <ware ware="plasmaconductors" amount="5" />
+      </primary>
+	</replace>
+	<!-- wheat -->
+	<!-- Workforce has been working out-->
+	<replace sel="//wares/ware[@id='advancedcomposites']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='advancedcomposites']/production[@method='teladi']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='advancedelectronics']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='antimattercells']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='antimatterconverters']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='claytronics']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='dronecomponents']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='energycells']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='engineparts']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='engineparts']/production[@method='teladi']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='fieldcoils']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='foodrations']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='graphene']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='hullparts']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='hullparts']/production[@method='teladi']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='majadust']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='majasnails']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='meat']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='medicalsupplies']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='medicalsupplies']/production[@method='paranid']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='medicalsupplies']/production[@method='teladi']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='microchips']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='missilecomponents']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='nostropoil']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='plasmaconductors']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='plasmaconductors']/production[@method='teladi']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='quantumtubes']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='quantumtubes']/production[@method='teladi']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='refinedmetals']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='scanningarrays']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='scanningarrays']/production[@method='teladi']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='shieldcomponents']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='siliconwafers']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='smartchips']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='sojabeans']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='sojahusk']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='spacefuel']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='spaceweed']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='spices']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='sunriseflowers']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='superfluidcoolant']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='swampplant']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='teladianium']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='turretcomponents']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='water']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='weaponcomponents']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	<replace sel="//wares/ware[@id='wheat']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	
+	<!-- Change Volume
+	<replace sel="/wares/ware[@id='X']/@volume">22</replace>
+	-->
+	<!-- Causing Price Issues
+	<replace sel="//wares/ware[@id='advancedcomposites']/@volume">16</replace>
+	<replace sel="//wares/ware[@id='advancedelectronics']/@volume">15</replace>
+	<replace sel="//wares/ware[@id='antimattercells']/@volume">9</replace>
+	<replace sel="//wares/ware[@id='antimatterconverters']/@volume">5</replace>
+	<replace sel="//wares/ware[@id='claytronics']/@volume">12</replace>
+	<replace sel="//wares/ware[@id='dronecomponents']/@volume">15</replace>
+	<replace sel="//wares/ware[@id='engineparts']/@volume">15</replace>
+	<replace sel="//wares/ware[@id='fieldcoils']/@volume">7</replace>
+	<replace sel="//wares/ware[@id='graphene']/@volume">10</replace>
+	<replace sel="//wares/ware[@id='helium']/@volume">3</replace>
+	<replace sel="//wares/ware[@id='hullparts']/@volume">12</replace>
+	<replace sel="//wares/ware[@id='hydrogen']/@volume">3</replace>
+	<replace sel="//wares/ware[@id='ice']/@volume">4</replace>
+	<replace sel="//wares/ware[@id='majadust']/@volume">3</replace>
+	<replace sel="//wares/ware[@id='majasnails']/@volume">3</replace>
+	<replace sel="//wares/ware[@id='meat']/@volume">3</replace>
+	<replace sel="//wares/ware[@id='methane']/@volume">6</replace>
+	<replace sel="//wares/ware[@id='microchips']/@volume">22</replace>
+	<replace sel="//wares/ware[@id='missilecomponents']/@volume">2</replace>
+	<replace sel="//wares/ware[@id='nividium']/@volume">5</replace>
+	<replace sel="//wares/ware[@id='ore']/@volume">5</replace>
+	<replace sel="//wares/ware[@id='plasmaconductors']/@volume">16</replace>
+	<replace sel="//wares/ware[@id='quantumtubes']/@volume">11</replace>
+	<replace sel="//wares/ware[@id='refinedmetals']/@volume">7</replace>
+	<replace sel="//wares/ware[@id='scanningarrays']/@volume">19</replace>
+	<replace sel="//wares/ware[@id='shieldcomponents']/@volume">5</replace>
+	<replace sel="//wares/ware[@id='silicon']/@volume">5</replace>
+	<replace sel="//wares/ware[@id='siliconwafers']/@volume">9</replace>
+	<replace sel="//wares/ware[@id='smartchips']/@volume">3</replace>
+	<replace sel="//wares/ware[@id='spacefuel']/@volume">1</replace>
+	<replace sel="//wares/ware[@id='spaceweed']/@volume">2</replace>
+	<replace sel="//wares/ware[@id='spices']/@volume">3</replace>
+	<replace sel="//wares/ware[@id='sunriseflowers']/@volume">3</replace>
+	<replace sel="//wares/ware[@id='superfluidcoolant']/@volume">8</replace>
+	<replace sel="//wares/ware[@id='swampplant']/@volume">3</replace>
+	<replace sel="//wares/ware[@id='teladianium']/@volume">8</replace>
+	<replace sel="//wares/ware[@id='turretcomponents']/@volume">10</replace>
+	<replace sel="//wares/ware[@id='water']/@volume">3</replace>
+	<replace sel="//wares/ware[@id='weaponcomponents']/@volume">10</replace>
+	<replace sel="//wares/ware[@id='wheat']/@volume">3</replace>
+	-->
+
+	
+	<!-- Faster, Cheaper ships
+	<replace sel="/wares/ware[@id='X']/production/@time">60</replace>
+	-->
+	<replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_b']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_par_l_destroyer_01_a']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_par_l_destroyer_01_b']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_a']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_b']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_xen_xl_carrier_01_a']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='ship_xen_xl_destroyer_01_a']/production[@method='default']/@time">180</replace>
+	<replace sel="//wares/ware[@id='ship_arg_xl_builder_01_a']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_arg_xl_builder_01_b']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_arg_xl_carrier_01_a']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='ship_arg_xl_carrier_01_b']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='ship_arg_xl_resupplier_01_a']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_arg_xl_resupplier_01_b']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_par_xl_builder_01_a']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_par_xl_builder_01_b']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_par_xl_carrier_01_a']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='ship_par_xl_carrier_01_b']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='ship_par_xl_resupplier_01_a']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_par_xl_resupplier_01_b']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_tel_xl_builder_01_a']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_tel_xl_builder_01_b']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_tel_xl_carrier_01_a']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='ship_tel_xl_carrier_01_b']/production[@method='default']/@time">300</replace>
+	<replace sel="//wares/ware[@id='ship_tel_xl_resupplier_01_a']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_tel_xl_resupplier_01_b']/production[@method='default']/@time">120</replace>
+	<replace sel="//wares/ware[@id='ship_arg_m_bomber_01_a']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_arg_m_bomber_01_b']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_arg_m_bomber_02_a']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_arg_m_frigate_01_a']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_arg_m_frigate_01_b']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_par_m_corvette_01_a']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_par_m_corvette_01_b']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_par_m_frigate_01_a']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_par_m_frigate_01_b']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_tel_m_bomber_01_a']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_tel_m_bomber_01_b']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_tel_m_frigate_01_a']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_tel_m_frigate_01_b']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='ship_xen_m_fighter_01_a']/production[@method='default']/@time">30</replace>
+	<!-- Engines -->
+	<replace sel="//wares/ware[@id='engine_arg_l_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_l_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_m_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_m_allround_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_m_allround_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_m_combat_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_m_combat_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_m_combat_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_m_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_m_travel_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_m_travel_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_s_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_s_allround_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_s_allround_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_s_combat_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_s_combat_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_s_combat_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_s_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_s_travel_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_s_travel_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_xl_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_arg_xl_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_l_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_l_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_m_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_m_allround_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_m_allround_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_m_combat_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_m_combat_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_m_combat_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_m_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_m_travel_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_m_travel_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_s_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_s_allround_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_s_allround_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_s_combat_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_s_combat_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_s_combat_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_s_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_s_travel_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_s_travel_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_xl_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_par_xl_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_l_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_l_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_m_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_m_allround_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_m_allround_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_m_combat_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_m_combat_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_m_combat_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_m_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_m_travel_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_m_travel_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_s_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_s_allround_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_s_allround_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_s_combat_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_s_combat_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_s_combat_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_s_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_s_travel_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_s_travel_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_xl_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_tel_xl_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_xen_l_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_xen_m_combat_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_xen_m_travel_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_xen_s_combat_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='engine_xen_xl_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<!-- Shields -->
+	<replace sel="//wares/ware[@id='shield_arg_l_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_arg_l_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_arg_m_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_arg_m_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_arg_m_standard_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_arg_m_standard_02_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_arg_s_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_arg_s_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_arg_s_standard_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_arg_xl_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_par_l_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_par_l_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_par_m_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_par_m_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_par_m_standard_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_par_m_standard_02_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_par_s_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_par_s_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_par_s_standard_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_par_xl_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_tel_l_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_tel_l_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_tel_m_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_tel_m_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_tel_m_standard_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_tel_m_standard_02_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_tel_s_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_tel_s_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_tel_s_standard_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_tel_xl_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_xen_l_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_xen_l_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_xen_m_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_xen_m_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_xen_m_standard_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_xen_m_standard_02_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_xen_s_standard_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='shield_xen_s_standard_01_mk2']/production[@method='default']/@time">5</replace>
+	<!-- Software -->
+	<replace sel="//wares/ware[@id='software_dockmk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='software_dockmk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='software_flightassistmk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='software_scannerlongrangemk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='software_scannerlongrangemk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='software_scannerobjectmk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='software_scannerobjectmk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='software_scannerobjectmk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='software_targetmk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='software_trademk1']/production[@method='default']/@time">5</replace>
+	<!-- Thrusters -->
+	<replace sel="//wares/ware[@id='thruster_gen_l_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_l_allround_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_l_allround_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_m_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_m_allround_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_m_allround_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_m_combat_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_m_combat_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_m_combat_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_s_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_s_allround_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_s_allround_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_s_combat_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_s_combat_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_s_combat_01_mk3']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_xl_allround_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_xl_allround_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='thruster_gen_xl_allround_01_mk3']/production[@method='default']/@time">5</replace>
+	<!-- Turrets -->
+	<replace sel="//wares/ware[@id='turret_arg_l_beam_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_l_guided_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_l_mining_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_l_plasma_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_beam_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_beam_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_gatling_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_gatling_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_guided_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_guided_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_laser_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_mining_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_mining_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_plasma_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_plasma_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_shotgun_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_arg_m_shotgun_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_l_beam_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_l_dumbfire_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_l_guided_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_l_mining_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_l_plasma_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_beam_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_beam_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_dumbfire_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_dumbfire_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_gatling_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_gatling_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_guided_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_guided_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_laser_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_mining_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_mining_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_plasma_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_plasma_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_shotgun_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_par_m_shotgun_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_l_beam_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_l_guided_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_l_mining_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_beam_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_dumbfire_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_gatling_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_gatling_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_guided_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_guided_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_laser_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_mining_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_mining_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_plasma_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_xen_l_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_xen_m_beam_02_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_xen_m_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='turret_xen_m_laser_02_mk1']/production[@method='default']/@time">5</replace>
+	<!-- Weapons -->
+	<replace sel="//wares/ware[@id='weapon_arg_l_destroyer_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_arg_m_ion_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_arg_m_ion_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_arg_s_ion_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_arg_s_ion_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_mine_01']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_mine_02']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_mine_03']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_gatling_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_gatling_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_laser_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_mining_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_mining_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_laser_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_mining_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_mining_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_par_l_destroyer_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_tel_l_destroyer_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_tel_m_charge_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_tel_m_charge_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_tel_s_charge_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_tel_s_charge_01_mk2']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_xen_m_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_xen_m_mining_01_mk1']/production[@method='default']/@time">5</replace>
+	<replace sel="//wares/ware[@id='weapon_xen_s_laser_01_mk1']/production[@method='default']/@time">5</replace>
+	
+	<!-- Cheaper mods
+	<replace sel="/wares/ware[@id='X']/production/@time">60</replace>
+	-->
+	<replace sel="//wares/ware[@id='mod_engine_boostthrust_01_mk3']/production/primary/ware[@ware='modpart_extendedfuelcontainer']/@amount">1</replace>
+	<replace sel="//wares/ware[@id='mod_engine_boostthrust_01_mk3']/production/primary/ware[@ware='modpart_nividiumoxide']/@amount">1</replace>
+	<replace sel="//wares/ware[@id='mod_engine_forwardthrust_01_mk3']/production/primary/ware[@ware='modpart_extendedfuelcontainer']/@amount">1</replace>
+	<replace sel="//wares/ware[@id='mod_engine_forwardthrust_01_mk3']/production/primary/ware[@ware='modpart_nividiumoxide']/@amount">1</replace>
+	<replace sel="//wares/ware[@id='mod_engine_rotationthrust_01_mk3']/production/primary/ware[@ware='modpart_extendedfuelcontainer']/@amount">1</replace>
+	<replace sel="//wares/ware[@id='mod_engine_rotationthrust_01_mk3']/production/primary/ware[@ware='modpart_nividiumoxide']/@amount">1</replace>
+	<replace sel="//wares/ware[@id='mod_engine_travelthrust_01_mk3']/production/primary/ware[@ware='modpart_extendedfuelcontainer']/@amount">1</replace>
+	<replace sel="//wares/ware[@id='mod_engine_travelthrust_01_mk3']/production/primary/ware[@ware='modpart_nividiumoxide']/@amount">1</replace>
+	
+	<replace sel="//wares/ware[@id='mod_ship_mass_01_mk3']/production/primary/ware[@ware='modpart_nividiumcrystallite']/@amount">1</replace>
+	<replace sel="//wares/ware[@id='mod_weapon_damage_02_mk3']/production/primary/ware[@ware='modpart_highenergycatalyst']/@amount">1</replace>
+	<replace sel="//wares/ware[@id='mod_weapon_mining_01_mk3']/production/primary/ware[@ware='modpart_highenergycatalyst']/@amount">1</replace>
+	<replace sel="//wares/ware[@id='mod_weapon_speed_01_mk3']/production/primary/ware[@ware='modpart_highenergycatalyst']/@amount">1</replace>
+	
+	<!--Faster Stations
+	<replace sel="//wares/ware[@id='module_arg_dock_m_01']/production[@method='default']/@time">1</replace>
+	-->
+	<replace sel="//wares/ware[@id='module_arg_conn_base_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_conn_base_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_conn_base_03']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_conn_cross_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_conn_vertical_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_conn_vertical_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_def_claim_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_def_disc_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_def_tube_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_dock_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_dock_m_01_hightech']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_dock_m_01_lowtech']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_dock_m_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_dock_m_02_hightech']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_dock_m_02_lowtech']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_dock_tradestation_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_hab_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_hab_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_hab_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_pier_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_pier_l_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_pier_l_03']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_pier_tradestation_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_prod_foodrations_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_prod_meat_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_prod_medicalsupplies_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_prod_spacefuel_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_prod_wheat_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_stor_container_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_stor_container_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_stor_container_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_stor_liquid_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_stor_liquid_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_stor_liquid_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_stor_solid_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_stor_solid_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_stor_solid_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_arg_stor_tradestation_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_build_dockarea_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_build_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_build_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_build_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_build_xl_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_equip_dockarea_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_equip_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_equip_xl_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_advancedcomposites_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_advancedelectronics_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_antimattercells_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_antimatterconverters_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_claytronics_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_dronecomponents_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_energycells_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_engineparts_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_fieldcoils_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_graphene_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_hullparts_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_microchips_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_missilecomponents_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_plasmaconductors_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_quantumtubes_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_refinedmetals_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_scanningarrays_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_shieldcomponents_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_siliconwafers_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_smartchips_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_spices_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_superfluidcoolant_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_turretcomponents_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_water_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_gen_prod_weaponcomponents_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_conn_base_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_conn_base_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_conn_base_03']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_conn_cross_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_conn_cross_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_conn_cross_03']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_conn_vertical_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_conn_vertical_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_def_claim_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_def_disc_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_def_tube_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_hab_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_hab_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_hab_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_pier_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_pier_l_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_pier_l_03']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_prod_majadust_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_prod_majasnails_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_prod_medicalsupplies_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_prod_sojabeans_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_prod_sojahusk_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_stor_container_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_stor_container_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_stor_container_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_stor_landmark_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_stor_liquid_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_stor_liquid_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_stor_liquid_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_stor_solid_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_stor_solid_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_par_stor_solid_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_conn_base_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_conn_base_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_conn_base_03']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_conn_cross_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_conn_vertical_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_conn_vertical_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_def_claim_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_def_disc_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_def_tube_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_hab_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_hab_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_hab_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_pier_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_pier_l_02']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_pier_l_03']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_prod_advancedcomposites_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_prod_engineparts_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_prod_hullparts_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_prod_medicalsupplies_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_prod_nostropoil_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_prod_scanningarrays_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_prod_spaceweed_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_prod_sunriseflowers_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_prod_swampplant_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_prod_teladianium_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_stor_container_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_stor_container_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_stor_container_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_stor_liquid_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_stor_liquid_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_stor_liquid_s_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_stor_solid_l_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_stor_solid_m_01']/production[@method='default']/@time">30</replace>
+	<replace sel="//wares/ware[@id='module_tel_stor_solid_s_01']/production[@method='default']/@time">30</replace>
+</diff>

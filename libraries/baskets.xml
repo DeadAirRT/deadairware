@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<replace sel="//baskets/basket[@id='equipment']/wares">
+    <wares>
+      <ware ware="advancedcomposites" />
+	  <ware ware="advancedelectronics" />
+      <ware ware="antimatterconverters" />
+      <ware ware="claytronics" />
+      <ware ware="dronecomponents" />
+	  <ware ware="energycells" />
+	  <ware ware="engineparts" />
+      <ware ware="fieldcoils" />
+      <ware ware="missilecomponents" />
+	  <ware ware="scanningarrays" />
+      <ware ware="shieldcomponents" />
+      <ware ware="smartchips" />
+      <ware ware="turretcomponents" />
+      <ware ware="weaponcomponents" />
+    </wares>
+</replace>
+<replace sel="//baskets/basket[@id='argon_agriculture']/wares">
+    <wares>
+      <ware ware="medicalsupplies" />
+	  <ware ware="foodrations" />
+      <ware ware="meat" />
+      <ware ware="wheat" />
+	  <ware ware="spices" />
+    </wares>
+	</replace>
+<replace sel="//baskets/basket[@id='paranid_agriculture']/wares">
+    <wares>
+      <ware ware="medicalsupplies" />
+	  <ware ware="majasnails" />
+      <ware ware="sojabeans" />
+      <ware ware="sojahusk" />
+	  <ware ware="spices" />
+    </wares>
+</replace>
+<replace sel="//baskets/basket[@id='teladi_agriculture']/wares">
+    <wares>
+      <ware ware="medicalsupplies" />
+	  <ware ware="nostropoil" />
+      <ware ware="spaceweed" />
+      <ware ware="sunriseflowers" />
+      <ware ware="swampplant" />
+	  <ware ware="spices" />
+    </wares>
+</replace>
+</diff>
