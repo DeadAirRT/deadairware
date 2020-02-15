@@ -25,8 +25,8 @@
 	</replace>
 	
     <!-- mod_weapon_mining_01_mk3 -->
-    <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/@min">7</replace>
-    <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/@max">7</replace>
+    <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/@min">2.5</replace>
+    <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/@max">2.5</replace>
     <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/bonus/damage/@weight">0</replace>
     <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/bonus/cooling/@min">2</replace>
 	<replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/bonus/cooling/@max">2</replace>
