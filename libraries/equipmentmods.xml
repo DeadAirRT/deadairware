@@ -1,123 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff>
-    <!-- Weapon Mods -->
-    <!-- mod_weapon_damage_02_mk3 -->
-    <replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']/@min">1.5</replace>
-	<replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']/@max">1.5</replace>
-    <replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']/bonus/cooling/@min">1.5</replace>
-	<replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']/bonus/cooling/@max">1.5</replace>
-    <replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']/bonus/reload/@min">1.5</replace>
-    <replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']/bonus/reload/@max">1.5</replace>
-    <replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']/bonus/sticktime/@min">1.3</replace>
-	<replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']/bonus/sticktime/@weight">0</replace>
-    <replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']/bonus/rotationspeed/@min">1.3</replace>
-	<replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']/bonus/rotationspeed/@weight">2</replace>
-	
-	<!-- mod_weapon_speed_01_mk3-->
-    <replace sel="//equipmentmods/weapon/speed[@ware='mod_weapon_speed_01_mk3']/@min">1.5</replace>
-	<replace sel="//equipmentmods/weapon/speed[@ware='mod_weapon_speed_01_mk3']/@max">1.5</replace>
-    <replace sel="//equipmentmods/weapon/speed[@ware='mod_weapon_speed_01_mk3']/bonus">
+<!-- REWRITE -->
+<!-- WEAPONS -->
+<!-- mod_weapon_damage_01_mk3 -->
+<!--
+	<damage ware="mod_weapon_damage_01_mk3" quality="3" min="1.1" max="1.3">
       <bonus chance="1.0" max="3">
-        <cooling min="2" max="2" weight="4"/>
-        <damage min="2.25" max="2.25" weight="3"/>
+        <cooling min="1.095" max="1.325"/>
+        <sticktime min="1.1" max="1.3"/>
+        <rotationspeed min="1.1" max="1.3"/>
+      </bonus>
+    </damage>
+-->
+<replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_01_mk3']">
+	<damage ware="mod_weapon_damage_01_mk3" quality="3" min="1.5" max="1.5">
+      <bonus chance="1.0" max="3">
+        <cooling min="1.3" max="1.3"/>
+        <sticktime min="1.3" max="1.3"/>
+        <rotationspeed min="1.3" max="1.3"/>
+      </bonus>
+    </damage>
+</replace>
+<!-- mod_weapon_damage_02_mk3 -->
+<!--
+	<damage ware="mod_weapon_damage_02_mk3" quality="3" min="1.062" max="1.348">
+      <bonus chance="1.0" max="3">
+        <cooling min="1.056" max="1.358" weight="4"/>
+        <reload min="0.682" max="2" weight="3"/>
+        <sticktime min="1.1" max="1.3" weight="2"/>
+        <rotationspeed min="1.1" max="1.3" weight="1"/>
+      </bonus>
+    </damage>
+-->
+<replace sel="//equipmentmods/weapon/damage[@ware='mod_weapon_damage_02_mk3']">
+	<damage ware="mod_weapon_damage_02_mk3" quality="3" min="1.3" max="1.3">
+      <bonus chance="1.0" max="3">
+        <reload min="1.3" max="1.3" weight="3"/>
+        <sticktime min="1.3" max="1.3" weight="2"/>
         <rotationspeed min="1.3" max="1.3" weight="1"/>
       </bonus>
-	</replace>
-	
-    <!-- mod_weapon_mining_01_mk3 -->
-    <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/@min">2.5</replace>
-    <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/@max">2.5</replace>
-    <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/bonus/damage/@weight">0</replace>
-    <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/bonus/cooling/@min">2</replace>
-	<replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/bonus/cooling/@max">2</replace>
-    <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/bonus/reload/@min">2</replace>
-    <replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']/bonus/rotationspeed/@min">1.3</replace>
-
-    <!-- Engine Mods -->
-	<!-- mod_engine_forwardthrust_01_mk3 -->
-	<replace sel="//equipmentmods/engine/forwardthrust[@ware='mod_engine_forwardthrust_01_mk3']">
-	<forwardthrust ware="mod_engine_forwardthrust_01_mk3" quality="3" min="1.3" max="1.3">
-      <bonus chance="1.0" max="5">
-        <boostthrust min="1.15" max="1.15"/>
-		<boostduration min="1.15" max="1.15"/>
-        <travelthrust min="1.15" max="1.15"/>
-        <rotationthrust min="1.15" max="1.15"/>
-        <strafethrust min="1.15" max="1.15"/>
+    </damage>
+</replace>
+<!-- mod_weapon_surfaceelement_01_mk3 -->
+<!--
+	<surfaceelement ware="mod_weapon_surfaceelement_01_mk3" quality="3" min="1.25" max="1.45">
+      <bonus chance="1.0" max="3">
+        <cooling min="1.095" max="1.325"/>
+        <rotationspeed min="1.1" max="1.3"/>
+        <lifetime min="1.1" max="1.2"/>
+      </bonus>
+    </surfaceelement>
+-->
+<replace sel="//equipmentmods/weapon/surfaceelement[@ware='mod_weapon_surfaceelement_01_mk3']">
+	<surfaceelement ware="mod_weapon_surfaceelement_01_mk3" quality="3" min="1.5" max="1.5">
+      <bonus chance="1.0" max="3">
+        <cooling min="1.3" max="1.3" weight="4"/>
+        <rotationspeed min="1.3" max="1.3" weight="3"/>
+        <lifetime min="1.3" max="1.3" weight="2"/>
+      </bonus>
+    </surfaceelement>
+</replace>
+<!-- mod_weapon_speed_01_mk3 -->
+<!--
+	<speed ware="mod_weapon_speed_01_mk3" quality="3" min="1.1" max="1.15">
+      <bonus chance="1.0" max="3">
+        <damage min="1.062" max="1.3" weight="4"/>
+        <reload min="0.682" max="0.99" weight="2"/>
+        <lifetime min="1.1" max="1.3" weight="3"/>
+        <rotationspeed min="1.1" max="1.3" weight="1"/>
+      </bonus>
+    </speed>
+-->
+<replace sel="//equipmentmods/weapon/speed[@ware='mod_weapon_speed_01_mk3']">
+	<speed ware="mod_weapon_speed_01_mk3" quality="3" min="1.3" max="1.3">
+      <bonus chance="1.0" max="3">
+        <damage min="1.3" max="1.3" weight="4"/>
+        <cooling min="1.3" max="1.3" weight="3"/>
+        <rotationspeed min="1.3" max="1.3" weight="2"/>
+      </bonus>
+    </speed>
+</replace>
+<!-- mod_weapon_mining_01_mk3 -->
+<!--
+	<mining ware="mod_weapon_mining_01_mk3" quality="3" min="5.31" max="6.74">
+      <bonus chance="1.0" max="3">
+        <damage min="1.062" max="1.348" weight="4"/>
+        <cooling min="1.056" max="1.358" weight="3"/>
+        <reload min="1.01" max="2" weight="2"/>
+        <rotationspeed min="1.1" max="1.3" weight="1"/>
+      </bonus>
+    </mining>
+-->
+<replace sel="//equipmentmods/weapon/mining[@ware='mod_weapon_mining_01_mk3']">
+	<mining ware="mod_weapon_mining_01_mk3" quality="3" min="3" max="3">
+      <bonus chance="1.0" max="3">
+        <cooling min="1.3" max="1.3" weight="4"/>
+        <reload min="1.3" max="1.3" weight="3"/>
+        <rotationspeed min="1.3" max="1.3" weight="2"/>
+      </bonus>
+    </mining>
+</replace>
+<!-- ENGINES -->
+<!-- mod_engine_forwardthrust_01_mk3 -->
+<!--
+	<forwardthrust ware="mod_engine_forwardthrust_01_mk3" quality="3" min="1.1" max="1.3">
+      <bonus chance="1.0" max="4">
+        <boostthrust min="1.2" max="1.5"/>
+        <travelthrust min="1.2" max="1.5"/>
+        <rotationthrust min="1.1" max="1.3"/>
+        <strafethrust min="1.1" max="1.3"/>
       </bonus>
     </forwardthrust>
-	</replace>
-	
-	<!-- mod_engine_rotationthrust_01_mk3 -->
-	<replace sel="//equipmentmods/engine/rotationthrust[@ware='mod_engine_rotationthrust_01_mk3']">
-    <rotationthrust ware="mod_engine_rotationthrust_01_mk3" quality="3" min="1.5" max="1.5">
-      <bonus chance="1.0" max="5">
-        <boostthrust min="1.05" max="1.05"/>
-		<boostduration min="1.05" max="1.05"/>
-        <travelthrust min="1.05" max="1.05"/>
-        <forwardthrust min="1.05" max="1.05"/>
-        <strafethrust min="2" max="2"/>
+-->
+<replace sel="//equipmentmods/engine/forwardthrust[@ware='mod_engine_forwardthrust_01_mk3']">
+	<forwardthrust ware="mod_engine_forwardthrust_01_mk3" quality="3" min="1.3" max="1.3">
+      <bonus chance="1.0" max="3">
+        <boostthrust min="1.15" max="1.15" weight="4"/>
+        <rotationthrust min="1.1" max="1.1" weight="3"/>
+        <strafethrust min="1.1" max="1.1" weight="2"/>
+      </bonus>
+    </forwardthrust>
+</replace>
+<!-- mod_engine_rotationthrust_01_mk3 -->
+<!--
+	<rotationthrust ware="mod_engine_rotationthrust_01_mk3" quality="3" min="1.2" max="1.5">
+      <bonus chance="1.0" max="3">
+        <forwardthrust min="1.05" max="1.15"/>
+        <strafethrust min="1.2" max="1.5"/>
       </bonus>
     </rotationthrust>
-	</replace>
-	
-	<!-- mod_engine_boostthrust_01_mk3 -->
-	<replace sel="//equipmentmods/engine/boostthrust[@ware='mod_engine_boostthrust_01_mk3']">
-    <boostthrust ware="mod_engine_boostthrust_01_mk3" quality="3" min="1.5" max="1.5">
+-->
+<replace sel="//equipmentmods/engine/rotationthrust[@ware='mod_engine_rotationthrust_01_mk3']">
+	<rotationthrust ware="mod_engine_rotationthrust_01_mk3" quality="3" min="1.5" max="1.5">
+      <bonus chance="1.0" max="3">
+        <boostthrust min="1.1" max="1.1" weight="4"/>
+		<forwardthrust min="1.1" max="1.1" weight="3"/>
+        <strafethrust min="1.3" max="1.3" weight="2"/>
+      </bonus>
+    </rotationthrust>
+</replace>
+<!-- mod_engine_boostthrust_01_mk3 -->
+<!--
+	<boostthrust ware="mod_engine_boostthrust_01_mk3" quality="3" min="1.1" max="1.3">
       <bonus chance="1.0" max="5">
-        <boostduration min="1.5" max="1.5"/>
-		<travelthrust min="1.05" max="1.05"/>
-		<forwardthrust min="1.3" max="1.3"/>
-        <rotationthrust min="1.05" max="1.05"/>
-        <strafethrust min="1.05" max="1.05"/>
+        <forwardthrust min="1.05" max="1.15"/>
+        <boostduration min="1.1" max="1.3"/>
+        <rotationthrust min="1.1" max="1.3"/>
+        <strafethrust min="1.1" max="1.3"/>
       </bonus>
     </boostthrust>
-	</replace>
-	
-	<!-- mod_engine_travelthrust_01_mk3 -->
-	<replace sel="//equipmentmods/engine/travelthrust[@ware='mod_engine_travelthrust_01_mk3']">
-    <travelthrust ware="mod_engine_travelthrust_01_mk3" quality="3" min="1.5" max="1.5">
+-->
+<replace sel="//equipmentmods/engine/boostthrust[@ware='mod_engine_boostthrust_01_mk3']">
+	<boostthrust ware="mod_engine_boostthrust_01_mk3" quality="3" min="1.5" max="1.5">
+      <bonus chance="1.0" max="4">
+        <forwardthrust min="1.1" max="1.1" weight="4"/>
+        <boostduration min="1.3" max="1.3" weight="3"/>
+        <rotationthrust min="1.1" max="1.1" weight="2"/>
+        <strafethrust min="1.1" max="1.1" weight="1"/>
+      </bonus>
+    </boostthrust>
+</replace>
+<!-- mod_engine_travelthrust_01_mk3 -->
+<!--
+	<travelthrust ware="mod_engine_travelthrust_01_mk3" quality="3" min="1.1" max="1.3">
       <bonus chance="1.0" max="7">
-        <forwardthrust min="1.3" max="1.3"/>
-        <boostthrust min="1.05" max="1.05"/>
-		<boostduration min="1.05" max="1.05"/>
-        <travelstartthrust min="1.5" max="1.5"/>
-        <travelchargetime min="0.5" max="0.5"/>
-        <rotationthrust min="0.95" max="0.95"/>
-        <strafethrust min="0.95" max="0.95"/>
+        <forwardthrust min="1.05" max="1.15"/>
+        <travelstartthrust min="1.1" max="1.3"/>
+        <travelattacktime min="0.7" max="0.9"/>
+        <travelchargetime min="0.7" max="0.9"/>
+        <travelreleasetime min="0.7" max="0.9"/>
+        <rotationthrust min="1.1" max="1.3"/>
+        <strafethrust min="1.1" max="1.3"/>
       </bonus>
     </travelthrust>
-	</replace>
-
-    <!-- Ship Mods -->
-    <!-- mod_ship_mass_01_mk3 -->
-    <replace sel="//equipmentmods/ship/mass[@ware='mod_ship_mass_01_mk3']/@max">0.6</replace>
-	<replace sel="//equipmentmods/ship/mass[@ware='mod_ship_mass_01_mk3']/@min">0.6</replace>
-    <replace sel="//equipmentmods/ship/mass[@ware='mod_ship_mass_01_mk3']/bonus">
-      <bonus chance="1.0" max="3">
-        <radarrange min="1.5" max="1.5" weight="1"/>
-        <maxhull min="1.25" max="1.25" weight="1"/>
-        <drag min="0.8" max="0.8" weight="1"/>
+-->
+<replace sel="//equipmentmods/engine/travelthrust[@ware='mod_engine_travelthrust_01_mk3']">
+	<travelthrust ware="mod_engine_travelthrust_01_mk3" quality="3" min="1.5" max="1.5">
+      <bonus chance="1.0" max="7">
+        <forwardthrust min="1.1" max="1.1" weight="7"/>
+        <travelstartthrust min="1.3" max="1.3" weight="6"/>
+        <travelattacktime min="0.8" max="0.8" weight="5"/>
+        <travelchargetime min="0" max="0" weight="4"/>
+        <travelreleasetime min="0.8" max="0.8" weight="3"/>
+        <rotationthrust min="1.1" max="1.1" weight="2"/>
+        <strafethrust min="1.1" max="1.1" weight="1"/>
       </bonus>
-	</replace>
-    <!--<replace sel="//equipmentmods/ship/mass[@ware='mod_ship_mass_01_mk3']/bonus/drag/@max">0.9</replace>
-	<replace sel="//equipmentmods/ship/mass[@ware='mod_ship_mass_01_mk3']/bonus/drag/@min">0.9</replace>-->
-    
-    <!-- Shield Mods -->
-    <!-- mod_shield_capacity_01_mk3 -->
-    <replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_01_mk3']/@min">3</replace>
-    <replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_01_mk3']/@max">3</replace>
-	
-    <!-- mod_shield_capacity_02_mk3 -->
-    <replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_02_mk3']/@min">2</replace>
-	<replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_02_mk3']/@max">2</replace>
-    <replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_02_mk3']/bonus/rechargerate/@min">2</replace>
-	<replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_02_mk3']/bonus/rechargerate/@max">2</replace>
-    <replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_02_mk3']/bonus/rechargedelay/@min">0</replace>
-    <replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_02_mk3']/bonus/rechargedelay/@max">0</replace>
-
-    <!-- mod_shield_rechargerate_01_mk3 -->
-    <replace sel="//equipmentmods/shield/rechargerate[@ware='mod_shield_rechargerate_01_mk3']/@min">3</replace>
-    <replace sel="//equipmentmods/shield/rechargerate[@ware='mod_shield_rechargerate_01_mk3']/@max">3</replace>
-	<replace sel="//equipmentmods/shield/rechargerate[@ware='mod_shield_rechargerate_01_mk3']/bonus/rechargedelay/@min">0</replace>
-    <replace sel="//equipmentmods/shield/rechargerate[@ware='mod_shield_rechargerate_01_mk3']/bonus/rechargedelay/@max">0</replace>
+    </travelthrust>
+</replace>
+<!-- SHIP -->
+<!-- mod_ship_mass_01_mk3 -->
+<!--
+	<mass ware="mod_ship_mass_01_mk3" quality="3" min="0.769" max="0.909">
+      <bonus chance="1.0" max="1">
+        <drag min="0.769" max="0.909"/>
+      </bonus>
+    </mass>
+-->
+<replace sel="//equipmentmods/ship/mass[@ware='mod_ship_mass_01_mk3']">
+	<mass ware="mod_ship_mass_01_mk3" quality="3" min="0.8" max="0.8">
+      <bonus chance="1.0" max="7">
+        <drag min="0.8" max="0.8" weight="7"/>
+		<maxhull min="1.25" max="1.25" weight="6"/>
+        <radarrange min="1.5" max="1.5" weight="5"/>
+        <countermeasurecapacity min="2" max="2" weight="4"/>
+        <deployablecapacity min="2" max="2" weight="3"/>
+        <missilecapacity min="2" max="2" weight="2"/>
+        <unitcapacity min="2" max="2" weight="1"/>
+      </bonus>
+    </mass>
+</replace>
+<!-- SHIELD -->
+<!-- mod_shield_capacity_01_mk3 -->
+<!--
+	<capacity ware="mod_shield_capacity_01_mk3" quality="3" min="1.3" max="1.7"/>
+-->
+<replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_01_mk3']">
+	<capacity ware="mod_shield_capacity_01_mk3" quality="3" min="3" max="3"/>
+</replace>
+<!-- mod_shield_capacity_02_mk3 -->
+<!--
+	<capacity ware="mod_shield_capacity_02_mk3" quality="3" min="1.1" max="1.3">
+      <bonus chance="1.0" max="2">
+        <rechargerate min="1.1" max="1.3"/>
+        <rechargedelay min="0.7" max="0.9"/>
+      </bonus>
+    </capacity>
+-->
+<replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_02_mk3']">
+	<capacity ware="mod_shield_capacity_02_mk3" quality="3" min="1.5" max="1.5">
+      <bonus chance="1.0" max="1">
+        <rechargerate min="1.5" max="1.5" weight="4"/>
+      </bonus>
+    </capacity>
+</replace>
+<!-- mod_shield_rechargerate_01_mk3 -->
+<!--
+	<rechargerate ware="mod_shield_rechargerate_01_mk3" quality="3" min="1.3" max="1.7">
+      <bonus chance="1.0" max="1">
+        <rechargedelay min="0.3" max="0.7"/>
+      </bonus>
+    </rechargerate>
+-->
+<replace sel="//equipmentmods/shield/rechargerate[@ware='mod_shield_rechargerate_01_mk3']">
+	<rechargerate ware="mod_shield_rechargerate_01_mk3" quality="3" min="3" max="3"/>
+</replace>
 </diff>
