@@ -285,7 +285,8 @@
       </primary>
 	</replace>
 	<!-- wheat -->
-	<!-- Workforce has been working out-->
+	<!-- Workforce has been working out -->
+	<!-- but they need the lights on -->
 	<replace sel="//wares/ware[@id='advancedcomposites']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
 	<replace sel="//wares/ware[@id='advancedcomposites']/production[@method='teladi']/effects/effect[@type='work']/@product">1</replace>
 	<replace sel="//wares/ware[@id='advancedelectronics']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
@@ -333,6 +334,14 @@
 	<replace sel="//wares/ware[@id='water']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
 	<replace sel="//wares/ware[@id='weaponcomponents']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
 	<replace sel="//wares/ware[@id='wheat']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+	
+	<add sel="//wares/ware[@id='workunit_busy']/production[@method='default']/primary"><ware ware="energycells" amount="270" /></add>
+	<add sel="//wares/ware[@id='workunit_busy']/production[@method='paranid']/primary"><ware ware="energycells" amount="270" /></add>
+	<add sel="//wares/ware[@id='workunit_busy']/production[@method='teladi']/primary"><ware ware="energycells" amount="270" /></add>
+	
+	<add sel="//wares/ware[@id='workunit_idle']/production[@method='default']/primary"><ware ware="energycells" amount="180" /></add>
+	<add sel="//wares/ware[@id='workunit_idle']/production[@method='paranid']/primary"><ware ware="energycells" amount="180" /></add>
+	<add sel="//wares/ware[@id='workunit_idle']/production[@method='teladi']/primary"><ware ware="energycells" amount="180" /></add>
 	
 	<!-- Change Volume
 	<replace sel="/wares/ware[@id='X']/@volume">22</replace>
