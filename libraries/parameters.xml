@@ -4,11 +4,14 @@
 	<replace sel="//parameters/controlpanel/entry[@type='hack_discount']/discount/@amount">25</replace>
 	<replace sel="//parameters/controlpanel/entry[@type='hack_discount']/commission/@amount">25</replace>
 	<!-- Faster workforce-->
-	<replace sel="//parameters/workforce/growth/@rate">500</replace>
-	<replace sel="//parameters/workforce/growth/factor/@min">0.8</replace>
+	<replace sel="//parameters/workforce/growth/@rate">250</replace>
+	<replace sel="//parameters/workforce/growth/ratio/@min">0.25</replace>
+	<replace sel="//parameters/workforce/growth/ratio/@max">0.9</replace>
+	<replace sel="//parameters/workforce/growth/factor/@min">0.25</replace>
+	<replace sel="//parameters/workforce/growth/factor/@max">1.0</replace>
 	<!-- Better Lootmagnet-->
 	<replace sel="//parameters/lootmagnet">
-		<lootmagnet range="9999" force="4" maxspeed="500" sound="containermagnet_active" />
+		<lootmagnet range="20000" force="4" maxspeed="500" sound="containermagnet_active" />
 	</replace>
 	<replace sel="//parameters/productioncheck/threshold/@resource">0.10</replace>
 	<replace sel="//parameters/productioncheck/threshold/@product">0.10</replace>
