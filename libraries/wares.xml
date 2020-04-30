@@ -1,67 +1,47 @@
 <?xml version='1.0' encoding='utf-8'?>
 <diff>
-  <replace sel="/wares/ware[@id='advancedcomposites']/production[@time='300'][1]/@amount">120</replace>
-  <replace sel="/wares/ware[@id='advancedcomposites']/production[@time='300'][1]/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='advancedcomposites']/production[@time='300'][2]/@amount">120</replace>
-  <replace sel="/wares/ware[@id='advancedcomposites']/production[@time='300'][2]/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='advancedcomposites']/production[@name='{20206,101}']/@amount">120</replace>
+  <replace sel="/wares/ware[@id='advancedcomposites']/production[@name='{20206,101}']/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='advancedcomposites']/production[@name='{20206,401}']/@amount">120</replace>
+  <replace sel="/wares/ware[@id='advancedcomposites']/production[@name='{20206,401}']/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/production/@amount">120</replace>
-  <replace sel="/wares/ware[@id='advancedelectronics']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="25"/>
-      <ware ware="microchips" amount="19"/>
-      <ware ware="quantumtubes" amount="9"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='advancedelectronics']/production/primary/ware[@ware='energycells']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='advancedelectronics']/production/primary/ware[@ware='microchips']/@amount">19</replace>
+  <replace sel="/wares/ware[@id='advancedelectronics']/production/primary/ware[@ware='quantumtubes']/@amount">9</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='antimattercells']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/production/@amount">300</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='claytronics']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='claytronics']/production/@amount">80</replace>
-  <replace sel="/wares/ware[@id='claytronics']/production/primary">
-    <primary>
-      <ware ware="antimattercells" amount="34"/>
-      <ware ware="energycells" amount="47"/>
-      <ware ware="microchips" amount="54"/>
-      <ware ware="quantumtubes" amount="34"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='claytronics']/production/primary/ware[@ware='antimattercells']/@amount">34</replace>
+  <replace sel="/wares/ware[@id='claytronics']/production/primary/ware[@ware='energycells']/@amount">47</replace>
+  <replace sel="/wares/ware[@id='claytronics']/production/primary/ware[@ware='microchips']/@amount">54</replace>
+  <replace sel="/wares/ware[@id='claytronics']/production/primary/ware[@ware='quantumtubes']/@amount">34</replace>
   <replace sel="/wares/ware[@id='claytronics']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/production/@amount">60</replace>
-  <replace sel="/wares/ware[@id='dronecomponents']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="15"/>
-      <ware ware="engineparts" amount="5"/>
-      <ware ware="hullparts" amount="5"/>
-      <ware ware="microchips" amount="5"/>
-      <ware ware="scanningarrays" amount="10"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='dronecomponents']/production/primary/ware[@ware='energycells']/@amount">15</replace>
+  <replace sel="/wares/ware[@id='dronecomponents']/production/primary/ware[@ware='engineparts']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='dronecomponents']/production/primary/ware[@ware='hullparts']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='dronecomponents']/production/primary/ware[@ware='microchips']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='dronecomponents']/production/primary/ware[@ware='scanningarrays']/@amount">10</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='energycells']/production/@amount">400</replace>
   <replace sel="/wares/ware[@id='energycells']/production/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='engineparts']/production[@time='900'][1]/@time">300</replace>
-  <replace sel="/wares/ware[@id='engineparts']/production[@time='300']/@amount">120</replace>
-  <replace sel="/wares/ware[@id='engineparts']/production[@time='300']/primary">
-    <primary>
-      <ware ware="antimattercells" amount="27"/>
-      <ware ware="energycells" amount="20"/>
-      <ware ware="refinedmetals" amount="32"/>
-    </primary>
-  </replace>
-  <replace sel="/wares/ware[@id='engineparts']/production[@time='300']/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='engineparts']/production[@time='900']/@time">300</replace>
-  <replace sel="/wares/ware[@id='engineparts']/production[@time='300'][2]/@amount">120</replace>
-  <replace sel="/wares/ware[@id='engineparts']/production[@time='300'][2]/primary">
-    <primary>
-      <ware ware="antimattercells" amount="27"/>
-      <ware ware="energycells" amount="20"/>
-      <ware ware="teladianium" amount="24"/>
-    </primary>
-  </replace>
-  <replace sel="/wares/ware[@id='engineparts']/production[@time='300'][2]/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,101}']/@time">300</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,101}']/@amount">120</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,101}']/primary/ware[@ware='antimattercells']/@amount">27</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,101}']/primary/ware[@ware='energycells']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,101}']/primary/ware[@ware='refinedmetals']/@amount">32</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,101}']/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,401}']/@time">300</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,401}']/@amount">120</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,401}']/primary/ware[@ware='antimattercells']/@amount">27</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,401}']/primary/ware[@ware='energycells']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,401}']/primary/ware[@ware='teladianium']/@amount">24</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@name='{20206,401}']/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='engine_arg_l_allround_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='engine_arg_l_travel_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='engine_arg_m_allround_01_mk1']/production/@time">5</replace>
@@ -134,36 +114,24 @@
   <replace sel="/wares/ware[@id='engine_xen_s_combat_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='engine_xen_xl_allround_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='fieldcoils']/production/@time">300</replace>
-  <replace sel="/wares/ware[@id='fieldcoils']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="30"/>
-      <ware ware="plasmaconductors" amount="20"/>
-      <ware ware="quantumtubes" amount="22"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='fieldcoils']/production/primary/ware[@ware='energycells']/@amount">30</replace>
+  <replace sel="/wares/ware[@id='fieldcoils']/production/primary/ware[@ware='plasmaconductors']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='fieldcoils']/production/primary/ware[@ware='quantumtubes']/@amount">22</replace>
   <replace sel="/wares/ware[@id='fieldcoils']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='foodrations']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='graphene']/production/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='hullparts']/production[@time='900'][1]/@time">300</replace>
-  <replace sel="/wares/ware[@id='hullparts']/production[@time='300']/@amount">146</replace>
-  <replace sel="/wares/ware[@id='hullparts']/production[@time='300']/primary">
-    <primary>
-      <ware ware="energycells" amount="27"/>
-      <ware ware="graphene" amount="14"/>
-      <ware ware="refinedmetals" amount="94"/>
-    </primary>
-  </replace>
-  <replace sel="/wares/ware[@id='hullparts']/production[@time='300']/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='hullparts']/production[@time='900']/@time">300</replace>
-  <replace sel="/wares/ware[@id='hullparts']/production[@time='300'][2]/@amount">146</replace>
-  <replace sel="/wares/ware[@id='hullparts']/production[@time='300'][2]/primary">
-    <primary>
-      <ware ware="energycells" amount="27"/>
-      <ware ware="graphene" amount="14"/>
-      <ware ware="teladianium" amount="68"/>
-    </primary>
-  </replace>
-  <replace sel="/wares/ware[@id='hullparts']/production[@time='300'][2]/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,101}']/@time">300</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,101}']/@amount">146</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,101}']/primary/ware[@ware='energycells']/@amount">27</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,101}']/primary/ware[@ware='graphene']/@amount">14</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,101}']/primary/ware[@ware='refinedmetals']/@amount">94</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,101}']/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,401}']/@time">300</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,401}']/@amount">146</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,401}']/primary/ware[@ware='energycells']/@amount">27</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,401}']/primary/ware[@ware='graphene']/@amount">14</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,401}']/primary/ware[@ware='teladianium']/@amount">68</replace>
+  <replace sel="/wares/ware[@id='hullparts']/production[@name='{20206,401}']/effects/effect/@product">1</replace>
   <remove sel="/wares/ware[@id='inv_agidevice_01']/@illegal"/>
   <remove sel="/wares/ware[@id='inv_agidevice_02']/@illegal"/>
   <remove sel="/wares/ware[@id='inv_agidevice_03']/@illegal"/>
@@ -180,43 +148,31 @@
   <replace sel="/wares/ware[@id='majasnails']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='meat']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='meat']/production/@amount">146</replace>
-  <replace sel="/wares/ware[@id='meat']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="27"/>
-      <ware ware="water" amount="67"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='meat']/production/primary/ware[@ware='energycells']/@amount">27</replace>
+  <replace sel="/wares/ware[@id='meat']/production/primary/ware[@ware='water']/@amount">67</replace>
   <replace sel="/wares/ware[@id='meat']/production/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='medicalsupplies']/production[@time='300'][1]/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='medicalsupplies']/production[@time='300'][2]/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='medicalsupplies']/production[@time='300'][3]/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='medicalsupplies']/production[@name='{20206,201}']/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='medicalsupplies']/production[@name='{20206,301}']/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='medicalsupplies']/production[@name='{20206,401}']/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='microchips']/production/@time">300</replace>
-  <replace sel="/wares/ware[@id='microchips']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="25"/>
-      <ware ware="siliconwafers" amount="100"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='microchips']/production/primary/ware[@ware='energycells']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='microchips']/production/primary/ware[@ware='siliconwafers']/@amount">100</replace>
   <replace sel="/wares/ware[@id='microchips']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/production/@amount">220</replace>
-  <replace sel="/wares/ware[@id='missilecomponents']/production/primary">
-    <primary>
-      <ware ware="advancedcomposites" amount="1"/>
-      <ware ware="energycells" amount="7"/>
-      <ware ware="hullparts" amount="1"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='missilecomponents']/production/primary/ware[@ware='advancedcomposites']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='missilecomponents']/production/primary/ware[@ware='energycells']/@amount">7</replace>
+  <replace sel="/wares/ware[@id='missilecomponents']/production/primary/ware[@ware='hullparts']/@amount">1</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='module_arg_conn_base_01']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_conn_base_02']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_conn_base_03']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_conn_cross_01']/production[@method='default']/@time">30</replace>
-  <replace sel="/wares/ware[@id='module_arg_conn_vertical_01']/production/@time">30</replace>
-  <replace sel="/wares/ware[@id='module_arg_conn_vertical_02']/production/@time">30</replace>
+  <replace sel="/wares/ware[@id='module_arg_conn_vertical_01']/production[@method='default']/@time">30</replace>
+  <replace sel="/wares/ware[@id='module_arg_conn_vertical_02']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_def_claim_01']/production/@time">30</replace>
-  <replace sel="/wares/ware[@id='module_arg_def_disc_01']/production[@time='592'][1]/@time">30</replace>
-  <replace sel="/wares/ware[@id='module_arg_def_tube_01']/production[@time='514'][1]/@time">30</replace>
+  <replace sel="/wares/ware[@id='module_arg_def_disc_01']/production[@name='{20206,101}']/@time">30</replace>
+  <replace sel="/wares/ware[@id='module_arg_def_tube_01']/production[@name='{20206,101}']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_dock_m_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_dock_m_01_hightech']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_dock_m_01_lowtech']/production/@time">30</replace>
@@ -246,7 +202,7 @@
   <replace sel="/wares/ware[@id='module_arg_stor_solid_m_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_solid_s_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_tradestation_l_01']/production/@time">30</replace>
-  <replace sel="/wares/ware[@id='module_gen_build_dockarea_m_01']/production[@time='1997']/@time">30</replace>
+  <replace sel="/wares/ware[@id='module_gen_build_dockarea_m_01']/production[@name='{20206,101}']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_build_l_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_build_m_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_build_s_01']/production/@time">30</replace>
@@ -259,12 +215,16 @@
   <replace sel="/wares/ware[@id='module_gen_prod_antimattercells_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_antimatterconverters_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_claytronics_01']/production/@time">30</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_claytronics_01']/production/primary/ware[@ware='claytronics']/@amount">1975</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_claytronics_01']/production/primary/ware[@ware='energycells']/@amount">129775</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_dronecomponents_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_energycells_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_engineparts_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_fieldcoils_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_graphene_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_hullparts_01']/production/@time">30</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_hullparts_01']/production/primary/ware[@ware='energycells']/@amount">12699</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_hullparts_01']/production/primary/ware[@ware='hullparts']/@amount">1574</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_microchips_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_missilecomponents_01']/production/@time">30</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_plasmaconductors_01']/production/@time">30</replace>
@@ -360,74 +320,46 @@
   <replace sel="/wares/ware[@id='mod_weapon_speed_01_mk3']/production/primary/ware[@ware='modpart_highenergycatalyst']/@amount">1</replace>
   <replace sel="/wares/ware[@id='mod_weapon_surfaceelement_01_mk3']/production/primary/ware[@ware='modpart_highenergycatalyst']/@amount">1</replace>
   <replace sel="/wares/ware[@id='nostropoil']/production/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='plasmaconductors']/production[@time='900'][1]/@time">300</replace>
-  <replace sel="/wares/ware[@id='plasmaconductors']/production[@time='300']/@amount">34</replace>
-  <replace sel="/wares/ware[@id='plasmaconductors']/production[@time='300']/primary">
-    <primary>
-      <ware ware="energycells" amount="20"/>
-      <ware ware="graphene" amount="33"/>
-      <ware ware="superfluidcoolant" amount="47"/>
-    </primary>
-  </replace>
-  <replace sel="/wares/ware[@id='plasmaconductors']/production[@time='300']/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='plasmaconductors']/production[@time='900']/@time">300</replace>
-  <replace sel="/wares/ware[@id='plasmaconductors']/production[@time='300'][2]/@amount">34</replace>
-  <replace sel="/wares/ware[@id='plasmaconductors']/production[@time='300'][2]/primary">
-    <primary>
-      <ware ware="energycells" amount="20"/>
-      <ware ware="graphene" amount="33"/>
-      <ware ware="superfluidcoolant" amount="47"/>
-    </primary>
-  </replace>
-  <replace sel="/wares/ware[@id='plasmaconductors']/production[@time='300'][2]/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='quantumtubes']/production[@time='720'][1]/@time">300</replace>
-  <replace sel="/wares/ware[@id='quantumtubes']/production[@time='300']/@amount">50</replace>
-  <replace sel="/wares/ware[@id='quantumtubes']/production[@time='300']/primary">
-    <primary>
-      <ware ware="energycells" amount="17"/>
-      <ware ware="graphene" amount="49"/>
-      <ware ware="superfluidcoolant" amount="13"/>
-    </primary>
-  </replace>
-  <replace sel="/wares/ware[@id='quantumtubes']/production[@time='300']/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='quantumtubes']/production[@time='720']/@time">300</replace>
-  <replace sel="/wares/ware[@id='quantumtubes']/production[@time='300'][2]/@amount">50</replace>
-  <replace sel="/wares/ware[@id='quantumtubes']/production[@time='300'][2]/primary">
-    <primary>
-      <ware ware="energycells" amount="17"/>
-      <ware ware="graphene" amount="49"/>
-      <ware ware="superfluidcoolant" amount="13"/>
-    </primary>
-  </replace>
-  <replace sel="/wares/ware[@id='quantumtubes']/production[@time='300'][2]/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,101}']/@time">300</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,101}']/@amount">34</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,101}']/primary/ware[@ware='energycells']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,101}']/primary/ware[@ware='graphene']/@amount">33</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,101}']/primary/ware[@ware='superfluidcoolant']/@amount">47</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,101}']/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,401}']/@time">300</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,401}']/@amount">34</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,401}']/primary/ware[@ware='energycells']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,401}']/primary/ware[@ware='graphene']/@amount">33</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,401}']/primary/ware[@ware='superfluidcoolant']/@amount">47</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@name='{20206,401}']/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,101}']/@time">300</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,101}']/@amount">50</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,101}']/primary/ware[@ware='energycells']/@amount">17</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,101}']/primary/ware[@ware='graphene']/@amount">49</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,101}']/primary/ware[@ware='superfluidcoolant']/@amount">13</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,101}']/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,401}']/@time">300</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,401}']/@amount">50</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,401}']/primary/ware[@ware='energycells']/@amount">17</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,401}']/primary/ware[@ware='graphene']/@amount">49</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,401}']/primary/ware[@ware='superfluidcoolant']/@amount">13</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@name='{20206,401}']/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/production/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='scanningarrays']/production[@time='600'][1]/@time">300</replace>
-  <replace sel="/wares/ware[@id='scanningarrays']/production[@time='300']/primary">
-    <primary>
-      <ware ware="energycells" amount="30"/>
-      <ware ware="refinedmetals" amount="50"/>
-      <ware ware="siliconwafers" amount="30"/>
-    </primary>
-  </replace>
-  <replace sel="/wares/ware[@id='scanningarrays']/production[@time='300']/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='scanningarrays']/production[@time='600']/@time">300</replace>
-  <replace sel="/wares/ware[@id='scanningarrays']/production[@time='300'][2]/primary">
-    <primary>
-      <ware ware="energycells" amount="30"/>
-      <ware ware="siliconwafers" amount="30"/>
-      <ware ware="teladianium" amount="37"/>
-    </primary>
-  </replace>
-  <replace sel="/wares/ware[@id='scanningarrays']/production[@time='300'][2]/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@name='{20206,101}']/@time">300</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@name='{20206,101}']/primary/ware[@ware='energycells']/@amount">30</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@name='{20206,101}']/primary/ware[@ware='refinedmetals']/@amount">50</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@name='{20206,101}']/primary/ware[@ware='siliconwafers']/@amount">30</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@name='{20206,101}']/effects/effect/@product">1</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@name='{20206,401}']/@time">300</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@name='{20206,401}']/primary/ware[@ware='energycells']/@amount">30</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@name='{20206,401}']/primary/ware[@ware='siliconwafers']/@amount">30</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@name='{20206,401}']/primary/ware[@ware='teladianium']/@amount">37</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@name='{20206,401}']/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production/@amount">110</replace>
-  <replace sel="/wares/ware[@id='shieldcomponents']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="18"/>
-      <ware ware="plasmaconductors" amount="5"/>
-      <ware ware="quantumtubes" amount="5"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='shieldcomponents']/production/primary/ware[@ware='energycells']/@amount">18</replace>
+  <replace sel="/wares/ware[@id='shieldcomponents']/production/primary/ware[@ware='plasmaconductors']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='shieldcomponents']/production/primary/ware[@ware='quantumtubes']/@amount">5</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='shield_arg_l_standard_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='shield_arg_l_standard_01_mk2']/production/@time">5</replace>
@@ -510,12 +442,8 @@
   <replace sel="/wares/ware[@id='siliconwafers']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='smartchips']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='smartchips']/production/@amount">80</replace>
-  <replace sel="/wares/ware[@id='smartchips']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="25"/>
-      <ware ware="siliconwafers" amount="10"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='smartchips']/production/primary/ware[@ware='energycells']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='smartchips']/production/primary/ware[@ware='siliconwafers']/@amount">10</replace>
   <replace sel="/wares/ware[@id='smartchips']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='software_dockmk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='software_dockmk2']/production/@time">5</replace>
@@ -531,175 +459,138 @@
   <replace sel="/wares/ware[@id='sojahusk']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='spacefuel']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='spacefuel']/production/@amount">75</replace>
-  <replace sel="/wares/ware[@id='spacefuel']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="25"/>
-      <ware ware="water" amount="62"/>
-      <ware ware="wheat" amount="50"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='spacefuel']/production/primary/ware[@ware='energycells']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='spacefuel']/production/primary/ware[@ware='water']/@amount">62</replace>
+  <replace sel="/wares/ware[@id='spacefuel']/production/primary/ware[@ware='wheat']/@amount">50</replace>
   <replace sel="/wares/ware[@id='spacefuel']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='spaceweed']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='spaceweed']/production/@amount">113</replace>
-  <replace sel="/wares/ware[@id='spaceweed']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="70"/>
-      <ware ware="spices" amount="20"/>
-      <ware ware="swampplant" amount="60"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='spaceweed']/production/primary/ware[@ware='energycells']/@amount">70</replace>
+  <replace sel="/wares/ware[@id='spaceweed']/production/primary/ware[@ware='spices']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='spaceweed']/production/primary/ware[@ware='swampplant']/@amount">60</replace>
   <replace sel="/wares/ware[@id='spaceweed']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='spices']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='spices']/production/@amount">240</replace>
-  <replace sel="/wares/ware[@id='spices']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="20"/>
-      <ware ware="water" amount="40"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='spices']/production/primary/ware[@ware='energycells']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='spices']/production/primary/ware[@ware='water']/@amount">40</replace>
   <replace sel="/wares/ware[@id='spices']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='sunriseflowers']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='superfluidcoolant']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='swampplant']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='swampplant']/production/@amount">80</replace>
-  <replace sel="/wares/ware[@id='swampplant']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="26"/>
-      <ware ware="water" amount="66"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='swampplant']/production/primary/ware[@ware='energycells']/@amount">26</replace>
+  <replace sel="/wares/ware[@id='swampplant']/production/primary/ware[@ware='water']/@amount">66</replace>
   <replace sel="/wares/ware[@id='swampplant']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='teladianium']/production/effects/effect/@product">1</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk1']/production[@time='20']/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk2']/production[@time='20']/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk3']/production[@time='20']/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk1']/production[@time='10'][1]/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk2']/production[@time='10'][1]/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk3']/production[@time='10'][1]/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk1']/production[@time='10'][1]/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk2']/production[@time='10'][1]/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk3']/production[@time='10'][1]/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk1']/production[@time='30']/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk2']/production[@time='30']/@time">5</replace>
-  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk3']/production[@time='30']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk1']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk2']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk3']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk1']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk2']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk3']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk1']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk2']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk3']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk1']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk2']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk3']/production[@name='{20206,101}']/@time">5</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/production/@amount">67</replace>
-  <replace sel="/wares/ware[@id='turretcomponents']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="10"/>
-      <ware ware="microchips" amount="4"/>
-      <ware ware="quantumtubes" amount="4"/>
-      <ware ware="scanningarrays" amount="2"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='turretcomponents']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turretcomponents']/production/primary/ware[@ware='microchips']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='turretcomponents']/production/primary/ware[@ware='quantumtubes']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='turretcomponents']/production/primary/ware[@ware='scanningarrays']/@amount">2</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_beam_01_mk1']/price/@min">78261</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_beam_01_mk1']/price/@average">86957</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_beam_01_mk1']/price/@max">95652</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_beam_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_beam_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_beam_01_mk1']/use/@threshold">0.7</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/price/@min">52289</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/price/@average">58099</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/price/@max">63909</replace>
-  <replace sel="/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="4"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="20"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">20</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_guided_01_mk1']/price/@min">93055</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_guided_01_mk1']/price/@average">103395</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_guided_01_mk1']/price/@max">113734</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_guided_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_guided_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">39</replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_guided_01_mk1']/use/@threshold">0.9</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_laser_01_mk1']/price/@min">67905</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_laser_01_mk1']/price/@average">75450</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_laser_01_mk1']/price/@max">82995</replace>
-  <replace sel="/wares/ware[@id='turret_arg_l_laser_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="9"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="15"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_laser_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_laser_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">9</replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_laser_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">15</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_mining_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_plasma_01_mk1']/price/@min">135464</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_plasma_01_mk1']/price/@average">150515</replace>
   <replace sel="/wares/ware[@id='turret_arg_l_plasma_01_mk1']/price/@max">165567</replace>
-  <replace sel="/wares/ware[@id='turret_arg_l_plasma_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="18"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="30"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_plasma_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_plasma_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">18</replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_plasma_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">30</replace>
+  <replace sel="/wares/ware[@id='turret_arg_l_plasma_01_mk1']/use/@threshold">1</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_beam_01_mk1']/price/@min">26317</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_beam_01_mk1']/price/@average">29242</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_beam_01_mk1']/price/@max">32166</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_beam_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_beam_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_beam_01_mk1']/use/@threshold">0.7</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_beam_02_mk1']/price/@min">26317</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_beam_02_mk1']/price/@average">29242</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_beam_02_mk1']/price/@max">32166</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_beam_02_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_beam_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_beam_02_mk1']/use/@threshold">0.7</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/price/@min">21378</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/price/@average">23753</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/price/@max">26128</replace>
-  <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="1"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/price/@min">21378</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/price/@average">23753</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/price/@max">26128</replace>
-  <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="1"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_01_mk1']/price/@min">24665</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_01_mk1']/price/@average">27406</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_01_mk1']/price/@max">30147</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">12</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_01_mk1']/use/@threshold">0.6</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_02_mk1']/price/@min">24665</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_02_mk1']/price/@average">27406</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_02_mk1']/price/@max">30147</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_02_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">12</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_flak_02_mk1']/use/@threshold">0.6</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/price/@min">22865</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/price/@average">25406</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/price/@max">27946</replace>
-  <replace sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="3"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="5"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">3</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_gatling_01_mk1']/use/@threshold">0.1</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/price/@min">22865</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/price/@average">25406</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/price/@max">27946</replace>
-  <replace sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="3"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="5"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">3</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_gatling_02_mk1']/use/@threshold">0.1</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_guided_01_mk1']">
-    <ware id="turret_arg_m_guided_01_mk1" name="{20105,4284}" description="{20105,4282}" group="turrets" transport="equipment" volume="1" tags="noplayerblueprint turret">
+    <ware id="turret_arg_m_guided_01_mk1" name="{20105,4284}" description="{20105,4282}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
       <price min="31249" average="34721" max="38193"/>
       <production time="5" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -710,39 +601,22 @@
       </production>
       <component ref="turret_arg_m_guided_01_mk1_macro" amount="1"/>
       <restriction licence="generaluseequipment"/>
+      <use threshold="0.9"/>
       <owner faction="argon"/>
     </ware>
   </replace>
-  <replace sel="/wares/ware[@id='turret_arg_m_guided_02_mk1']">
-    <ware id="turret_arg_m_guided_02_mk1" name="{20105,4284}" description="{20105,4282}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="31249" average="34721" max="38193"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="2"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="13"/>
-        </primary>
-      </production>
-      <component ref="turret_arg_m_guided_02_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <use threshold="0.63"/>
-      <owner faction="alliance"/>
-      <owner faction="antigone"/>
-      <owner faction="argon"/>
-    </ware>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_guided_02_mk1']/price/@min">31249</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_guided_02_mk1']/price/@average">34721</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_guided_02_mk1']/price/@max">38193</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_guided_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_guided_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">13</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_guided_02_mk1']/use/@threshold">0.9</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_laser_01_mk1']/price/@min">22857</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_laser_01_mk1']/price/@average">25397</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_laser_01_mk1']/price/@max">27936</replace>
-  <replace sel="/wares/ware[@id='turret_arg_m_laser_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="2"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="8"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_laser_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_laser_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_laser_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">8</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_laser_02_mk1']/price/@min">22857</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_laser_02_mk1']/price/@average">25397</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_laser_02_mk1']/price/@max">27936</replace>
@@ -754,518 +628,236 @@
   <replace sel="/wares/ware[@id='turret_arg_m_plasma_01_mk1']/price/@min">45385</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_plasma_01_mk1']/price/@average">50428</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_plasma_01_mk1']/price/@max">55471</replace>
-  <replace sel="/wares/ware[@id='turret_arg_m_plasma_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="6"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_plasma_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_plasma_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_plasma_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_plasma_01_mk1']/use/@threshold">1</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_plasma_02_mk1']/price/@min">45385</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_plasma_02_mk1']/price/@average">50428</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_plasma_02_mk1']/price/@max">55471</replace>
-  <replace sel="/wares/ware[@id='turret_arg_m_plasma_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="6"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_plasma_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_plasma_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_plasma_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_plasma_02_mk1']/use/@threshold">1</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_shotgun_01_mk1']/price/@min">24665</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_shotgun_01_mk1']/price/@average">27406</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_shotgun_01_mk1']/price/@max">30147</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_shotgun_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_shotgun_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_shotgun_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">12</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_shotgun_01_mk1']/use/@threshold">0.4</replace>
   <replace sel="/wares/ware[@id='turret_arg_m_shotgun_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_arg_m_shotgun_02_mk1']/use/@threshold">0.4</replace>
   <replace sel="/wares/ware[@id='turret_par_l_beam_01_mk1']/price/@min">78261</replace>
   <replace sel="/wares/ware[@id='turret_par_l_beam_01_mk1']/price/@average">86957</replace>
   <replace sel="/wares/ware[@id='turret_par_l_beam_01_mk1']/price/@max">95652</replace>
   <replace sel="/wares/ware[@id='turret_par_l_beam_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_par_l_beam_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_par_l_beam_01_mk1']/use/@threshold">0.7</replace>
   <replace sel="/wares/ware[@id='turret_par_l_dumbfire_01_mk1']/price/@min">52289</replace>
   <replace sel="/wares/ware[@id='turret_par_l_dumbfire_01_mk1']/price/@average">58099</replace>
   <replace sel="/wares/ware[@id='turret_par_l_dumbfire_01_mk1']/price/@max">63909</replace>
-  <replace sel="/wares/ware[@id='turret_par_l_dumbfire_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="4"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="20"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_par_l_dumbfire_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_l_dumbfire_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='turret_par_l_dumbfire_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">20</replace>
   <replace sel="/wares/ware[@id='turret_par_l_guided_01_mk1']/price/@min">93055</replace>
   <replace sel="/wares/ware[@id='turret_par_l_guided_01_mk1']/price/@average">103395</replace>
   <replace sel="/wares/ware[@id='turret_par_l_guided_01_mk1']/price/@max">113734</replace>
   <replace sel="/wares/ware[@id='turret_par_l_guided_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_par_l_guided_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">39</replace>
+  <replace sel="/wares/ware[@id='turret_par_l_guided_01_mk1']/use/@threshold">0.9</replace>
   <replace sel="/wares/ware[@id='turret_par_l_laser_01_mk1']/price/@min">67905</replace>
   <replace sel="/wares/ware[@id='turret_par_l_laser_01_mk1']/price/@average">75450</replace>
   <replace sel="/wares/ware[@id='turret_par_l_laser_01_mk1']/price/@max">82995</replace>
-  <replace sel="/wares/ware[@id='turret_par_l_laser_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="9"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="15"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_par_l_laser_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_l_laser_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">9</replace>
+  <replace sel="/wares/ware[@id='turret_par_l_laser_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">15</replace>
   <replace sel="/wares/ware[@id='turret_par_l_mining_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_par_l_plasma_01_mk1']/price/@min">135464</replace>
   <replace sel="/wares/ware[@id='turret_par_l_plasma_01_mk1']/price/@average">150515</replace>
   <replace sel="/wares/ware[@id='turret_par_l_plasma_01_mk1']/price/@max">165567</replace>
-  <replace sel="/wares/ware[@id='turret_par_l_plasma_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="18"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="30"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_par_l_plasma_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_l_plasma_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">18</replace>
+  <replace sel="/wares/ware[@id='turret_par_l_plasma_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">30</replace>
+  <replace sel="/wares/ware[@id='turret_par_l_plasma_01_mk1']/use/@threshold">1</replace>
   <replace sel="/wares/ware[@id='turret_par_m_beam_01_mk1']/price/@min">26317</replace>
   <replace sel="/wares/ware[@id='turret_par_m_beam_01_mk1']/price/@average">29242</replace>
   <replace sel="/wares/ware[@id='turret_par_m_beam_01_mk1']/price/@max">32166</replace>
   <replace sel="/wares/ware[@id='turret_par_m_beam_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_par_m_beam_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_beam_01_mk1']/use/@threshold">0.7</replace>
   <replace sel="/wares/ware[@id='turret_par_m_beam_02_mk1']/price/@min">26317</replace>
   <replace sel="/wares/ware[@id='turret_par_m_beam_02_mk1']/price/@average">29242</replace>
   <replace sel="/wares/ware[@id='turret_par_m_beam_02_mk1']/price/@max">32166</replace>
-  <replace sel="/wares/ware[@id='turret_par_m_beam_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="2"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_par_m_beam_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_beam_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_beam_02_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_beam_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_beam_02_mk1']/use/@threshold">0.7</replace>
   <replace sel="/wares/ware[@id='turret_par_m_dumbfire_01_mk1']/price/@min">21378</replace>
   <replace sel="/wares/ware[@id='turret_par_m_dumbfire_01_mk1']/price/@average">23753</replace>
   <replace sel="/wares/ware[@id='turret_par_m_dumbfire_01_mk1']/price/@max">26128</replace>
-  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="1"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
-  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_02_mk1']">
-    <ware id="turret_par_m_dumbfire_02_mk1" name="{20105,4254}" description="{20105,4252}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="21378" average="23753" max="26128"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="1"/>
-          <ware ware="energycells" amount="5"/>
-          <ware ware="turretcomponents" amount="10"/>
-        </primary>
-      </production>
-      <component ref="turret_par_m_dumbfire_02_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.55"/>
-      <owner faction="alliance"/>
-      <owner faction="holyorder"/>
-      <owner faction="paranid"/>
-      <owner faction="trinity"/>
-    </ware>
-  </replace>
-  <replace sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']">
-    <ware id="turret_par_m_gatling_01_mk1" name="{20105,4094}" description="{20105,4092}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="22865" average="25406" max="27946"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="3"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="5"/>
-        </primary>
-      </production>
-      <component ref="turret_par_m_gatling_01_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.45"/>
-      <owner faction="alliance"/>
-      <owner faction="holyorder"/>
-      <owner faction="paranid"/>
-      <owner faction="trinity"/>
-    </ware>
-  </replace>
-  <replace sel="/wares/ware[@id='turret_par_m_gatling_02_mk1']">
-    <ware id="turret_par_m_gatling_02_mk1" name="{20105,4094}" description="{20105,4092}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="22865" average="25406" max="27946"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="3"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="5"/>
-        </primary>
-      </production>
-      <component ref="turret_par_m_gatling_02_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.45"/>
-      <owner faction="alliance"/>
-      <owner faction="holyorder"/>
-      <owner faction="paranid"/>
-      <owner faction="trinity"/>
-    </ware>
-  </replace>
-  <replace sel="/wares/ware[@id='turret_par_m_guided_01_mk1']">
-    <ware id="turret_par_m_guided_01_mk1" name="{20105,4294}" description="{20105,4292}" group="turrets" transport="equipment" volume="1" tags="noplayerblueprint turret">
-      <price min="31249" average="34721" max="38193"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="2"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="13"/>
-        </primary>
-      </production>
-      <component ref="turret_par_m_guided_01_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <owner faction="paranid"/>
-      <owner faction="trinity"/>
-    </ware>
-  </replace>
-  <replace sel="/wares/ware[@id='turret_par_m_guided_02_mk1']">
-    <ware id="turret_par_m_guided_02_mk1" name="{20105,4294}" description="{20105,4292}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="31249" average="34721" max="38193"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="2"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="13"/>
-        </primary>
-      </production>
-      <component ref="turret_par_m_guided_02_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <use threshold="0.63"/>
-      <owner faction="alliance"/>
-      <owner faction="holyorder"/>
-      <owner faction="paranid"/>
-      <owner faction="trinity"/>
-    </ware>
-  </replace>
-  <replace sel="/wares/ware[@id='turret_par_m_laser_01_mk1']">
-    <ware id="turret_par_m_laser_01_mk1" name="{20105,4014}" description="{20105,4012}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="22857" average="25397" max="27936"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="2"/>
-          <ware ware="energycells" amount="5"/>
-          <ware ware="turretcomponents" amount="8"/>
-        </primary>
-      </production>
-      <component ref="turret_par_m_laser_01_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <use threshold="0"/>
-      <owner faction="alliance"/>
-      <owner faction="holyorder"/>
-      <owner faction="paranid"/>
-      <owner faction="trinity"/>
-    </ware>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_02_mk1']/price/@min">21378</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_02_mk1']/price/@average">23753</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_02_mk1']/price/@max">26128</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_02_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_dumbfire_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']/price/@min">22865</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']/price/@average">25406</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']/price/@max">27946</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">3</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']/use/@threshold">0.1</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_02_mk1']/price/@min">22865</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_02_mk1']/price/@average">25406</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_02_mk1']/price/@max">27946</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">3</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_gatling_02_mk1']/use/@threshold">0.1</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_01_mk1']/@tags">equipment turret</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_01_mk1']/price/@min">31249</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_01_mk1']/price/@average">34721</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_01_mk1']/price/@max">38193</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">13</replace>
+  <add sel="/wares/ware[@id='turret_par_m_guided_01_mk1']/owner[@faction='paranid']" pos="before">
+    <use threshold="0.9"/>
+  </add>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_02_mk1']/price/@min">31249</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_02_mk1']/price/@average">34721</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_02_mk1']/price/@max">38193</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">13</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_guided_02_mk1']/use/@threshold">0.9</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_laser_01_mk1']/price/@min">22857</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_laser_01_mk1']/price/@average">25397</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_laser_01_mk1']/price/@max">27936</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_laser_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_laser_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_laser_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">8</replace>
   <replace sel="/wares/ware[@id='turret_par_m_laser_02_mk1']/price/@min">22857</replace>
   <replace sel="/wares/ware[@id='turret_par_m_laser_02_mk1']/price/@average">25397</replace>
   <replace sel="/wares/ware[@id='turret_par_m_laser_02_mk1']/price/@max">27936</replace>
-  <replace sel="/wares/ware[@id='turret_par_m_laser_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="2"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="8"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_par_m_laser_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_laser_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_laser_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">8</replace>
   <replace sel="/wares/ware[@id='turret_par_m_mining_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_par_m_mining_02_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_par_m_plasma_01_mk1']/price/@min">45385</replace>
   <replace sel="/wares/ware[@id='turret_par_m_plasma_01_mk1']/price/@average">50428</replace>
   <replace sel="/wares/ware[@id='turret_par_m_plasma_01_mk1']/price/@max">55471</replace>
-  <replace sel="/wares/ware[@id='turret_par_m_plasma_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="6"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1']" pos="before">
-    <ware id="turret_par_m_plasma_02_mk1" name="{20105,4134}" description="{20105,4132}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="45385" average="50428" max="55471"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="6"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="10"/>
-        </primary>
-      </production>
-      <component ref="turret_par_m_plasma_02_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.57"/>
-      <owner faction="alliance"/>
-      <owner faction="holyorder"/>
-      <owner faction="paranid"/>
-      <owner faction="trinity"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]" pos="before">
-    <ware id="turret_par_m_shotgun_01_mk1" name="{20105,4054}" description="{20105,4052}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="24665" average="27406" max="30147"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="1"/>
-          <ware ware="energycells" amount="5"/>
-          <ware ware="turretcomponents" amount="12"/>
-        </primary>
-      </production>
-      <component ref="turret_par_m_shotgun_01_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.42"/>
-      <owner faction="alliance"/>
-      <owner faction="holyorder"/>
-      <owner faction="paranid"/>
-      <owner faction="trinity"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]" pos="before">
-    <ware id="turret_par_m_shotgun_02_mk1" name="{20105,4054}" description="{20105,4052}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="24665" average="27406" max="30147"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="1"/>
-          <ware ware="energycells" amount="5"/>
-          <ware ware="turretcomponents" amount="12"/>
-        </primary>
-      </production>
-      <component ref="turret_par_m_shotgun_02_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.42"/>
-      <owner faction="alliance"/>
-      <owner faction="holyorder"/>
-      <owner faction="paranid"/>
-      <owner faction="trinity"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]" pos="before">
-    <ware id="turret_tel_l_beam_01_mk1" name="{20105,5104}" description="{20105,5102}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="78261" average="86957" max="95652"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="6"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="30"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_l_beam_01_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <use threshold="1"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]" pos="before">
-    <ware id="turret_tel_l_dumbfire_01_mk1" name="{20105,5144}" description="{20105,5142}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="52289" average="58099" max="63909"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="4"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="20"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_l_dumbfire_01_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <use threshold="0.54"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]" pos="before">
-    <ware id="turret_tel_l_guided_01_mk1" name="{20105,5184}" description="{20105,5182}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="93055" average="103395" max="113734"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="6"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="39"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_l_guided_01_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <use threshold="0.62"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]" pos="before">
-    <ware id="turret_tel_l_laser_01_mk1" name="{20105,5024}" description="{20105, 5022}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="67905" average="75450" max="82995"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="9"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="15"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_l_laser_01_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <use threshold="0"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="scaleplate"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]" pos="before">
-    <ware id="turret_tel_l_mining_01_mk1" name="{20105,5224}" description="{20105, 5222}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="49163" average="54626" max="60088"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="3"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="21"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_l_mining_01_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <use threshold="0" purposes="mine"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]" pos="before">
-    <ware id="turret_tel_l_plasma_01_mk1" name="{20105,5064}" description="{20105, 5062}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="135464" average="150515" max="165567"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="18"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="30"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_l_plasma_01_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <use threshold="0.64"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]" pos="before">
-    <ware id="turret_tel_m_beam_01_mk1" name="{20105,4184}" description="{20105,4182}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="26317" average="29242" max="32166"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="2"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="10"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_m_beam_01_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.99"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]" pos="before">
-    <ware id="turret_tel_m_beam_02_mk1" name="{20105,4184}" description="{20105,4182}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="26317" average="29242" max="32166"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="2"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="10"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_m_beam_02_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.99"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <replace sel="/wares/ware[@id='turret_par_m_plasma_02_mk1'][2]/@id">turret_tel_m_dumbfire_01_mk1</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][1]/@name">{20105,4264}</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][1]/@description">{20105,4262}</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][1]/@tags">noplayerblueprint turret</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][1]/production/@time">5</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][1]/component/@ref">turret_tel_m_dumbfire_01_mk1_macro</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][1]/use">
-    <owner faction="teladi"/>
-  </replace>
-  <remove sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][1]/owner[@faction='alliance']"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][1]/owner[@faction='holyorder']"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][1]/owner[@faction='paranid']"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][1]/owner[@faction='trinity']"/>
-  <add sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1'][2]" pos="before">
-    <ware id="turret_tel_m_dumbfire_02_mk1" name="{20105,4264}" description="{20105,4262}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="21378" average="23753" max="26128"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="1"/>
-          <ware ware="energycells" amount="5"/>
-          <ware ware="turretcomponents" amount="10"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_m_dumbfire_02_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.55"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1'][2]" pos="before">
-    <ware id="turret_tel_m_gatling_01_mk1" name="{20105,4104}" description="{20105, 4102}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="22865" average="25406" max="27946"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="3"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="5"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_m_gatling_01_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.45"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1'][2]" pos="before">
-    <ware id="turret_tel_m_gatling_02_mk1" name="{20105,4104}" description="{20105, 4102}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="22865" average="25406" max="27946"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="3"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="5"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_m_gatling_02_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.45"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1'][2]" pos="before">
-    <ware id="turret_tel_m_guided_01_mk1" name="{20105,4304}" description="{20105,4302}" group="turrets" transport="equipment" volume="1" tags="noplayerblueprint turret">
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_01_mk1']/use/@threshold">1</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_02_mk1']/price/@min">45385</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_02_mk1']/price/@average">50428</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_02_mk1']/price/@max">55471</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_02_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_plasma_02_mk1']/use/@threshold">1</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1']/price/@min">24665</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1']/price/@average">27406</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1']/price/@max">30147</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">12</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1']/use/@threshold">0.4</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1']/price/@min">24665</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1']/price/@average">27406</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1']/price/@max">30147</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">12</replace>
+  <replace sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1']/use/@threshold">0.4</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_beam_01_mk1']/price/@min">78261</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_beam_01_mk1']/price/@average">86957</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_beam_01_mk1']/price/@max">95652</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_beam_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_beam_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_beam_01_mk1']/use/@threshold">0.7</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/price/@min">52289</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/price/@average">58099</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/price/@max">63909</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_guided_01_mk1']/price/@min">93055</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_guided_01_mk1']/price/@average">103395</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_guided_01_mk1']/price/@max">113734</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_guided_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_guided_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">39</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_guided_01_mk1']/use/@threshold">0.9</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_laser_01_mk1']/price/@min">67905</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_laser_01_mk1']/price/@average">75450</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_laser_01_mk1']/price/@max">82995</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_laser_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_laser_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">9</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_laser_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">15</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_mining_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_plasma_01_mk1']/price/@min">135464</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_plasma_01_mk1']/price/@average">150515</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_plasma_01_mk1']/price/@max">165567</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_plasma_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_plasma_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">18</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_plasma_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">30</replace>
+  <replace sel="/wares/ware[@id='turret_tel_l_plasma_01_mk1']/use/@threshold">1</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_01_mk1']/price/@min">26317</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_01_mk1']/price/@average">29242</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_01_mk1']/price/@max">32166</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_01_mk1']/use/@threshold">0.7</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_02_mk1']/price/@min">26317</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_02_mk1']/price/@average">29242</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_02_mk1']/price/@max">32166</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_beam_02_mk1']/use/@threshold">0.7</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1']/price/@min">21378</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1']/price/@average">23753</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1']/price/@max">26128</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/price/@min">21378</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/price/@average">23753</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/price/@max">26128</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_01_mk1']/price/@min">22865</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_01_mk1']/price/@average">25406</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_01_mk1']/price/@max">27946</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">3</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_01_mk1']/use/@threshold">0.1</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_02_mk1']/price/@min">22865</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_02_mk1']/price/@average">25406</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_02_mk1']/price/@max">27946</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">3</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_02_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_gatling_02_mk1']/use/@threshold">0.1</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_guided_01_mk1']">
+    <ware id="turret_tel_m_guided_01_mk1" name="{20105,4304}" description="{20105,4302}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
       <price min="31249" average="34721" max="38193"/>
       <production time="5" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -1276,101 +868,56 @@
       </production>
       <component ref="turret_tel_m_guided_01_mk1_macro" amount="1"/>
       <restriction licence="generaluseequipment"/>
+      <use threshold="0.9"/>
       <owner faction="teladi"/>
     </ware>
-  </add>
-  <add sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1'][2]" pos="before">
-    <ware id="turret_tel_m_guided_02_mk1" name="{20105,4304}" description="{20105,4302}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="31249" average="34721" max="38193"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="2"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="13"/>
-        </primary>
-      </production>
-      <component ref="turret_tel_m_guided_02_mk1_macro" amount="1"/>
-      <restriction licence="generaluseequipment"/>
-      <use threshold="0.63"/>
-      <owner faction="alliance"/>
-      <owner faction="ministry"/>
-      <owner faction="teladi"/>
-    </ware>
-  </add>
-  <replace sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1'][2]/@id">turret_tel_m_laser_01_mk1</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1'][1]/@name">{20105,4024}</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1'][1]/@description">{20105, 4022}</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1'][1]/production/@time">5</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1'][1]/component/@ref">turret_tel_m_laser_01_mk1_macro</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1'][1]/restriction/@licence">generaluseequipment</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1'][1]/use/@threshold">0</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1'][1]/owner[@faction='holyorder']/@faction">ministry</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1'][1]/owner[@faction='paranid']/@faction">scaleplate</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1'][1]/owner[@faction='trinity']/@faction">teladi</replace>
-  <remove sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_l_beam_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_l_dumbfire_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_l_guided_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_l_laser_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_l_mining_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_l_plasma_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_beam_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_beam_02_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_dumbfire_02_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_gatling_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_gatling_02_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_guided_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_guided_02_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='turret_tel_m_laser_01_mk1'][2]"/>
+  </replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_guided_02_mk1']/price/@min">31249</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_guided_02_mk1']/price/@average">34721</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_guided_02_mk1']/price/@max">38193</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_guided_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_guided_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">13</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_guided_02_mk1']/use/@threshold">0.9</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1']/price/@min">22857</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1']/price/@average">25397</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1']/price/@max">27936</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_laser_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">8</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_laser_02_mk1']/price/@min">22857</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_laser_02_mk1']/price/@average">25397</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_laser_02_mk1']/price/@max">27936</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_laser_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="2"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="8"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_laser_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_laser_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_laser_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">8</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_mining_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_mining_02_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_plasma_01_mk1']/price/@min">45385</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_plasma_01_mk1']/price/@average">50428</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_plasma_01_mk1']/price/@max">55471</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_plasma_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="6"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_plasma_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_plasma_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_plasma_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_plasma_01_mk1']/use/@threshold">1</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_plasma_02_mk1']/price/@min">45385</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_plasma_02_mk1']/price/@average">50428</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_plasma_02_mk1']/price/@max">55471</replace>
-  <replace sel="/wares/ware[@id='turret_tel_m_plasma_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="6"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_plasma_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_plasma_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_plasma_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_plasma_02_mk1']/use/@threshold">1</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_shotgun_01_mk1']/price/@min">24665</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_shotgun_01_mk1']/price/@average">27406</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_shotgun_01_mk1']/price/@max">30147</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_shotgun_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_shotgun_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_shotgun_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">12</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_shotgun_01_mk1']/use/@threshold">0.4</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_shotgun_02_mk1']/price/@min">24665</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_shotgun_02_mk1']/price/@average">27406</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_shotgun_02_mk1']/price/@max">30147</replace>
   <replace sel="/wares/ware[@id='turret_tel_m_shotgun_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_tel_m_shotgun_02_mk1']/use/@threshold">0.4</replace>
   <replace sel="/wares/ware[@id='turret_xen_l_laser_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_xen_m_beam_02_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_xen_m_laser_01_mk1']/production/@time">5</replace>
@@ -1378,27 +925,17 @@
   <replace sel="/wares/ware[@id='water']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='weaponcomponents']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='weaponcomponents']/production/@amount">67</replace>
-  <replace sel="/wares/ware[@id='weaponcomponents']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="10"/>
-      <ware ware="hullparts" amount="4"/>
-      <ware ware="plasmaconductors" amount="5"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='weaponcomponents']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weaponcomponents']/production/primary/ware[@ware='hullparts']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='weaponcomponents']/production/primary/ware[@ware='plasmaconductors']/@amount">5</replace>
   <replace sel="/wares/ware[@id='weaponcomponents']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='weapon_arg_l_destroyer_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk1']/price/@min">78040</replace>
   <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk1']/price/@average">86711</replace>
   <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk1']/price/@max">95382</replace>
-  <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="8"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="weaponcomponents" amount="25"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">8</replace>
+  <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">25</replace>
   <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk2']/price/@min">389161</replace>
   <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk2']/price/@average">432401</replace>
   <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk2']/price/@max">475641</replace>
@@ -1407,211 +944,85 @@
   <replace sel="/wares/ware[@id='weapon_arg_m_ion_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">125</replace>
   <replace sel="/wares/ware[@id='weapon_arg_s_ion_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_arg_s_ion_01_mk2']/production/@time">5</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_mine_01']/production[@time='10'][1]/@time">5</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_mine_02']/production[@time='60']/@time">5</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_mine_03']/production[@time='60']/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_01']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_02']/production[@name='{20206,101}']/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_03']/production[@name='{20206,101}']/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk1']/price/@min">30277</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk1']/price/@average">33641</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk1']/price/@max">37005</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">13</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk2']">
-    <ware id="weapon_gen_m_beam_01_mk2" name="{20105,2094}" description="{20105,2092}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-      <price min="150867" average="167630" max="184393"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="10"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="weaponcomponents" amount="65"/>
-        </primary>
-      </production>
-      <component ref="weapon_gen_m_beam_01_mk2_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.42"/>
-      <owner faction="alliance"/>
-      <owner faction="antigone"/>
-      <owner faction="argon"/>
-      <owner faction="holyorder"/>
-      <owner faction="ministry"/>
-      <owner faction="paranid"/>
-      <owner faction="teladi"/>
-      <owner faction="trinity"/>
-    </ware>
-  </replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']">
-    <ware id="weapon_gen_m_dumbfire_01_mk1" name="{20105,2124}" description="{20105,2122}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-      <price min="20763" average="23070" max="25377"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="1"/>
-          <ware ware="energycells" amount="5"/>
-          <ware ware="weaponcomponents" amount="10"/>
-        </primary>
-      </production>
-      <component ref="weapon_gen_m_dumbfire_01_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.07"/>
-      <owner faction="alliance"/>
-      <owner faction="antigone"/>
-      <owner faction="argon"/>
-      <owner faction="hatikvah"/>
-      <owner faction="holyorder"/>
-      <owner faction="ministry"/>
-      <owner faction="paranid"/>
-      <owner faction="scaleplate"/>
-      <owner faction="teladi"/>
-      <owner faction="trinity"/>
-      <owner faction="court"/>
-      <owner faction="freesplit"/>
-      <owner faction="split"/>
-    </ware>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk2']/price/@min">150867</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk2']/price/@average">167630</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk2']/price/@max">184393</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk2']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_beam_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">65</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/price/@min">20763</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/price/@average">23070</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/price/@max">25377</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">10</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/price/@min">103297</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/price/@average">114775</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/price/@max">126252</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="5"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="weaponcomponents" amount="50"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/production/primary/ware[@ware='advancedelectronics']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">50</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_gatling_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_gatling_01_mk2']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk1']/price/@min">22558</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk1']/price/@average">25064</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk1']/price/@max">27571</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="3"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="weaponcomponents" amount="5"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">3</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">5</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk2']/price/@min">111753</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk2']/price/@average">124170</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk2']/price/@max">136587</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk2']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="15"/>
-        <ware ware="energycells" amount="20"/>
-        <ware ware="weaponcomponents" amount="25"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk2']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk2']/production/primary/ware[@ware='advancedelectronics']/@amount">15</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk2']/production/primary/ware[@ware='energycells']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_laser_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">25</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_mining_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_mining_01_mk2']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk1']/price/@min">78039</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk1']/price/@average">86710</replace>
   <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk1']/price/@max">95381</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="8"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="weaponcomponents" amount="25"/>
-      </primary>
-    </production>
-  </replace>
-  <add sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2']" pos="before">
-    <ware id="weapon_gen_m_plasma_01_mk2" name="{20105,2074}" description="{20105,2072}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-      <price min="389160" average="432400" max="475640"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="40"/>
-          <ware ware="energycells" amount="20"/>
-          <ware ware="weaponcomponents" amount="125"/>
-        </primary>
-      </production>
-      <component ref="weapon_gen_m_plasma_01_mk2_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.38"/>
-      <owner faction="alliance"/>
-      <owner faction="antigone"/>
-      <owner faction="argon"/>
-      <owner faction="holyorder"/>
-      <owner faction="ministry"/>
-      <owner faction="paranid"/>
-      <owner faction="teladi"/>
-      <owner faction="trinity"/>
-      <owner faction="court"/>
-      <owner faction="freesplit"/>
-      <owner faction="split"/>
-    </ware>
-  </add>
-  <add sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2'][2]" pos="before">
-    <ware id="weapon_gen_m_shotgun_01_mk1" name="{20105,2044}" description="{20105,2042}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-      <price min="25530" average="28367" max="31203"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="2"/>
-          <ware ware="energycells" amount="5"/>
-          <ware ware="weaponcomponents" amount="10"/>
-        </primary>
-      </production>
-      <component ref="weapon_gen_m_shotgun_01_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.06"/>
-      <owner faction="alliance"/>
-      <owner faction="antigone"/>
-      <owner faction="argon"/>
-      <owner faction="holyorder"/>
-      <owner faction="ministry"/>
-      <owner faction="paranid"/>
-      <owner faction="teladi"/>
-      <owner faction="trinity"/>
-    </ware>
-  </add>
-  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2'][2]/@id">weapon_gen_m_shotgun_01_mk2</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/@name">{20105,2054}</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/@description">{20105,2052}</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/price/@min">127132</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/price/@average">141257</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/price/@max">155383</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/production/@time">5</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/production/primary/ware[@ware='weaponcomponents']/@amount">50</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/component/@ref">weapon_gen_m_shotgun_01_mk2_macro</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/use/@threshold">0.28</replace>
-  <remove sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/owner[@faction='court']"/>
-  <remove sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/owner[@faction='freesplit']"/>
-  <remove sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][1]/owner[@faction='split']"/>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk1'][2]/@id">weapon_gen_m_torpedo_01_mk1</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1'][1]/@name">{20105,2164}</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1'][1]/@description">{20105,2162}</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1'][1]/production/@time">5</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1'][1]/component/@ref">weapon_gen_m_torpedo_01_mk1_macro</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1'][1]/use/@threshold">0.25</replace>
-  <add sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1'][1]">
-    <owner faction="court"/>
-  </add>
-  <add sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1'][1]">
-    <owner faction="freesplit"/>
-  </add>
-  <add sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1'][1]">
-    <owner faction="split"/>
-  </add>
-  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2'][2]/@id">weapon_gen_m_torpedo_01_mk2</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2'][1]/@name">{20105,2174}</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2'][1]/@description">{20105,2172}</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2'][1]/production/@time">5</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2'][1]/component/@ref">weapon_gen_m_torpedo_01_mk2_macro</replace>
-  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2'][1]/use/@threshold">1</replace>
-  <add sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2'][1]">
-    <owner faction="court"/>
-  </add>
-  <add sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2'][1]">
-    <owner faction="freesplit"/>
-  </add>
-  <add sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2'][1]">
-    <owner faction="split"/>
-  </add>
-  <remove sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1'][2]"/>
-  <remove sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2'][2]"/>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">8</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2']/price/@min">389160</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2']/price/@average">432400</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2']/price/@max">475640</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2']/production/primary/ware[@ware='advancedelectronics']/@amount">40</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2']/production/primary/ware[@ware='energycells']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_plasma_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">125</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/price/@min">25530</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/price/@average">28367</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/price/@max">31203</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/price/@min">127132</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/price/@average">141257</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/price/@max">155383</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">50</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price/@min">22365</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price/@average">24850</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price/@max">27335</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">8</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/price/@min">111308</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/price/@average">123676</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/price/@max">136043</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/production/primary/ware[@ware='advancedelectronics']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">40</replace>
   <replace sel="/wares/ware[@id='weapon_gen_s_beam_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_gen_s_beam_01_mk2']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_gen_s_gatling_01_mk1']/production/@time">5</replace>
@@ -1628,15 +1039,9 @@
   <replace sel="/wares/ware[@id='weapon_par_m_railgun_01_mk1']/price/@min">78040</replace>
   <replace sel="/wares/ware[@id='weapon_par_m_railgun_01_mk1']/price/@average">86711</replace>
   <replace sel="/wares/ware[@id='weapon_par_m_railgun_01_mk1']/price/@max">95382</replace>
-  <replace sel="/wares/ware[@id='weapon_par_m_railgun_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="8"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="weaponcomponents" amount="25"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_par_m_railgun_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_par_m_railgun_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">8</replace>
+  <replace sel="/wares/ware[@id='weapon_par_m_railgun_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">25</replace>
   <replace sel="/wares/ware[@id='weapon_par_m_railgun_01_mk2']/price/@min">389161</replace>
   <replace sel="/wares/ware[@id='weapon_par_m_railgun_01_mk2']/price/@average">432401</replace>
   <replace sel="/wares/ware[@id='weapon_par_m_railgun_01_mk2']/price/@max">475641</replace>
@@ -1649,60 +1054,50 @@
   <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk1']/price/@min">78040</replace>
   <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk1']/price/@average">86711</replace>
   <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk1']/price/@max">95382</replace>
-  <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="8"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="weaponcomponents" amount="25"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">8</replace>
+  <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">25</replace>
   <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk2']/price/@min">389161</replace>
   <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk2']/price/@average">432401</replace>
   <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk2']/price/@max">475641</replace>
-  <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk2']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="40"/>
-        <ware ware="energycells" amount="20"/>
-        <ware ware="weaponcomponents" amount="125"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk2']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk2']/production/primary/ware[@ware='advancedelectronics']/@amount">40</replace>
+  <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk2']/production/primary/ware[@ware='energycells']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='weapon_tel_m_charge_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">125</replace>
   <replace sel="/wares/ware[@id='weapon_tel_s_charge_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_tel_s_charge_01_mk2']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_xen_m_laser_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_xen_m_mining_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_xen_s_laser_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='wheat']/production/effects/effect/@product">1</replace>
-  <add sel="/wares/ware[@id='workunit_busy']/production[@time='3600'][1]/primary">
+  <add sel="/wares/ware[@id='workunit_busy']/production[@name='{20206,201}']/primary">
     <ware ware="energycells" amount="270"/>
   </add>
-  <add sel="/wares/ware[@id='workunit_busy']/production[@time='3600'][2]/primary">
+  <add sel="/wares/ware[@id='workunit_busy']/production[@name='{20206,301}']/primary">
     <ware ware="energycells" amount="270"/>
   </add>
-  <add sel="/wares/ware[@id='workunit_busy']/production[@time='3600'][3]/primary">
+  <add sel="/wares/ware[@id='workunit_busy']/production[@name='{20206,401}']/primary">
     <ware ware="energycells" amount="270"/>
   </add>
   <remove sel="/wares/ware[@id='workunit_busy']/icon"/>
-  <add sel="/wares/ware[@id='workunit_busy']/production[@time='3600'][4]/primary">
+  <add sel="/wares/ware[@id='workunit_busy']/production[@name='{20206,701}']/primary">
     <ware ware="energycells" amount="270"/>
   </add>
   <add sel="/wares/ware[@id='workunit_busy']">
     <icon active="ware_workunit_busy"/>
   </add>
-  <add sel="/wares/ware[@id='workunit_idle']/production[@time='3600'][1]/primary">
+  <add sel="/wares/ware[@id='workunit_idle']/production[@name='{20206,201}']/primary">
     <ware ware="energycells" amount="180"/>
   </add>
-  <add sel="/wares/ware[@id='workunit_idle']/production[@time='3600'][2]/primary">
+  <add sel="/wares/ware[@id='workunit_idle']/production[@name='{20206,301}']/primary">
     <ware ware="energycells" amount="180"/>
   </add>
-  <add sel="/wares/ware[@id='workunit_idle']/production[@time='3600'][3]/primary">
+  <add sel="/wares/ware[@id='workunit_idle']/production[@name='{20206,401}']/primary">
     <ware ware="energycells" amount="180"/>
   </add>
   <remove sel="/wares/ware[@id='workunit_idle']/icon"/>
-  <add sel="/wares/ware[@id='workunit_idle']/production[@time='3600'][4]/primary">
+  <add sel="/wares/ware[@id='workunit_idle']/production[@name='{20206,701}']/primary">
     <ware ware="energycells" amount="180"/>
   </add>
   <add sel="/wares/ware[@id='workunit_idle']">
@@ -1710,12 +1105,8 @@
   </add>
   <replace sel="/wares/ware[@id='cheltmeat']/production/@time">300</replace>
   <replace sel="/wares/ware[@id='cheltmeat']/production/@amount">167</replace>
-  <replace sel="/wares/ware[@id='cheltmeat']/production/primary">
-    <primary>
-      <ware ware="energycells" amount="33"/>
-      <ware ware="water" amount="80"/>
-    </primary>
-  </replace>
+  <replace sel="/wares/ware[@id='cheltmeat']/production/primary/ware[@ware='energycells']/@amount">33</replace>
+  <replace sel="/wares/ware[@id='cheltmeat']/production/primary/ware[@ware='water']/@amount">80</replace>
   <replace sel="/wares/ware[@id='cheltmeat']/production/effects/effect/@product">1</replace>
   <replace sel="/wares/ware[@id='engine_spl_l_allround_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='engine_spl_l_travel_01_mk1']/production/@time">5</replace>
@@ -1725,15 +1116,10 @@
   <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk2']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk3']/production/@time">5</replace>
-  <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk4']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="antimatterconverters" amount="109"/>
-        <ware ware="energycells" amount="158"/>
-        <ware ware="engineparts" amount="212"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk4']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk4']/production/primary/ware[@ware='antimatterconverters']/@amount">109</replace>
+  <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk4']/production/primary/ware[@ware='energycells']/@amount">158</replace>
+  <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk4']/production/primary/ware[@ware='engineparts']/@amount">212</replace>
   <replace sel="/wares/ware[@id='engine_spl_m_travel_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='engine_spl_m_travel_01_mk2']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='engine_spl_m_travel_01_mk3']/production/@time">5</replace>
@@ -1797,302 +1183,235 @@
   <replace sel="/wares/ware[@id='turret_spl_l_beam_01_mk1']/price/@min">78261</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_beam_01_mk1']/price/@average">86957</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_beam_01_mk1']/price/@max">95652</replace>
-  <replace sel="/wares/ware[@id='turret_spl_l_beam_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="6"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="30"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_beam_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_beam_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_beam_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_beam_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">30</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_beam_01_mk1']/use/@threshold">0.7</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_dumbfire_01_mk1']/price/@min">52289</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_dumbfire_01_mk1']/price/@average">58099</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_dumbfire_01_mk1']/price/@max">63909</replace>
-  <replace sel="/wares/ware[@id='turret_spl_l_dumbfire_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="4"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="20"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_dumbfire_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_dumbfire_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_dumbfire_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_dumbfire_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">20</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_guided_01_mk1']/price/@min">93055</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_guided_01_mk1']/price/@average">103395</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_guided_01_mk1']/price/@max">113734</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_guided_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_guided_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_guided_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_guided_01_mk1']/use/@threshold">0.9</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_laser_01_mk1']/price/@min">67905</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_laser_01_mk1']/price/@average">75450</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_laser_01_mk1']/price/@max">82995</replace>
-  <replace sel="/wares/ware[@id='turret_spl_l_laser_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="9"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="15"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_laser_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_laser_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">9</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_laser_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_laser_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">15</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_mining_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_plasma_01_mk1']/price/@min">135464</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_plasma_01_mk1']/price/@average">150515</replace>
   <replace sel="/wares/ware[@id='turret_spl_l_plasma_01_mk1']/price/@max">165567</replace>
-  <replace sel="/wares/ware[@id='turret_spl_l_plasma_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="18"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="30"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_plasma_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_plasma_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">18</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_plasma_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_plasma_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">30</replace>
+  <replace sel="/wares/ware[@id='turret_spl_l_plasma_01_mk1']/use/@threshold">1</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_beam_01_mk1']/price/@min">26317</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_beam_01_mk1']/price/@average">29242</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_beam_01_mk1']/price/@max">32166</replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_beam_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="2"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_beam_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_beam_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_beam_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_beam_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_beam_01_mk1']/use/@threshold">0.7</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_beam_02_mk1']/price/@min">26317</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_beam_02_mk1']/price/@average">29242</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_beam_02_mk1']/price/@max">32166</replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_beam_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="2"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_beam_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_beam_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_beam_02_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_beam_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_beam_02_mk1']/use/@threshold">0.7</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_01_mk1']/price/@min">21378</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_01_mk1']/price/@average">23753</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_01_mk1']/price/@max">26128</replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="1"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_01_mk1']/production/primary/ware[@ware='energycells']/@ware">advancedelectronics</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_01_mk1']/production/primary/ware[@ware='turretcomponents']/@ware">energycells</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <add sel="/wares/ware[@id='turret_spl_m_dumbfire_01_mk1']/production/primary">
+    <ware ware="turretcomponents" amount="10"/>
+  </add>
   <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_02_mk1']/price/@min">21378</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_02_mk1']/price/@average">23753</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_02_mk1']/price/@max">26128</replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="1"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_02_mk1']/production/primary/ware[@ware='energycells']/@ware">advancedelectronics</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_02_mk1']/production/primary/ware[@ware='turretcomponents']/@ware">energycells</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_dumbfire_02_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <add sel="/wares/ware[@id='turret_spl_m_dumbfire_02_mk1']/production/primary">
+    <ware ware="turretcomponents" amount="10"/>
+  </add>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_01_mk1']/price/@min">24665</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_01_mk1']/price/@average">27406</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_01_mk1']/price/@max">30147</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_flak_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">12</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_01_mk1']/use/@threshold">0.6</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_02_mk1']/price/@min">24665</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_02_mk1']/price/@average">27406</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_02_mk1']/price/@max">30147</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_flak_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_02_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">12</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_flak_02_mk1']/use/@threshold">0.6</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/price/@min">22865</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/price/@average">25406</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/price/@max">27946</replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="3"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="5"/>
-      </primary>
-    </production>
-  </replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']">
-    <ware id="turret_spl_m_gatling_02_mk1" name="{20105,4344}" description="{20105,4342}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="22865" average="25406" max="27946"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="3"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="5"/>
-        </primary>
-      </production>
-      <component ref="turret_spl_m_gatling_02_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.06"/>
-      <owner faction="court"/>
-      <owner faction="freesplit"/>
-      <owner faction="split"/>
-    </ware>
-  </replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_guided_01_mk1']">
-    <ware id="turret_spl_m_guided_01_mk1" name="{20105,4394}" description="{20105,4392}" group="turrets" transport="equipment" volume="1" tags="noplayerblueprint turret">
-      <price min="31249" average="34721" max="38193"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="2"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="13"/>
-        </primary>
-      </production>
-      <component ref="turret_spl_m_guided_01_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <owner faction="court"/>
-      <owner faction="freesplit"/>
-      <owner faction="split"/>
-    </ware>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/production/primary/ware[@ware='energycells']/@ware">advancedelectronics</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">3</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/production/primary/ware[@ware='turretcomponents']/@ware">energycells</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <add sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/production/primary">
+    <ware ware="turretcomponents" amount="5"/>
+  </add>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_01_mk1']/use/@threshold">0.1</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']/price/@min">22865</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']/price/@average">25406</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']/price/@max">27946</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']/production/primary/ware[@ware='energycells']/@ware">advancedelectronics</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">3</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']/production/primary/ware[@ware='turretcomponents']/@ware">energycells</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <add sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']/production/primary">
+    <ware ware="turretcomponents" amount="5"/>
+  </add>
+  <replace sel="/wares/ware[@id='turret_spl_m_gatling_02_mk1']/use/@threshold">0.1</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_01_mk1']/@tags">equipment turret</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_01_mk1']/price/@min">31249</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_01_mk1']/price/@average">34721</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_01_mk1']/price/@max">38193</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">13</replace>
+  <add sel="/wares/ware[@id='turret_spl_m_guided_01_mk1']/owner[@faction='court']" pos="before">
+    <use threshold="0.9"/>
+  </add>
   <replace sel="/wares/ware[@id='turret_spl_m_guided_02_mk1']/price/@min">31249</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_guided_02_mk1']/price/@average">34721</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_guided_02_mk1']/price/@max">38193</replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_guided_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="2"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="13"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_02_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">13</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_guided_02_mk1']/use/@threshold">0.9</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_laser_01_mk1']/price/@min">22857</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_laser_01_mk1']/price/@average">25397</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_laser_01_mk1']/price/@max">27936</replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_laser_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="2"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="8"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_laser_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_laser_01_mk1']/production/primary/ware[@ware='energycells']/@ware">advancedelectronics</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_laser_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_laser_01_mk1']/production/primary/ware[@ware='turretcomponents']/@ware">energycells</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_laser_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <add sel="/wares/ware[@id='turret_spl_m_laser_01_mk1']/production/primary">
+    <ware ware="turretcomponents" amount="8"/>
+  </add>
   <replace sel="/wares/ware[@id='turret_spl_m_laser_02_mk1']/price/@min">22857</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_laser_02_mk1']/price/@average">25397</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_laser_02_mk1']/price/@max">27936</replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_laser_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="2"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="8"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_laser_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_laser_02_mk1']/production/primary/ware[@ware='energycells']/@ware">advancedelectronics</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_laser_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_laser_02_mk1']/production/primary/ware[@ware='turretcomponents']/@ware">energycells</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_laser_02_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <add sel="/wares/ware[@id='turret_spl_m_laser_02_mk1']/production/primary">
+    <ware ware="turretcomponents" amount="8"/>
+  </add>
   <replace sel="/wares/ware[@id='turret_spl_m_mining_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_mining_02_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_plasma_01_mk1']/price/@min">45385</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_plasma_01_mk1']/price/@average">50428</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_plasma_01_mk1']/price/@max">55471</replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_plasma_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="6"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="turretcomponents" amount="10"/>
-      </primary>
-    </production>
-  </replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_plasma_02_mk1']">
-    <ware id="turret_spl_m_plasma_02_mk1" name="{20105,4354}" description="{20105,4352}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="45385" average="50428" max="55471"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="6"/>
-          <ware ware="energycells" amount="10"/>
-          <ware ware="turretcomponents" amount="10"/>
-        </primary>
-      </production>
-      <component ref="turret_spl_m_plasma_02_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.57"/>
-      <owner faction="court"/>
-      <owner faction="freesplit"/>
-      <owner faction="split"/>
-    </ware>
-  </replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']">
-    <ware id="turret_spl_m_shotgun_01_mk1" name="{20105,4334}" description="{20105,4332}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="24665" average="27406" max="30147"/>
-      <production time="5" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="advancedelectronics" amount="1"/>
-          <ware ware="energycells" amount="5"/>
-          <ware ware="turretcomponents" amount="12"/>
-        </primary>
-      </production>
-      <component ref="turret_spl_m_shotgun_01_mk1_macro" amount="1"/>
-      <restriction licence="militaryequipment"/>
-      <use threshold="0.06"/>
-      <owner faction="court"/>
-      <owner faction="freesplit"/>
-      <owner faction="split"/>
-    </ware>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_01_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_01_mk1']/use/@threshold">1</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_02_mk1']/price/@min">45385</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_02_mk1']/price/@average">50428</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_02_mk1']/price/@max">55471</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">6</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_02_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_02_mk1']/production/primary/ware[@ware='turretcomponents']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_plasma_02_mk1']/use/@threshold">1</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']/price/@min">24665</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']/price/@average">27406</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']/price/@max">30147</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']/production/primary/ware[@ware='energycells']/@ware">advancedelectronics</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']/production/primary/ware[@ware='turretcomponents']/@ware">energycells</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <add sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']/production/primary">
+    <ware ware="turretcomponents" amount="12"/>
+  </add>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_01_mk1']/use/@threshold">0.4</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/price/@min">24665</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/price/@average">27406</replace>
   <replace sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/price/@max">30147</replace>
-  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="1"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="turretcomponents" amount="12"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/production/primary/ware[@ware='energycells']/@ware">advancedelectronics</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/production/primary/ware[@ware='turretcomponents']/@ware">energycells</replace>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <add sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/production/primary">
+    <ware ware="turretcomponents" amount="12"/>
+  </add>
+  <replace sel="/wares/ware[@id='turret_spl_m_shotgun_02_mk1']/use/@threshold">0.4</replace>
   <replace sel="/wares/ware[@id='weapon_spl_l_destroyer_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk1']/price/@min">23928</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk1']/price/@average">26586</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk1']/price/@max">29245</replace>
-  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="1"/>
-        <ware ware="energycells" amount="5"/>
-        <ware ware="weaponcomponents" amount="12"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk1']/production/primary/ware[@ware='energycells']/@ware">advancedelectronics</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@ware">energycells</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk1']/production/primary/ware[@ware='energycells']/@amount">5</replace>
+  <add sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk1']/production/primary">
+    <ware ware="weaponcomponents" amount="12"/>
+  </add>
   <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk2']/price/@min">119121</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk2']/price/@average">132356</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk2']/price/@max">145592</replace>
-  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk2']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="5"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="weaponcomponents" amount="60"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk2']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk2']/production/primary/ware[@ware='advancedelectronics']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk2']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_gatling_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">60</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk1']/price/@min">78040</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk1']/price/@average">86711</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk1']/price/@max">95382</replace>
-  <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="8"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="weaponcomponents" amount="25"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">8</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">25</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk2']/price/@min">389161</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk2']/price/@average">432401</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk2']/price/@max">475641</replace>
-  <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk2']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="40"/>
-        <ware ware="energycells" amount="20"/>
-        <ware ware="weaponcomponents" amount="125"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk2']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk2']/production/primary/ware[@ware='advancedelectronics']/@amount">40</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk2']/production/primary/ware[@ware='energycells']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_railgun_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">125</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk1']/price/@min">25530</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk1']/price/@average">28367</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk1']/price/@max">31203</replace>
@@ -2102,39 +1421,24 @@
   <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk2']/price/@min">127132</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk2']/price/@average">141257</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk2']/price/@max">155383</replace>
-  <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk2']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="10"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="weaponcomponents" amount="50"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk2']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk2']/production/primary/ware[@ware='advancedelectronics']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk2']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_shotgun_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">50</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk1']/price/@min">78040</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk1']/price/@average">86711</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk1']/price/@max">95382</replace>
-  <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk1']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="8"/>
-        <ware ware="energycells" amount="10"/>
-        <ware ware="weaponcomponents" amount="25"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk1']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk1']/production/primary/ware[@ware='advancedelectronics']/@amount">8</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk1']/production/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk1']/production/primary/ware[@ware='weaponcomponents']/@amount">25</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk2']/price/@min">389161</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk2']/price/@average">432401</replace>
   <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk2']/price/@max">475641</replace>
-  <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk2']/production">
-    <production time="5" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="40"/>
-        <ware ware="energycells" amount="20"/>
-        <ware ware="weaponcomponents" amount="125"/>
-      </primary>
-    </production>
-  </replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk2']/production/@time">5</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk2']/production/primary/ware[@ware='advancedelectronics']/@amount">40</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk2']/production/primary/ware[@ware='energycells']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='weapon_spl_m_sticky_01_mk2']/production/primary/ware[@ware='weaponcomponents']/@amount">125</replace>
   <replace sel="/wares/ware[@id='weapon_spl_s_gatling_01_mk1']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_spl_s_gatling_01_mk2']/production/@time">5</replace>
   <replace sel="/wares/ware[@id='weapon_spl_s_railgun_01_mk1']/production/@time">5</replace>

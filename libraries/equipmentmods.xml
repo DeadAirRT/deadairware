@@ -199,15 +199,13 @@
     </mass>
 -->
 <replace sel="//equipmentmods/ship/mass[@ware='mod_ship_mass_01_mk3']">
-	<mass ware="mod_ship_mass_01_mk3" quality="3" min="0.8" max="0.8">
-      <bonus chance="1.0" max="7">
-        <drag min="0.8" max="0.8" weight="7"/>
+	<mass ware="mod_ship_mass_01_mk3" quality="3" min="0.75" max="0.75">
+      <bonus chance="1.0" max="5">
+        <drag min="0.75" max="0.75" weight="7"/>
 		<maxhull min="1.25" max="1.25" weight="6"/>
         <radarrange min="1.5" max="1.5" weight="5"/>
-        <countermeasurecapacity min="2" max="2" weight="4"/>
-        <deployablecapacity min="2" max="2" weight="3"/>
-        <missilecapacity min="2" max="2" weight="2"/>
-        <unitcapacity min="2" max="2" weight="1"/>
+        <countermeasurecapacity min="10" max="10" weight="4"/>
+        <missilecapacity min="25" max="25" weight="2"/>
       </bonus>
     </mass>
 </replace>
@@ -229,9 +227,9 @@
     </capacity>
 -->
 <replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_02_mk3']">
-	<capacity ware="mod_shield_capacity_02_mk3" quality="3" min="1.5" max="1.5">
+	<capacity ware="mod_shield_capacity_02_mk3" quality="3" min="2" max="2">
       <bonus chance="1.0" max="1">
-        <rechargerate min="1.5" max="1.5" weight="4"/>
+        <rechargerate min="2" max="2" weight="4"/>
       </bonus>
     </capacity>
 </replace>
