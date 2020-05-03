@@ -4,6 +4,8 @@
 - Increases critical ship ware production amounts
 - Increases workforce effect to 100% and growthrate
 - Removes faction relation discounts to prevent unsellable goods
+- Lowers station module build time
+- Workforce now requires energy cells as well
 
 ##### Save game compatible.
 
