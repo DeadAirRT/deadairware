@@ -13,7 +13,7 @@
 	<replace sel="//parameters/lootmagnet">
 		<lootmagnet range="20000" force="4" maxspeed="500" sound="containermagnet_active" />
 	</replace>
-	<replace sel="//parameters/productioncheck/threshold/@resource">0.10</replace>
-	<replace sel="//parameters/productioncheck/threshold/@product">0.10</replace>
+	<!-- more modules -->
+	<replace sel="//economy/modulelimits[@production='5']/@production">10</replace>
 </diff>
 

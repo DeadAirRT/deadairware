@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="DeadAirShipyardWharfFix" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+		<cue name="Init">
+			<actions>
+				<!-- Shipyards and Wharfs are not adjusting prices of energy cells, this is an attempt to fix -->
+				<set_value name="$Checktime" exact="player.age + 15s" />
+				<set_value name="$ShipyardWharfDebugChance" exact="true" />
+			</actions>
+			<cues>
+				<cue name="FindShipyardWharf" instantiate="true" checktime="$Checktime" checkinterval="60min">
+					<actions>
+						<set_value name="$delayalpha" exact="1s" />
+						<find_station groupname="$ShipyardWharfs" multiple="true" space="player.galaxy" functional="true" shipyard="true">
+							<match owner="[faction.player,faction.xenon]" negate="true" />
+						</find_station>
+						<find_station groupname="$ShipyardWharfs" append="true" multiple="true" space="player.galaxy" functional="true" wharf="true">
+							<match owner="[faction.player,faction.xenon]" negate="true" />
+						</find_station>
+					</actions>
+					<cues>
+						<cue name="ProcessShipyardWharf">
+							<delay exact="$delayalpha" />
+							<actions>
+								<do_if value="$ShipyardWharfs.count">
+									<set_value name="$ShipyardWharf" exact="$ShipyardWharfs.{1}" />
+									<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1, %2, %3'.[$ShipyardWharf.trueowner, $ShipyardWharf.sector.knownname, $ShipyardWharf.knownname]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+									<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1, %2, %3, %4, istradestation %5, iswharf %6, isshipyard %7, isequipmentdock %8'.[$ShipyardWharf.trueowner, $ShipyardWharf.sector.knownname, $ShipyardWharf.knownname, $ShipyardWharf.macro, $ShipyardWharf.istradestation, $ShipyardWharf.iswharf, $ShipyardWharf.isshipyard, $ShipyardWharf.isequipmentdock]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+									<include_actions ref="FixShipyardWharfs" />
+									<remove_from_group group="$ShipyardWharfs" object="$ShipyardWharf"/>
+									<reset_cue cue="this"/>
+								</do_if>
+								<do_else>
+									<remove_value name="$ShipyardWharfs" />
+									<remove_value name="$ShipyardWharf" />
+									<remove_value name="$Tradeware" />
+									<remove_value name="$BuyOffer" />
+									<remove_value name="$SupplyResource" />
+									<remove_value name="$Resource" />
+									<remove_value name="$NewAmount" />
+									<remove_value name="$NewRelativePrice" />
+									<remove_value name="$NewPrice" />
+								</do_else>
+							</actions>
+						</cue>
+					</cues>
+				</cue>
+				<library name="FixShipyardWharfs">
+					<actions>
+						<do_if value="$ShipyardWharf.isoperational">
+							<do_if value="$ShipyardWharf.tradewares.list.count gt 0">
+								<do_all exact="$ShipyardWharf.tradewares.list.count" counter="$b">
+									<set_value name="$Tradeware" exact="$ShipyardWharf.tradewares.list.{$b}" />
+									<find_buy_offer result="$BuyOffers" buyer="$ShipyardWharf" multiple="true" wares="$Tradeware" />
+									<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // Station: %2 // Sector: %3 // Tradeware: %4 // Current Amount: %5 // Desired Amount: %6'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$Tradeware.name,$ShipyardWharf.cargo.{$Tradeware}.count,$ShipyardWharf.cargo.{$Tradeware}.target]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+									<do_all exact="$BuyOffers.count" counter="$c">
+										<set_value name="$BuyOffer" exact="$BuyOffers.{$c}" />
+										<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // Station: %2 // Sector: %3 // Tradeware: %4 // Buy Offer Amount: %5 // Buy Offer Desired Amount: %6 // Unit Price: %7 // Relative Price: %8 // Quantity Factor: %9'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$Tradeware.name,$BuyOffer.amount,$BuyOffer.desiredamount,$BuyOffer.unitprice,$BuyOffer.relativeprice,$BuyOffer.quantityfactor]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+									</do_all>
+								</do_all>
+							</do_if>
+							<do_else>
+								<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // Station: %2 // Sector: %3 // Has no tradewares'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+							</do_else>
+							
+							<do_if value="$ShipyardWharf.supplyresources.list.count gt 0">
+								<do_all exact="$ShipyardWharf.supplyresources.list.count" counter="$d">
+									<set_value name="$SupplyResource" exact="$ShipyardWharf.supplyresources.list.{$d}" />
+									<find_buy_offer result="$BuyOffers" buyer="$ShipyardWharf" multiple="true" wares="$SupplyResource" />
+									<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // Station: %2 // Sector: %3 // SupplyResource: %4 // Current Amount: %5 // Desired Amount: %6'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$SupplyResource.name,$ShipyardWharf.cargo.{$SupplyResource}.count,$ShipyardWharf.cargo.{$SupplyResource}.target]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+									<do_all exact="$BuyOffers.count" counter="$e">
+										<set_value name="$BuyOffer" exact="$BuyOffers.{$e}" />
+										<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // Station: %2 // Sector: %3 // SupplyResource: %4 // Buy Offer Amount: %5 // Buy Offer Desired Amount: %6 // Unit Price: %7 // Relative Price: %8 // Quantity Factor: %9'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$SupplyResource.name,$BuyOffer.amount,$BuyOffer.desiredamount,$BuyOffer.unitprice,$BuyOffer.relativeprice,$BuyOffer.quantityfactor]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+									</do_all>
+								</do_all>
+							</do_if>
+							<do_else>
+								<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // Station: %2 // Sector: %3 // Has no SupplyResources'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+							</do_else>
+							
+							<do_if value="$ShipyardWharf.resources.list.count gt 0">
+								<do_all exact="$ShipyardWharf.resources.list.count" counter="$f">
+									<set_value name="$Resource" exact="$ShipyardWharf.resources.list.{$f}" />
+									<find_buy_offer result="$BuyOffers" buyer="$ShipyardWharf" multiple="true" wares="$Resource" />
+									<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // Station: %2 // Sector: %3 // Resource: %4 // Current Amount: %5 // Desired Amount: %6'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$Resource.name,$ShipyardWharf.cargo.{$Resource}.count,$ShipyardWharf.cargo.{$Resource}.target]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+									<do_all exact="$BuyOffers.count" counter="$g">
+										<set_value name="$BuyOffer" exact="$BuyOffers.{$g}" />
+										<do_if value="($BuyOffer.desiredamount gt $ShipyardWharf.cargo.{$BuyOffer.ware}.target * 0.7) and ($BuyOffer.relativeprice lt -0.5)">
+											<include_actions ref="FixBuyOffer" />
+										</do_if>
+										<do_else>
+											<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // Station: %2 // Sector: %3 // Resource: %4 // Buy Offer Amount: %5 // Buy Offer Desired Amount: %6 // Unit Price: %7 // Relative Price: %8 // Quantity Factor: %9'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$Resource.name,$BuyOffer.amount,$BuyOffer.desiredamount,$BuyOffer.unitprice,$BuyOffer.relativeprice,$BuyOffer.quantityfactor]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+										</do_else>
+									</do_all>
+								</do_all>
+							</do_if>
+							<do_else>
+								<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // Station: %2 // Sector: %3 // Has no Resources'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+							</do_else>
+						</do_if>
+					</actions>
+				</library>
+				
+				<library name="FixBuyOffer">
+					<actions>
+						<debug_text text="'%1 // Attempting to fix trade offer at %2 // sector %3 // ware %4'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$BuyOffer.ware.name]" filter="general"/>
+						<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // OLD // Station: %2 // Sector: %3 // Buy Offer Ware: %4 // Buy Offer Amount: %5 // Buy Offer Desired Amount: %6 // Unit Price: %7 // Relative Price: %8 // Quantity Factor: %9'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$BuyOffer.ware.name,$BuyOffer.amount,$BuyOffer.desiredamount,$BuyOffer.unitprice,$BuyOffer.relativeprice,$BuyOffer.quantityfactor]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+						<set_value name="$NewAmount" exact="($BuyOffer.amount / 2)i" />
+						<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // NEW // AMOUNT: %2'.[player.age,$NewAmount]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+						<set_value name="$NewRelativePrice" exact="(1 - (($ShipyardWharf.cargo.{$BuyOffer.ware}.count)f / ($ShipyardWharf.cargo.{$Resource}.target)f)f * 2.0)f" />
+						<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // NEW // RELATIVE PRICE: %2'.[player.age,$NewRelativePrice]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+						<set_value name="$NewPrice" exact="(($BuyOffer.ware.minprice)f + ((($BuyOffer.ware.maxprice)f - ($BuyOffer.ware.minprice)f)*(($NewRelativePrice + 1.0)/2.0)))*100 / 1Cr" />
+						<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // NEW // NEW PRICE: %2'.[player.age,$NewPrice]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+						<create_trade_offer name="$NewOffer" buyer="$ShipyardWharf" object="$ShipyardWharf" ware="$BuyOffer.ware" price="$NewPrice" amount="$NewAmount" playeronly="false" />
+						<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // NEW // Station: %2 // Sector: %3 // Buy Offer Ware: %4 // Buy Offer Amount: %5 // Buy Offer Desired Amount: %6 // Unit Price: %7 // Relative Price: %8 // Quantity Factor: %9'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$NewOffer.ware.name,$NewOffer.amount,$NewOffer.desiredamount,$NewOffer.unitprice,$NewOffer.relativeprice,$NewOffer.quantityfactor]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+					</actions>
+				</library>
+			</cues>
+		</cue>
+	</cues>
+</mdscript>
