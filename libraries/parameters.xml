@@ -15,5 +15,7 @@
 	</replace>
 	<!-- more modules -->
 	<replace sel="//economy/modulelimits[@production='5']/@production">10</replace>
+	<replace sel="//drop/timeout[@min='1200']/@min">2400</replace>
+	<replace sel="//drop/timeout[@max='1800']/@max">3600</replace>
 </diff>
 

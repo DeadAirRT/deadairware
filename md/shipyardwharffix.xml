@@ -4,19 +4,20 @@
 		<cue name="Init">
 			<actions>
 				<!-- Shipyards and Wharfs are not adjusting prices of energy cells, this is an attempt to fix -->
-				<set_value name="$Checktime" exact="player.age + 15s" />
+				<!-- We don't need to check for a while after game start -->
+				<set_value name="$Checktime" exact="[player.age + 15s, 120min].max" />
 			</actions>
 			<cues>
 				<cue name="FindShipyardWharf" instantiate="true" checktime="$Checktime" checkinterval="60min">
 					<actions>
-						<set_value name="$delayalpha" exact="1s" />
+						<set_value name="$delayalpha" exact="2s" />
+						<set_value name="$ShipyardWharfDebugChance" exact="true" />
 						<find_station groupname="$ShipyardWharfs" multiple="true" space="player.galaxy" functional="true" shipyard="true">
 							<match owner="[faction.player,faction.xenon]" negate="true" />
 						</find_station>
 						<find_station groupname="$ShipyardWharfs" append="true" multiple="true" space="player.galaxy" functional="true" wharf="true">
 							<match owner="[faction.player,faction.xenon]" negate="true" />
 						</find_station>
-						<set_value name="$ShipyardWharfDebugChance" exact="false" />
 					</actions>
 					<cues>
 						<cue name="ProcessShipyardWharf">
@@ -24,8 +25,8 @@
 							<actions>
 								<do_if value="$ShipyardWharfs.count">
 									<set_value name="$ShipyardWharf" exact="$ShipyardWharfs.{1}" />
-									<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1, %2, %3'.[$ShipyardWharf.trueowner, $ShipyardWharf.sector.knownname, $ShipyardWharf.knownname]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
-									<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1, %2, %3, %4, istradestation %5, iswharf %6, isshipyard %7, isequipmentdock %8'.[$ShipyardWharf.trueowner, $ShipyardWharf.sector.knownname, $ShipyardWharf.knownname, $ShipyardWharf.macro, $ShipyardWharf.istradestation, $ShipyardWharf.iswharf, $ShipyardWharf.isshipyard, $ShipyardWharf.isequipmentdock]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+									<debug_text text="'MOD: DeadAirShipyardWharfFix -- %1 -- Processing %2 in sector %3'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname]" 
+										context="false" filter="scripts" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
 									<include_actions ref="FixShipyardWharfs" />
 									<remove_from_group group="$ShipyardWharfs" object="$ShipyardWharf"/>
 									<reset_cue cue="this"/>
@@ -105,7 +106,8 @@
 				
 				<library name="FixBuyOffer">
 					<actions>
-						<debug_text text="'%1 // Attempting to fix trade offer at %2 // sector %3 // ware %4'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$BuyOffer.ware.name]" filter="general" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
+						<debug_text text="'%1 // Attempting to fix trade offer at %2 // sector %3 // ware %4'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$BuyOffer.ware.name]" 
+							context="false" filter="general" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
 						<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // OLD // Station: %2 // Sector: %3 // Buy Offer Ware: %4 // Buy Offer Amount: %5 // Buy Offer Desired Amount: %6 // Unit Price: %7 // Relative Price: %8 // Quantity Factor: %9'.[player.age,$ShipyardWharf.knownname,$ShipyardWharf.sector.knownname,$BuyOffer.ware.name,$BuyOffer.amount,$BuyOffer.desiredamount,$BuyOffer.unitprice,$BuyOffer.relativeprice,$BuyOffer.quantityfactor]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
 						<set_value name="$NewAmount" exact="($BuyOffer.amount / 2)i" />
 						<debug_to_file name="'ShipyardWharfFix'" directory="'DeadAir_Ware'" text="'%1 // NEW // AMOUNT: %2'.[player.age,$NewAmount]" output="false" append="true" chance="if @$ShipyardWharfDebugChance then ($ShipyardWharfDebugChance * 100) else 0"/>
