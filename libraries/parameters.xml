@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
 	<!-- Unlocked Discount-->
-	<replace sel="//parameters/controlpanel/entry[@type='hack_discount']/discount/@amount">25</replace>
-	<replace sel="//parameters/controlpanel/entry[@type='hack_discount']/commission/@amount">25</replace>
+	<replace sel="//parameters/controlpanel/entry[@type='hack_discount']/discount/@amount">15</replace>
+	<replace sel="//parameters/controlpanel/entry[@type='hack_discount']/commission/@amount">15</replace>
 	<!-- Faster workforce-->
 	<replace sel="//parameters/workforce/growth/@rate">250</replace>
 	<replace sel="//parameters/workforce/growth/ratio/@min">0.25</replace>

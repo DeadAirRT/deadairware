@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="DeadAirDiscountMapFix" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+		<cue name="Init">
+			<actions>
+			</actions>
+			<cues>
+				<cue name="SignalFixDiscountMap" instantiate="true">
+					<conditions>
+						<check_any>
+							<event_cue_signalled cue="md.Setup.GameStart"/>
+							<event_game_loaded/>
+						</check_any>
+					</conditions>
+					<actions>
+						<signal_cue_instantly cue="FixDiscountMap"/>
+					</actions>
+				</cue>
+				<cue name="FixDiscountMap" instantiate="true">
+					<conditions>
+						<event_cue_signalled />
+					</conditions>
+					<actions>
+						<set_value name="md.Notifications.PlayerRelationDiscounts.$DiscountMap" exact="[
+										['md_relation_discount_1', 0.01f, 2, 3101],
+										['md_relation_discount_2', 0.1f, 5, 3111],
+										['md_relation_discount_3', 1.0f, 10, 3121]
+										]" />
+					</actions>
+				</cue>
+			</cues>
+		</cue>
+	</cues>
+</mdscript>
