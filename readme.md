@@ -1,12 +1,12 @@
 # DeadAir Ware
 
-## Scales production cycles to 5 minutes or less
-- Increases critical ship ware production amounts
-- Increases workforce effect to 100% and growthrate
-- Removes faction relation discounts to prevent unsellable goods
-- Lowers station module build time
-- Workforce now requires energy cells as well
+## Scales production cycles to 5 minute or 10 minute cycles
+- Does not change vanilla ware ratios
+- Adjusts workforce rate on food, meds, shipwares, and refined goods.
+- Lowers station module build time for storage
 
 ##### Save game compatible.
+
+##### Requires DLC
 
 ##### Installation: extract to x4 foundations\extensions
