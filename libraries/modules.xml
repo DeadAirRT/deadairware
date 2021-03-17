@@ -186,22 +186,21 @@
   <add sel="/modules/module[@id='prod_spl_cheltmeat']/compatibilities">
     <limits production="8"/>
   </add>
-  <replace sel="/modules/module[@id='prod_ter_computronicsubstrate']/compatibilities/limits/@production">4</replace>
+  <replace sel="/modules/module[@id='prod_ter_computronicsubstrate']/compatibilities/limits/@production">2</replace>
   <replace sel="/modules/module[@id='prod_ter_computronicsubstrate']/compatibilities/production/@chance">95</replace>
-  <replace sel="/modules/module[@id='prod_ter_energycells']/compatibilities/production/@chance">95</replace>
   <replace sel="/modules/module[@id='prod_ter_medicalsupplies']/compatibilities/production/@chance">95</replace>
   <add sel="/modules/module[@id='prod_ter_medicalsupplies']/compatibilities">
-    <limits production="8"/>
+    <limits production="4"/>
   </add>
   <replace sel="/modules/module[@id='prod_ter_metallicmicrolattice']/compatibilities/production/@chance">95</replace>
   <add sel="/modules/module[@id='prod_ter_metallicmicrolattice']/compatibilities">
-    <limits production="4"/>
+    <limits production="2"/>
   </add>
-  <replace sel="/modules/module[@id='prod_ter_proteinpaste']/compatibilities/limits/@production">8</replace>
+  <replace sel="/modules/module[@id='prod_ter_proteinpaste']/compatibilities/limits/@production">4</replace>
   <replace sel="/modules/module[@id='prod_ter_proteinpaste']/compatibilities/production[@ware='proteinpaste']/@chance">95</replace>
   <remove sel="/modules/module[@id='prod_ter_proteinpaste']/compatibilities/production[@ware='medicalsupplies']"/>
   <remove sel="/modules/module[@id='prod_ter_proteinpaste']/compatibilities/production[@ware='terranmre']"/>
-  <replace sel="/modules/module[@id='prod_ter_terranmre']/compatibilities/limits/@production">8</replace>
+  <replace sel="/modules/module[@id='prod_ter_terranmre']/compatibilities/limits/@production">4</replace>
   <replace sel="/modules/module[@id='prod_ter_terranmre']/compatibilities/production[@ware='terranmre']/@chance">95</replace>
   <remove sel="/modules/module[@id='prod_ter_terranmre']/compatibilities/production[@ware='proteinpaste']"/>
   <replace sel="/modules/module[@id='prod_ter_siliconcarbide']/compatibilities/limits/@production">4</replace>
