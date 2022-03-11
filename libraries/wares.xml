@@ -7,11 +7,13 @@
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/primary/ware[@ware='energycells']/@amount">100</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/primary/ware[@ware='graphene']/@amount">160</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/primary/ware[@ware='refinedmetals']/@amount">160</replace>
+  <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/@time">600</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/@amount">108</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/primary/ware[@ware='energycells']/@amount">100</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/primary/ware[@ware='graphene']/@amount">160</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/primary/ware[@ware='teladianium']/@amount">116</replace>
+  <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/price/@min">816</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/price/@max">1416</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/production[@method='default']/@time">600</replace>
@@ -26,7 +28,7 @@
   <replace sel="/wares/ware[@id='antimattercells']/production[@method='default']/@amount">248</replace>
   <replace sel="/wares/ware[@id='antimattercells']/production[@method='default']/primary/ware[@ware='energycells']/@amount">250</replace>
   <replace sel="/wares/ware[@id='antimattercells']/production[@method='default']/primary/ware[@ware='hydrogen']/@amount">800</replace>
-  <replace sel="/wares/ware[@id='antimattercells']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='antimattercells']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/price/@min">290</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/price/@max">490</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/@time">600</replace>
@@ -34,6 +36,7 @@
   <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/primary/ware[@ware='advancedcomposites']/@amount">40</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/primary/ware[@ware='energycells']/@amount">160</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/primary/ware[@ware='microchips']/@amount">60</replace>
+  <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='claytronics']/price/@min">1842</replace>
   <replace sel="/wares/ware[@id='claytronics']/price/@max">2442</replace>
   <replace sel="/wares/ware[@id='claytronics']/production[@method='default']/@time">600</replace>
@@ -42,6 +45,7 @@
   <replace sel="/wares/ware[@id='claytronics']/production[@method='default']/primary/ware[@ware='energycells']/@amount">93</replace>
   <replace sel="/wares/ware[@id='claytronics']/production[@method='default']/primary/ware[@ware='microchips']/@amount">107</replace>
   <replace sel="/wares/ware[@id='claytronics']/production[@method='default']/primary/ware[@ware='quantumtubes']/@amount">67</replace>
+  <replace sel="/wares/ware[@id='claytronics']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='countermeasure_flares_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">1</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/price/@min">706</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/price/@max">1306</replace>
@@ -52,6 +56,7 @@
   <replace sel="/wares/ware[@id='dronecomponents']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">10</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/production[@method='default']/primary/ware[@ware='microchips']/@amount">10</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/production[@method='default']/primary/ware[@ware='scanningarrays']/@amount">20</replace>
+  <replace sel="/wares/ware[@id='dronecomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='energycells']/price/@min">9</replace>
   <replace sel="/wares/ware[@id='energycells']/price/@max">29</replace>
   <replace sel="/wares/ware[@id='energycells']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
@@ -63,13 +68,16 @@
   <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/primary/ware[@ware='antimattercells']/@amount">53</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/primary/ware[@ware='energycells']/@amount">40</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/primary/ware[@ware='refinedmetals']/@amount">64</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/@time">600</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/@amount">139</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/primary/ware[@ware='antimattercells']/@amount">53</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/primary/ware[@ware='energycells']/@amount">40</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/primary/ware[@ware='teladianium']/@amount">47</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='fieldcoils']/price/@min">314</replace>
   <replace sel="/wares/ware[@id='fieldcoils']/price/@max">614</replace>
+  <replace sel="/wares/ware[@id='fieldcoils']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='foodrations']/price/@min">14</replace>
   <replace sel="/wares/ware[@id='foodrations']/price/@max">34</replace>
   <replace sel="/wares/ware[@id='foodrations']/production[@method='default']/@time">300</replace>
@@ -78,7 +86,7 @@
   <replace sel="/wares/ware[@id='foodrations']/production[@method='default']/primary/ware[@ware='meat']/@amount">50</replace>
   <replace sel="/wares/ware[@id='foodrations']/production[@method='default']/primary/ware[@ware='spices']/@amount">50</replace>
   <replace sel="/wares/ware[@id='foodrations']/production[@method='default']/primary/ware[@ware='wheat']/@amount">50</replace>
-  <replace sel="/wares/ware[@id='foodrations']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='foodrations']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
   <replace sel="/wares/ware[@id='graphene']/@volume">18</replace>
   <replace sel="/wares/ware[@id='graphene']/price/@min">60</replace>
   <replace sel="/wares/ware[@id='graphene']/price/@max">330</replace>
@@ -86,7 +94,7 @@
   <replace sel="/wares/ware[@id='graphene']/production[@method='default']/@amount">120</replace>
   <replace sel="/wares/ware[@id='graphene']/production[@method='default']/primary/ware[@ware='energycells']/@amount">100</replace>
   <replace sel="/wares/ware[@id='graphene']/production[@method='default']/primary/ware[@ware='methane']/@amount">400</replace>
-  <replace sel="/wares/ware[@id='graphene']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='graphene']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='helium']/price/@max">57</replace>
   <replace sel="/wares/ware[@id='hullparts']/price/@min">96</replace>
   <replace sel="/wares/ware[@id='hullparts']/price/@max">396</replace>
@@ -124,14 +132,15 @@
   <replace sel="/wares/ware[@id='meat']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='medicalsupplies']/price/@min">53</replace>
   <replace sel="/wares/ware[@id='medicalsupplies']/price/@max">93</replace>
-  <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
-  <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='paranid']/effects/effect[@type='work']/@product">0.75</replace>
-  <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='teladi']/effects/effect[@type='work']/@product">0.75</replace>
-  <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='split']/effects/effect[@type='work']/@product">0.75</replace>
-  <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='terran']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+  <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='paranid']/effects/effect[@type='work']/@product">1</replace>
+  <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='teladi']/effects/effect[@type='work']/@product">1</replace>
+  <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='split']/effects/effect[@type='work']/@product">1</replace>
+  <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='terran']/effects/effect[@type='work']/@product">1</replace>
   <replace sel="/wares/ware[@id='methane']/price/@max">62</replace>
   <replace sel="/wares/ware[@id='microchips']/price/@min">831</replace>
   <replace sel="/wares/ware[@id='microchips']/price/@max">1161</replace>
+  <replace sel="/wares/ware[@id='microchips']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/@volume">1</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/price/@min">3</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/price/@max">18</replace>
@@ -140,6 +149,7 @@
   <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/primary/ware[@ware='advancedcomposites']/@amount">1</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/primary/ware[@ware='energycells']/@amount">13</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='module_arg_conn_base_01']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_conn_base_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_arg_conn_base_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
@@ -605,6 +615,7 @@
   <replace sel="/wares/ware[@id='plasmaconductors']/production[@method='default']/primary/ware[@ware='energycells']/@amount">40</replace>
   <replace sel="/wares/ware[@id='plasmaconductors']/production[@method='default']/primary/ware[@ware='graphene']/@amount">64</replace>
   <replace sel="/wares/ware[@id='plasmaconductors']/production[@method='default']/primary/ware[@ware='superfluidcoolant']/@amount">93</replace>
+  <replace sel="/wares/ware[@id='plasmaconductors']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='quantumtubes']/price/@min">188</replace>
   <replace sel="/wares/ware[@id='quantumtubes']/price/@max">518</replace>
   <replace sel="/wares/ware[@id='quantumtubes']/production[@method='default']/@time">600</replace>
@@ -612,15 +623,18 @@
   <replace sel="/wares/ware[@id='quantumtubes']/production[@method='default']/primary/ware[@ware='energycells']/@amount">33</replace>
   <replace sel="/wares/ware[@id='quantumtubes']/production[@method='default']/primary/ware[@ware='graphene']/@amount">97</replace>
   <replace sel="/wares/ware[@id='quantumtubes']/production[@method='default']/primary/ware[@ware='superfluidcoolant']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='quantumtubes']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/price/@min">69</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/price/@max">279</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/@time">300</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/@amount">176</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/primary/ware[@ware='energycells']/@amount">180</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/primary/ware[@ware='ore']/@amount">480</replace>
-  <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='scanningarrays']/price/@min">805</replace>
   <replace sel="/wares/ware[@id='scanningarrays']/price/@max">1565</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@method='teladi']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/price/@min">121</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/price/@max">321</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/@time">600</replace>
@@ -628,6 +642,7 @@
   <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/primary/ware[@ware='energycells']/@amount">35</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/primary/ware[@ware='plasmaconductors']/@amount">10</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/primary/ware[@ware='quantumtubes']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='silicon']/price/@max">169</replace>
   <replace sel="/wares/ware[@id='siliconwafers']/price/@min">209</replace>
   <replace sel="/wares/ware[@id='siliconwafers']/price/@max">479</replace>
@@ -635,9 +650,10 @@
   <replace sel="/wares/ware[@id='siliconwafers']/production[@method='default']/@amount">178</replace>
   <replace sel="/wares/ware[@id='siliconwafers']/production[@method='default']/primary/ware[@ware='energycells']/@amount">150</replace>
   <replace sel="/wares/ware[@id='siliconwafers']/production[@method='default']/primary/ware[@ware='silicon']/@amount">400</replace>
-  <replace sel="/wares/ware[@id='siliconwafers']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='siliconwafers']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='smartchips']/price/@min">43</replace>
   <replace sel="/wares/ware[@id='smartchips']/price/@max">83</replace>
+  <replace sel="/wares/ware[@id='smartchips']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='sojabeans']/@volume">2</replace>
   <replace sel="/wares/ware[@id='sojabeans']/price/@min">59</replace>
   <replace sel="/wares/ware[@id='sojabeans']/price/@max">89</replace>
@@ -674,7 +690,7 @@
   <replace sel="/wares/ware[@id='superfluidcoolant']/production[@method='default']/@amount">119</replace>
   <replace sel="/wares/ware[@id='superfluidcoolant']/production[@method='default']/primary/ware[@ware='energycells']/@amount">75</replace>
   <replace sel="/wares/ware[@id='superfluidcoolant']/production[@method='default']/primary/ware[@ware='helium']/@amount">400</replace>
-  <replace sel="/wares/ware[@id='superfluidcoolant']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='superfluidcoolant']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='swampplant']/@volume">2</replace>
   <replace sel="/wares/ware[@id='swampplant']/price/@min">75</replace>
   <replace sel="/wares/ware[@id='swampplant']/price/@max">105</replace>
@@ -689,7 +705,7 @@
   <replace sel="/wares/ware[@id='teladianium']/production[@method='default']/@amount">175</replace>
   <replace sel="/wares/ware[@id='teladianium']/production[@method='default']/primary/ware[@ware='energycells']/@amount">113</replace>
   <replace sel="/wares/ware[@id='teladianium']/production[@method='default']/primary/ware[@ware='ore']/@amount">700</replace>
-  <replace sel="/wares/ware[@id='teladianium']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='teladianium']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/price/@min">128</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/price/@max">528</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/production[@method='default']/@time">600</replace>
@@ -726,7 +742,7 @@
   <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/@amount">139</replace>
   <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/primary/ware[@ware='energycells']/@amount">33</replace>
   <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/primary/ware[@ware='water']/@amount">80</replace>
-  <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
   <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk4']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">760</replace>
   <replace sel="/wares/ware[@id='engine_spl_s_combat_01_mk4']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">482</replace>
   <replace sel="/wares/ware[@id='module_spl_conn_base_01']/production[@method='default']/@time">30</replace>
@@ -816,7 +832,7 @@
   <replace sel="/wares/ware[@id='scruffinfruits']/@volume">2</replace>
   <replace sel="/wares/ware[@id='scruffinfruits']/price/@min">14</replace>
   <replace sel="/wares/ware[@id='scruffinfruits']/price/@max">54</replace>
-  <replace sel="/wares/ware[@id='scruffinfruits']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='scruffinfruits']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
   <replace sel="/wares/ware[@id='computronicsubstrate']/price/@min">8069</replace>
   <replace sel="/wares/ware[@id='computronicsubstrate']/price/@max">9319</replace>
   <replace sel="/wares/ware[@id='computronicsubstrate']/production[@method='default']/@time">300</replace>
@@ -825,6 +841,7 @@
   <replace sel="/wares/ware[@id='computronicsubstrate']/production[@method='default']/primary/ware[@ware='hydrogen']/@amount">1000</replace>
   <replace sel="/wares/ware[@id='computronicsubstrate']/production[@method='default']/primary/ware[@ware='ore']/@amount">1500</replace>
   <replace sel="/wares/ware[@id='computronicsubstrate']/production[@method='default']/primary/ware[@ware='silicon']/@amount">1500</replace>
+  <replace sel="/wares/ware[@id='computronicsubstrate']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/price/@min">44</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/price/@max">69</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/@time">300</replace>
@@ -832,6 +849,7 @@
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/primary/ware[@ware='energycells']/@amount">83</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/primary/ware[@ware='helium']/@amount">217</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/primary/ware[@ware='ore']/@amount">83</replace>
+  <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_01']/production[@method='default']/primary/ware[@ware='computronicsubstrate']/@amount">1</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_01']/production[@method='default']/primary/ware[@ware='siliconcarbide']/@amount">1</replace>
@@ -883,6 +901,7 @@
   <replace sel="/wares/ware[@id='proteinpaste']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
   <replace sel="/wares/ware[@id='siliconcarbide']/price/@min">1270</replace>
   <replace sel="/wares/ware[@id='siliconcarbide']/price/@max">1770</replace>
+  <replace sel="/wares/ware[@id='siliconcarbide']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
   <replace sel="/wares/ware[@id='stimulants']/@volume">1</replace>
   <replace sel="/wares/ware[@id='stimulants']/price/@min">322</replace>
   <replace sel="/wares/ware[@id='stimulants']/price/@max">402</replace>
@@ -893,5 +912,5 @@
   <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/@amount">219</replace>
   <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/primary/ware[@ware='energycells']/@amount">75</replace>
   <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/primary/ware[@ware='proteinpaste']/@amount">75</replace>
-  <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
 </diff>

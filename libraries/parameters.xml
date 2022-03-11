@@ -6,5 +6,7 @@
   <replace sel="/parameters/workforce/update/@variation">0</replace>
   <replace sel="/parameters/workforce/growth/@interval">300</replace>
   <replace sel="/parameters/workforce/growth/@rate">50</replace>
+  <replace sel="/parameters/productioncheck[@reportintermediates='false']/threshold/@resource">0.10</replace>
+  <replace sel="/parameters/productioncheck[@reportintermediates='false']/threshold/@product">0.10</replace>
   <replace sel="/parameters/loadout[@variation='0.3']/units/@min">0.7</replace>
 </diff>
