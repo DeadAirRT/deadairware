@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<content id="DeadAir_Ware" name="DeadAir Ware" description="Adjust production, pricing, and wares for a war heavy universe and strong economy" author="DeadAir" version="006" date="2022-03-11" save="0" enabled="1">
-	<dependency id="ego_dlc_split" optional="false" name="Split Vendetta" />
-	<dependency id="ego_dlc_terran" optional="false" name="Cradle of Humanity" />
+<content id="DeadAir_Ware" name="DeadAir Ware" description="Adjust production, pricing, and wares for a war heavy universe and strong economy" author="DeadAir" version="007" date="2022-04-07" save="0" enabled="1">
+	<dependency id="ego_dlc_split" optional="true" name="Split Vendetta" />
+	<dependency id="ego_dlc_terran" optional="true" name="Cradle of Humanity" />
+	<dependency id="ego_dlc_pirate" optional="true" name="Tides of Avarice" />
 	<dependency id="ws_1668457361" optional="true" name="Faction Enhancer - War Module" />
 	<dependency id="ws_1668473070" optional="true" name="Faction Enhancer - Econ AI Module" />
 	<dependency id="ws_1668472321" optional="true" name="Faction Enhancer - Econ Balance Module" />

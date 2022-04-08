@@ -282,6 +282,8 @@
   <remove sel="/wares/ware[@id='module_gen_equip_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
   <replace sel="/wares/ware[@id='module_gen_equip_xl_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">1654</replace>
   <remove sel="/wares/ware[@id='module_gen_equip_xl_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_proc_scrapworks']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">244</replace>
+  <remove sel="/wares/ware[@id='module_gen_proc_scrapworks']/production[@method='default']/primary/ware[@ware='hullparts']"/>
   <replace sel="/wares/ware[@id='module_gen_prod_advancedcomposites_01']/production[@method='default']/@time">180</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_advancedcomposites_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">863</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_advancedcomposites_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
@@ -333,6 +335,8 @@
   <replace sel="/wares/ware[@id='module_gen_prod_scanningarrays_01']/production[@method='default']/@time">180</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_scanningarrays_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">838</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_scanningarrays_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_prod_scrap_recycler']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">400</replace>
+  <remove sel="/wares/ware[@id='module_gen_prod_scrap_recycler']/production[@method='default']/primary/ware[@ware='hullparts']"/>
   <replace sel="/wares/ware[@id='module_gen_prod_shieldcomponents_01']/production[@method='default']/@time">180</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_shieldcomponents_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">575</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_shieldcomponents_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
@@ -357,6 +361,8 @@
   <replace sel="/wares/ware[@id='module_gen_prod_weaponcomponents_01']/production[@method='default']/@time">180</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_weaponcomponents_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">527</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_weaponcomponents_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_welfare_gamblinghall_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">516</replace>
+  <remove sel="/wares/ware[@id='module_gen_welfare_gamblinghall_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
   <replace sel="/wares/ware[@id='module_par_conn_base_01']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_par_conn_base_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_par_conn_base_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
@@ -631,6 +637,11 @@
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/primary/ware[@ware='energycells']/@amount">180</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/primary/ware[@ware='ore']/@amount">480</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='resourceprobe_01']/production[@method='closedloop']/primary/ware[@ware='energycells']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='resourceprobe_01']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='satellite_mk1']/production[@method='closedloop']/primary/ware[@ware='energycells']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='satellite_mk2']/production[@method='closedloop']/primary/ware[@ware='energycells']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='satellite_mk2']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">5</replace>
   <replace sel="/wares/ware[@id='scanningarrays']/price/@min">805</replace>
   <replace sel="/wares/ware[@id='scanningarrays']/price/@max">1565</replace>
   <replace sel="/wares/ware[@id='scanningarrays']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
@@ -850,21 +861,27 @@
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/primary/ware[@ware='helium']/@amount">217</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/primary/ware[@ware='ore']/@amount">83</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='module_ter_conn_base_01']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_01']/production[@method='default']/primary/ware[@ware='computronicsubstrate']/@amount">1</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_01']/production[@method='default']/primary/ware[@ware='siliconcarbide']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='module_ter_conn_base_02']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_02']/production[@method='default']/primary/ware[@ware='computronicsubstrate']/@amount">1</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_02']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_02']/production[@method='default']/primary/ware[@ware='siliconcarbide']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='module_ter_conn_base_03']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_03']/production[@method='default']/primary/ware[@ware='computronicsubstrate']/@amount">1</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_03']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_03']/production[@method='default']/primary/ware[@ware='siliconcarbide']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='module_ter_conn_cross_01']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_cross_01']/production[@method='default']/primary/ware[@ware='computronicsubstrate']/@amount">1</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_cross_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_cross_01']/production[@method='default']/primary/ware[@ware='siliconcarbide']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='module_ter_conn_vertical_01']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_vertical_01']/production[@method='default']/primary/ware[@ware='computronicsubstrate']/@amount">1</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_vertical_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_vertical_01']/production[@method='default']/primary/ware[@ware='siliconcarbide']/@amount">1</replace>
+  <replace sel="/wares/ware[@id='module_ter_conn_vertical_02']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_vertical_02']/production[@method='default']/primary/ware[@ware='computronicsubstrate']/@amount">1</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_vertical_02']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_vertical_02']/production[@method='default']/primary/ware[@ware='siliconcarbide']/@amount">1</replace>
@@ -913,4 +930,19 @@
   <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/primary/ware[@ware='energycells']/@amount">75</replace>
   <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/primary/ware[@ware='proteinpaste']/@amount">75</replace>
   <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+  <replace sel="/wares/ware[@id='module_gen_welfare_casino_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">816</replace>
+  <remove sel="/wares/ware[@id='module_gen_welfare_casino_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_pir_hab_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_pir_hab_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">577</replace>
+  <remove sel="/wares/ware[@id='module_pir_hab_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_pir_hab_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_pir_hab_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">408</replace>
+  <remove sel="/wares/ware[@id='module_pir_hab_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_pir_hab_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_pir_hab_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">283</replace>
+  <remove sel="/wares/ware[@id='module_pir_hab_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_pir_stor_condensate_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">399</replace>
+  <remove sel="/wares/ware[@id='module_pir_stor_condensate_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_pir_stor_condensate_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">126</replace>
+  <remove sel="/wares/ware[@id='module_pir_stor_condensate_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
 </diff>
