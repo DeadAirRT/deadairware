@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <diff>
   <replace sel="/parameters/economy/prices/build/@min">0.3</replace>
-  <replace sel="/parameters/economy/modulelimits/@production">12</replace>
-  <replace sel="/parameters/economy/modulelimits/@storage">8</replace>
+  <replace sel="/parameters/economy/prices/build/@shipsalefactor">0.6</replace>
+  <replace sel="/parameters/economy/modulelimits/@production">20</replace>
   <replace sel="/parameters/workforce/update/@variation">0</replace>
-  <replace sel="/parameters/workforce/growth/@interval">300</replace>
-  <replace sel="/parameters/workforce/growth/@rate">50</replace>
-  <replace sel="/parameters/productioncheck[@reportintermediates='false']/threshold/@resource">0.10</replace>
-  <replace sel="/parameters/productioncheck[@reportintermediates='false']/threshold/@product">0.10</replace>
-  <replace sel="/parameters/loadout[@variation='0.3']/units/@min">0.7</replace>
+  <replace sel="/parameters/workforce/growth/@rate">80</replace>
+  <replace sel="/parameters/productioncheck[@reportintermediates='false']/time/warning/low/@resource">1800</replace>
+  <replace sel="/parameters/productioncheck[@reportintermediates='false']/time/warning/low/@product">900</replace>
+  <replace sel="/parameters/productioncheck[@reportintermediates='false']/threshold/@resource">0.15</replace>
+  <replace sel="/parameters/productioncheck[@reportintermediates='false']/threshold/@product">0.15</replace>
 </diff>

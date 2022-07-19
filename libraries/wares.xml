@@ -1,27 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
 <diff>
-  <replace sel="/wares/ware[@id='advancedcomposites']/price/@min">328</replace>
-  <replace sel="/wares/ware[@id='advancedcomposites']/price/@max">968</replace>
+  <replace sel="/wares/ware[@id='advancedcomposites']/price/@min">275</replace>
+  <replace sel="/wares/ware[@id='advancedcomposites']/price/@max">1075</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/@time">600</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/@amount">108</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/primary/ware[@ware='energycells']/@amount">100</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/primary/ware[@ware='graphene']/@amount">160</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/primary/ware[@ware='refinedmetals']/@amount">160</replace>
-  <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/effects/effect[@type='work']/@product">0.78</replace>
+  <add sel="/wares/ware[@id='advancedcomposites']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/@time">600</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/@amount">108</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/primary/ware[@ware='energycells']/@amount">100</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/primary/ware[@ware='graphene']/@amount">160</replace>
   <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/primary/ware[@ware='teladianium']/@amount">116</replace>
-  <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/effects/effect[@type='work']/@product">0.75</replace>
-  <replace sel="/wares/ware[@id='advancedelectronics']/price/@min">816</replace>
-  <replace sel="/wares/ware[@id='advancedelectronics']/price/@max">1416</replace>
+  <replace sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/effects/effect[@type='work']/@product">0.78</replace>
+  <add sel="/wares/ware[@id='advancedcomposites']/production[@method='teladi']/effects/effect[@type='work']" type="@cycle">0.1</add>
+  <replace sel="/wares/ware[@id='advancedelectronics']/price/@min">792</replace>
+  <replace sel="/wares/ware[@id='advancedelectronics']/price/@max">1542</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/production[@method='default']/@time">600</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/production[@method='default']/@amount">45</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/production[@method='default']/primary/ware[@ware='energycells']/@amount">50</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/production[@method='default']/primary/ware[@ware='microchips']/@amount">37</replace>
   <replace sel="/wares/ware[@id='advancedelectronics']/production[@method='default']/primary/ware[@ware='quantumtubes']/@amount">17</replace>
-  <replace sel="/wares/ware[@id='advancedelectronics']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='advancedelectronics']/production[@method='default']/effects/effect[@type='work']/@product">0.8</replace>
+  <add sel="/wares/ware[@id='advancedelectronics']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
   <replace sel="/wares/ware[@id='antimattercells']/price/@min">113</replace>
   <replace sel="/wares/ware[@id='antimattercells']/price/@max">383</replace>
   <replace sel="/wares/ware[@id='antimattercells']/production[@method='default']/@time">300</replace>
@@ -29,14 +32,16 @@
   <replace sel="/wares/ware[@id='antimattercells']/production[@method='default']/primary/ware[@ware='energycells']/@amount">250</replace>
   <replace sel="/wares/ware[@id='antimattercells']/production[@method='default']/primary/ware[@ware='hydrogen']/@amount">800</replace>
   <replace sel="/wares/ware[@id='antimattercells']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
-  <replace sel="/wares/ware[@id='antimatterconverters']/price/@min">290</replace>
-  <replace sel="/wares/ware[@id='antimatterconverters']/price/@max">490</replace>
+  <add sel="/wares/ware[@id='antimattercells']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.25</add>
+  <replace sel="/wares/ware[@id='antimatterconverters']/price/@min">265</replace>
+  <replace sel="/wares/ware[@id='antimatterconverters']/price/@max">515</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/@time">600</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/@amount">266</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/primary/ware[@ware='advancedcomposites']/@amount">40</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/primary/ware[@ware='energycells']/@amount">160</replace>
   <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/primary/ware[@ware='microchips']/@amount">60</replace>
-  <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/effects/effect[@type='work']/@product">0.73</replace>
+  <add sel="/wares/ware[@id='antimatterconverters']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
   <replace sel="/wares/ware[@id='claytronics']/price/@min">1842</replace>
   <replace sel="/wares/ware[@id='claytronics']/price/@max">2442</replace>
   <replace sel="/wares/ware[@id='claytronics']/production[@method='default']/@time">600</replace>
@@ -46,9 +51,12 @@
   <replace sel="/wares/ware[@id='claytronics']/production[@method='default']/primary/ware[@ware='microchips']/@amount">107</replace>
   <replace sel="/wares/ware[@id='claytronics']/production[@method='default']/primary/ware[@ware='quantumtubes']/@amount">67</replace>
   <replace sel="/wares/ware[@id='claytronics']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='claytronics']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.25</add>
+  <replace sel="/wares/ware[@id='claytronics']/production[@method='recycling']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='claytronics']/production[@method='recycling']/effects/effect[@type='work']" type="@cycle">0.25</add>
   <replace sel="/wares/ware[@id='countermeasure_flares_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">1</replace>
-  <replace sel="/wares/ware[@id='dronecomponents']/price/@min">706</replace>
-  <replace sel="/wares/ware[@id='dronecomponents']/price/@max">1306</replace>
+  <replace sel="/wares/ware[@id='dronecomponents']/price/@min">631</replace>
+  <replace sel="/wares/ware[@id='dronecomponents']/price/@max">1381</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/production[@method='default']/@time">600</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/production[@method='default']/@amount">53</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/production[@method='default']/primary/ware[@ware='energycells']/@amount">30</replace>
@@ -57,27 +65,398 @@
   <replace sel="/wares/ware[@id='dronecomponents']/production[@method='default']/primary/ware[@ware='microchips']/@amount">10</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/production[@method='default']/primary/ware[@ware='scanningarrays']/@amount">20</replace>
   <replace sel="/wares/ware[@id='dronecomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='dronecomponents']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
   <replace sel="/wares/ware[@id='energycells']/price/@min">9</replace>
   <replace sel="/wares/ware[@id='energycells']/price/@max">29</replace>
   <replace sel="/wares/ware[@id='energycells']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='energycells']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='energycells']/production[@method='terran']/effects/effect[@type='work']/@product">0.5</replace>
-  <replace sel="/wares/ware[@id='engineparts']/price/@min">64</replace>
-  <replace sel="/wares/ware[@id='engineparts']/price/@max">364</replace>
+  <add sel="/wares/ware[@id='energycells']/production[@method='terran']/effects/effect[@type='work']" type="@cycle">0.1</add>
+  <add sel="/wares/ware[@id='energycells']">
+    <production time="60" amount="350" method="xenon" name="{20206,601}">
+      <effects>
+        <effect type="sunlight" product="1"/>
+      </effects>
+    </production>
+  </add>
+  <replace sel="/wares/ware[@id='engineparts']/price/@min">54</replace>
+  <replace sel="/wares/ware[@id='engineparts']/price/@max">429</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/@time">600</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/@amount">139</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/primary/ware[@ware='antimattercells']/@amount">53</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/primary/ware[@ware='energycells']/@amount">40</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/primary/ware[@ware='refinedmetals']/@amount">64</replace>
-  <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@method='default']/effects/effect[@type='work']/@product">0.65</replace>
+  <add sel="/wares/ware[@id='engineparts']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/@time">600</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/@amount">139</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/primary/ware[@ware='antimattercells']/@amount">53</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/primary/ware[@ware='energycells']/@amount">40</replace>
   <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/primary/ware[@ware='teladianium']/@amount">47</replace>
-  <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/effects/effect[@type='work']/@product">0.5</replace>
-  <replace sel="/wares/ware[@id='fieldcoils']/price/@min">314</replace>
-  <replace sel="/wares/ware[@id='fieldcoils']/price/@max">614</replace>
-  <replace sel="/wares/ware[@id='fieldcoils']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='engineparts']/production[@method='teladi']/effects/effect[@type='work']/@product">0.65</replace>
+  <add sel="/wares/ware[@id='engineparts']/production[@method='teladi']/effects/effect[@type='work']" type="@cycle">0.35</add>
+  <add sel="/wares/ware[@id='engine_par_l_allround_01_mk1']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="19"/>
+        <ware ware="energycells" amount="206"/>
+        <ware ware="hullparts" amount="108"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_l_travel_01_mk1']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="19"/>
+        <ware ware="energycells" amount="304"/>
+        <ware ware="hullparts" amount="111"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_m_allround_01_mk1']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="99"/>
+        <ware ware="hullparts" amount="3"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_m_allround_01_mk2']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="61"/>
+        <ware ware="hullparts" amount="18"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_m_allround_01_mk3']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="15"/>
+        <ware ware="energycells" amount="241"/>
+        <ware ware="hullparts" amount="88"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_m_combat_01_mk1']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="109"/>
+        <ware ware="hullparts" amount="4"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_m_combat_01_mk2']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="156"/>
+        <ware ware="hullparts" amount="21"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_m_combat_01_mk3']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="18"/>
+        <ware ware="energycells" amount="293"/>
+        <ware ware="hullparts" amount="106"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_m_travel_01_mk1']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="97"/>
+        <ware ware="hullparts" amount="4"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_m_travel_01_mk2']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="113"/>
+        <ware ware="hullparts" amount="20"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_m_travel_01_mk3']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="17"/>
+        <ware ware="energycells" amount="318"/>
+        <ware ware="hullparts" amount="101"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_s_allround_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="42"/>
+        <ware ware="hullparts" amount="1"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_s_allround_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="79"/>
+        <ware ware="hullparts" amount="8"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_s_allround_01_mk3']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="6"/>
+        <ware ware="energycells" amount="176"/>
+        <ware ware="hullparts" amount="38"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_s_combat_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="52"/>
+        <ware ware="hullparts" amount="2"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_s_combat_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="56"/>
+        <ware ware="hullparts" amount="12"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_s_combat_01_mk3']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="9"/>
+        <ware ware="energycells" amount="228"/>
+        <ware ware="hullparts" amount="56"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_s_travel_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="54"/>
+        <ware ware="hullparts" amount="1"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_s_travel_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="142"/>
+        <ware ware="hullparts" amount="10"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_s_travel_01_mk3']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="9"/>
+        <ware ware="energycells" amount="126"/>
+        <ware ware="hullparts" amount="51"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_xl_allround_01_mk1']">
+    <production time="30" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="25"/>
+        <ware ware="energycells" amount="290"/>
+        <ware ware="hullparts" amount="142"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_par_xl_travel_01_mk1']">
+    <production time="30" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="25"/>
+        <ware ware="energycells" amount="406"/>
+        <ware ware="hullparts" amount="147"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_l_allround_01_mk1']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="19"/>
+        <ware ware="energycells" amount="206"/>
+        <ware ware="hullparts" amount="108"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_l_travel_01_mk1']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="19"/>
+        <ware ware="energycells" amount="304"/>
+        <ware ware="hullparts" amount="111"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_m_allround_01_mk1']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="99"/>
+        <ware ware="hullparts" amount="3"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_m_allround_01_mk3']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="15"/>
+        <ware ware="energycells" amount="241"/>
+        <ware ware="hullparts" amount="88"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_m_combat_01_mk2']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="156"/>
+        <ware ware="hullparts" amount="21"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_m_combat_01_mk3']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="18"/>
+        <ware ware="energycells" amount="293"/>
+        <ware ware="hullparts" amount="106"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_m_travel_01_mk1']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="97"/>
+        <ware ware="hullparts" amount="4"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_m_travel_01_mk2']">
+    <production time="15" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="113"/>
+        <ware ware="hullparts" amount="20"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_s_allround_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="42"/>
+        <ware ware="hullparts" amount="1"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_s_allround_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="79"/>
+        <ware ware="hullparts" amount="8"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_s_allround_01_mk3']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="6"/>
+        <ware ware="energycells" amount="176"/>
+        <ware ware="hullparts" amount="38"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_s_combat_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="52"/>
+        <ware ware="hullparts" amount="2"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_s_combat_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="56"/>
+        <ware ware="hullparts" amount="12"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_s_combat_01_mk3']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="9"/>
+        <ware ware="energycells" amount="228"/>
+        <ware ware="hullparts" amount="56"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_s_travel_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="54"/>
+        <ware ware="hullparts" amount="1"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_s_travel_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="142"/>
+        <ware ware="hullparts" amount="10"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_s_travel_01_mk3']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="9"/>
+        <ware ware="energycells" amount="126"/>
+        <ware ware="hullparts" amount="51"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_xl_allround_01_mk1']">
+    <production time="30" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="25"/>
+        <ware ware="energycells" amount="290"/>
+        <ware ware="hullparts" amount="142"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='engine_tel_xl_travel_01_mk1']">
+    <production time="30" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="25"/>
+        <ware ware="energycells" amount="406"/>
+        <ware ware="hullparts" amount="147"/>
+      </primary>
+    </production>
+  </add>
+  <replace sel="/wares/ware[@id='fieldcoils']/price/@min">286</replace>
+  <replace sel="/wares/ware[@id='fieldcoils']/price/@max">661</replace>
+  <replace sel="/wares/ware[@id='fieldcoils']/production[@method='default']/effects/effect[@type='work']/@product">0.53</replace>
+  <add sel="/wares/ware[@id='fieldcoils']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
   <replace sel="/wares/ware[@id='foodrations']/price/@min">14</replace>
   <replace sel="/wares/ware[@id='foodrations']/price/@max">34</replace>
   <replace sel="/wares/ware[@id='foodrations']/production[@method='default']/@time">300</replace>
@@ -87,6 +466,7 @@
   <replace sel="/wares/ware[@id='foodrations']/production[@method='default']/primary/ware[@ware='spices']/@amount">50</replace>
   <replace sel="/wares/ware[@id='foodrations']/production[@method='default']/primary/ware[@ware='wheat']/@amount">50</replace>
   <replace sel="/wares/ware[@id='foodrations']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+  <add sel="/wares/ware[@id='foodrations']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='graphene']/@volume">18</replace>
   <replace sel="/wares/ware[@id='graphene']/price/@min">60</replace>
   <replace sel="/wares/ware[@id='graphene']/price/@max">330</replace>
@@ -95,6 +475,7 @@
   <replace sel="/wares/ware[@id='graphene']/production[@method='default']/primary/ware[@ware='energycells']/@amount">100</replace>
   <replace sel="/wares/ware[@id='graphene']/production[@method='default']/primary/ware[@ware='methane']/@amount">400</replace>
   <replace sel="/wares/ware[@id='graphene']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='graphene']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.25</add>
   <replace sel="/wares/ware[@id='helium']/price/@max">57</replace>
   <replace sel="/wares/ware[@id='hullparts']/price/@min">96</replace>
   <replace sel="/wares/ware[@id='hullparts']/price/@max">396</replace>
@@ -104,17 +485,22 @@
   <replace sel="/wares/ware[@id='hullparts']/production[@method='default']/primary/ware[@ware='graphene']/@amount">27</replace>
   <replace sel="/wares/ware[@id='hullparts']/production[@method='default']/primary/ware[@ware='refinedmetals']/@amount">187</replace>
   <replace sel="/wares/ware[@id='hullparts']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='hullparts']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
   <replace sel="/wares/ware[@id='hullparts']/production[@method='teladi']/@time">600</replace>
   <replace sel="/wares/ware[@id='hullparts']/production[@method='teladi']/@amount">196</replace>
   <replace sel="/wares/ware[@id='hullparts']/production[@method='teladi']/primary/ware[@ware='energycells']/@amount">53</replace>
   <replace sel="/wares/ware[@id='hullparts']/production[@method='teladi']/primary/ware[@ware='graphene']/@amount">27</replace>
   <replace sel="/wares/ware[@id='hullparts']/production[@method='teladi']/primary/ware[@ware='teladianium']/@amount">136</replace>
   <replace sel="/wares/ware[@id='hullparts']/production[@method='teladi']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='hullparts']/production[@method='teladi']/effects/effect[@type='work']" type="@cycle">0.35</add>
+  <replace sel="/wares/ware[@id='hullparts']/production[@method='recycling']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='hullparts']/production[@method='recycling']/effects/effect[@type='work']" type="@cycle">0.35</add>
   <replace sel="/wares/ware[@id='hydrogen']/price/@max">75</replace>
   <replace sel="/wares/ware[@id='ice']/price/@max">39</replace>
   <replace sel="/wares/ware[@id='majadust']/@volume">1</replace>
   <replace sel="/wares/ware[@id='majadust']/price/@min">184</replace>
   <replace sel="/wares/ware[@id='majadust']/price/@max">264</replace>
+  <add sel="/wares/ware[@id='majadust']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='majasnails']/@volume">2</replace>
   <replace sel="/wares/ware[@id='majasnails']/price/@min">49</replace>
   <replace sel="/wares/ware[@id='majasnails']/price/@max">79</replace>
@@ -123,6 +509,7 @@
   <replace sel="/wares/ware[@id='majasnails']/production[@method='default']/primary/ware[@ware='energycells']/@amount">27</replace>
   <replace sel="/wares/ware[@id='majasnails']/production[@method='default']/primary/ware[@ware='water']/@amount">67</replace>
   <replace sel="/wares/ware[@id='majasnails']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='majasnails']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='meat']/@volume">2</replace>
   <replace sel="/wares/ware[@id='meat']/price/@min">38</replace>
   <replace sel="/wares/ware[@id='meat']/production[@method='default']/@time">300</replace>
@@ -130,26 +517,34 @@
   <replace sel="/wares/ware[@id='meat']/production[@method='default']/primary/ware[@ware='energycells']/@amount">53</replace>
   <replace sel="/wares/ware[@id='meat']/production[@method='default']/primary/ware[@ware='water']/@amount">67</replace>
   <replace sel="/wares/ware[@id='meat']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='meat']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='medicalsupplies']/price/@min">53</replace>
   <replace sel="/wares/ware[@id='medicalsupplies']/price/@max">93</replace>
   <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+  <add sel="/wares/ware[@id='medicalsupplies']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='paranid']/effects/effect[@type='work']/@product">1</replace>
+  <add sel="/wares/ware[@id='medicalsupplies']/production[@method='paranid']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='teladi']/effects/effect[@type='work']/@product">1</replace>
+  <add sel="/wares/ware[@id='medicalsupplies']/production[@method='teladi']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='split']/effects/effect[@type='work']/@product">1</replace>
+  <add sel="/wares/ware[@id='medicalsupplies']/production[@method='split']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='medicalsupplies']/production[@method='terran']/effects/effect[@type='work']/@product">1</replace>
+  <add sel="/wares/ware[@id='medicalsupplies']/production[@method='terran']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='methane']/price/@max">62</replace>
   <replace sel="/wares/ware[@id='microchips']/price/@min">831</replace>
   <replace sel="/wares/ware[@id='microchips']/price/@max">1161</replace>
   <replace sel="/wares/ware[@id='microchips']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='microchips']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='missilecomponents']/@volume">1</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/price/@min">3</replace>
-  <replace sel="/wares/ware[@id='missilecomponents']/price/@max">18</replace>
+  <replace sel="/wares/ware[@id='missilecomponents']/price/@max">28</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/@time">600</replace>
-  <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/@amount">187</replace>
+  <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/@amount">400</replace>
   <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/primary/ware[@ware='advancedcomposites']/@amount">1</replace>
-  <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/primary/ware[@ware='energycells']/@amount">13</replace>
-  <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">1</replace>
-  <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/primary/ware[@ware='energycells']/@amount">100</replace>
+  <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='missilecomponents']/production[@method='default']/effects/effect[@type='work']/@product">1.0</replace>
+  <add sel="/wares/ware[@id='missilecomponents']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
   <replace sel="/wares/ware[@id='module_arg_conn_base_01']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_arg_conn_base_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_arg_conn_base_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
@@ -174,193 +569,209 @@
   <replace sel="/wares/ware[@id='module_arg_conn_vertical_02']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_arg_conn_vertical_02']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <remove sel="/wares/ware[@id='module_arg_conn_vertical_02']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_arg_def_claim_01']/production[@method='default']/@time">268</replace>
   <replace sel="/wares/ware[@id='module_arg_def_claim_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">182</replace>
   <remove sel="/wares/ware[@id='module_arg_def_claim_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_arg_def_disc_01']/production[@method='default']/@time">192</replace>
   <replace sel="/wares/ware[@id='module_arg_def_disc_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">130</replace>
   <remove sel="/wares/ware[@id='module_arg_def_disc_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_arg_def_tube_01']/production[@method='default']/@time">167</replace>
   <replace sel="/wares/ware[@id='module_arg_def_tube_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">113</replace>
   <remove sel="/wares/ware[@id='module_arg_def_tube_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_dock_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_dock_m_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_dock_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">72</replace>
   <remove sel="/wares/ware[@id='module_arg_dock_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_dock_m_01_hightech']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_dock_m_01_hightech']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_dock_m_01_hightech']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">77</replace>
   <remove sel="/wares/ware[@id='module_arg_dock_m_01_hightech']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_dock_m_01_lowtech']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_dock_m_01_lowtech']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_dock_m_01_lowtech']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">67</replace>
   <remove sel="/wares/ware[@id='module_arg_dock_m_01_lowtech']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_dock_m_02']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_dock_m_02']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_dock_m_02']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">103</replace>
   <remove sel="/wares/ware[@id='module_arg_dock_m_02']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_dock_m_02_hightech']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_dock_m_02_hightech']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_dock_m_02_hightech']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">106</replace>
   <remove sel="/wares/ware[@id='module_arg_dock_m_02_hightech']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_dock_m_02_lowtech']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_dock_m_02_lowtech']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_dock_m_02_lowtech']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">99</replace>
   <remove sel="/wares/ware[@id='module_arg_dock_m_02_lowtech']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_dock_tradestation_02']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_dock_tradestation_02']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_dock_tradestation_02']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">154</replace>
   <remove sel="/wares/ware[@id='module_arg_dock_tradestation_02']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_hab_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_arg_hab_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_hab_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">254</replace>
   <remove sel="/wares/ware[@id='module_arg_hab_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_hab_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_hab_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_arg_hab_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">180</replace>
   <remove sel="/wares/ware[@id='module_arg_hab_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_hab_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_arg_hab_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_arg_hab_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">125</replace>
   <remove sel="/wares/ware[@id='module_arg_hab_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_pier_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_arg_pier_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_pier_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">722</replace>
   <remove sel="/wares/ware[@id='module_arg_pier_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_pier_l_02']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_arg_pier_l_02']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_pier_l_02']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">416</replace>
   <remove sel="/wares/ware[@id='module_arg_pier_l_02']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_pier_l_03']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_arg_pier_l_03']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_pier_l_03']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">832</replace>
   <remove sel="/wares/ware[@id='module_arg_pier_l_03']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_pier_tradestation_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_arg_pier_tradestation_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_pier_tradestation_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">263</replace>
   <remove sel="/wares/ware[@id='module_arg_pier_tradestation_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_prod_foodrations_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_prod_foodrations_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_prod_foodrations_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">349</replace>
   <remove sel="/wares/ware[@id='module_arg_prod_foodrations_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_prod_meat_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_prod_meat_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_prod_meat_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">330</replace>
   <remove sel="/wares/ware[@id='module_arg_prod_meat_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_prod_medicalsupplies_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_prod_medicalsupplies_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_prod_medicalsupplies_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">299</replace>
   <remove sel="/wares/ware[@id='module_arg_prod_medicalsupplies_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_prod_spacefuel_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_prod_spacefuel_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_prod_spacefuel_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">425</replace>
   <remove sel="/wares/ware[@id='module_arg_prod_spacefuel_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_prod_wheat_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_prod_wheat_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_prod_wheat_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">394</replace>
   <remove sel="/wares/ware[@id='module_arg_prod_wheat_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_stor_container_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_arg_stor_container_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_container_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">153</replace>
   <remove sel="/wares/ware[@id='module_arg_stor_container_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_stor_container_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_stor_container_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_container_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">109</replace>
   <remove sel="/wares/ware[@id='module_arg_stor_container_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_stor_container_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_arg_stor_container_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_container_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">69</replace>
   <remove sel="/wares/ware[@id='module_arg_stor_container_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_stor_liquid_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_arg_stor_liquid_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_liquid_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">153</replace>
   <remove sel="/wares/ware[@id='module_arg_stor_liquid_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_stor_liquid_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_stor_liquid_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_liquid_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">109</replace>
   <remove sel="/wares/ware[@id='module_arg_stor_liquid_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_stor_liquid_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_arg_stor_liquid_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_liquid_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">69</replace>
   <remove sel="/wares/ware[@id='module_arg_stor_liquid_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_stor_solid_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_arg_stor_solid_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_solid_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">153</replace>
   <remove sel="/wares/ware[@id='module_arg_stor_solid_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_stor_solid_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_arg_stor_solid_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_solid_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">109</replace>
   <remove sel="/wares/ware[@id='module_arg_stor_solid_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_arg_stor_solid_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_arg_stor_solid_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_solid_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">69</replace>
   <remove sel="/wares/ware[@id='module_arg_stor_solid_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_arg_stor_tradestation_l_01']/production[@method='default']/@time">310</replace>
   <replace sel="/wares/ware[@id='module_arg_stor_tradestation_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">163</replace>
   <remove sel="/wares/ware[@id='module_arg_stor_tradestation_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_build_dockarea_m_01']/production[@method='default']/@time">649</replace>
   <replace sel="/wares/ware[@id='module_gen_build_dockarea_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">4413</replace>
   <remove sel="/wares/ware[@id='module_gen_build_dockarea_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_build_l_01']/production[@method='default']/@time">365</replace>
   <replace sel="/wares/ware[@id='module_gen_build_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">2486</replace>
   <remove sel="/wares/ware[@id='module_gen_build_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_build_m_01']/production[@method='default']/@time">269</replace>
   <replace sel="/wares/ware[@id='module_gen_build_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">1833</replace>
   <remove sel="/wares/ware[@id='module_gen_build_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_build_s_01']/production[@method='default']/@time">269</replace>
   <replace sel="/wares/ware[@id='module_gen_build_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">1833</replace>
   <remove sel="/wares/ware[@id='module_gen_build_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_build_xl_01']/production[@method='default']/@time">477</replace>
   <replace sel="/wares/ware[@id='module_gen_build_xl_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">3243</replace>
   <remove sel="/wares/ware[@id='module_gen_build_xl_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_equip_dockarea_m_01']/production[@method='default']/@time">325</replace>
   <replace sel="/wares/ware[@id='module_gen_equip_dockarea_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">2205</replace>
   <remove sel="/wares/ware[@id='module_gen_equip_dockarea_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_equip_l_01']/production[@method='default']/@time">182</replace>
   <replace sel="/wares/ware[@id='module_gen_equip_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">1270</replace>
   <remove sel="/wares/ware[@id='module_gen_equip_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_equip_xl_01']/production[@method='default']/@time">238</replace>
   <replace sel="/wares/ware[@id='module_gen_equip_xl_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">1654</replace>
   <remove sel="/wares/ware[@id='module_gen_equip_xl_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_proc_scrapworks']/production[@method='default']/@time">283</replace>
   <replace sel="/wares/ware[@id='module_gen_proc_scrapworks']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">244</replace>
   <remove sel="/wares/ware[@id='module_gen_proc_scrapworks']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_advancedcomposites_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_proc_scrapworks']/production[@method='terran']/@time">282</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_advancedcomposites_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_advancedcomposites_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">863</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_advancedcomposites_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_advancedelectronics_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_advancedelectronics_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_advancedelectronics_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">642</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_advancedelectronics_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_antimattercells_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_antimattercells_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_antimattercells_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">92</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_antimattercells_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_antimatterconverters_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_antimatterconverters_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_antimatterconverters_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">2372</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_antimatterconverters_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_claytronics_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_claytronics_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_claytronics_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">3760</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_claytronics_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_dronecomponents_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_dronecomponents_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_dronecomponents_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">1632</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_dronecomponents_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_energycells_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_energycells_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_energycells_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">346</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_energycells_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_engineparts_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_engineparts_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_engineparts_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">518</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_engineparts_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_fieldcoils_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_fieldcoils_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_fieldcoils_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">2312</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_fieldcoils_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_graphene_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_graphene_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_graphene_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">37</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_graphene_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_hullparts_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_hullparts_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_hullparts_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">818</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_hullparts_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_microchips_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_microchips_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_microchips_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">1010</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_microchips_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_missilecomponents_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_missilecomponents_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_missilecomponents_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">46</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_missilecomponents_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_plasmaconductors_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_plasmaconductors_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_plasmaconductors_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">630</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_plasmaconductors_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_quantumtubes_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_quantumtubes_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_quantumtubes_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">506</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_quantumtubes_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_refinedmetals_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_refinedmetals_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_refinedmetals_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">48</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_refinedmetals_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_scanningarrays_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_scanningarrays_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_scanningarrays_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">838</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_scanningarrays_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_prod_scrap_recycler']/production[@method='default']/@time">388</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_scrap_recycler']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">400</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_scrap_recycler']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_shieldcomponents_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_shieldcomponents_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_shieldcomponents_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">575</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_shieldcomponents_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_siliconwafers_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_siliconwafers_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_siliconwafers_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">98</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_siliconwafers_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_smartchips_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_smartchips_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_smartchips_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">168</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_smartchips_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_spices_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_spices_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_spices_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">185</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_spices_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_superfluidcoolant_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_superfluidcoolant_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_superfluidcoolant_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">33</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_superfluidcoolant_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_turretcomponents_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_turretcomponents_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_turretcomponents_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">633</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_turretcomponents_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_water_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_water_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_water_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">48</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_water_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_gen_prod_weaponcomponents_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_gen_prod_weaponcomponents_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_prod_weaponcomponents_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">527</replace>
   <remove sel="/wares/ware[@id='module_gen_prod_weaponcomponents_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_gen_welfare_gamblinghall_01']/production[@method='default']/@time">365</replace>
   <replace sel="/wares/ware[@id='module_gen_welfare_gamblinghall_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">516</replace>
   <remove sel="/wares/ware[@id='module_gen_welfare_gamblinghall_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
   <replace sel="/wares/ware[@id='module_par_conn_base_01']/production[@method='default']/@time">30</replace>
@@ -395,72 +806,75 @@
   <replace sel="/wares/ware[@id='module_par_conn_vertical_02']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_par_conn_vertical_02']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <remove sel="/wares/ware[@id='module_par_conn_vertical_02']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_par_def_claim_01']/production[@method='default']/@time">273</replace>
   <replace sel="/wares/ware[@id='module_par_def_claim_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">186</replace>
   <remove sel="/wares/ware[@id='module_par_def_claim_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_par_def_disc_01']/production[@method='default']/@time">192</replace>
   <replace sel="/wares/ware[@id='module_par_def_disc_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">130</replace>
   <remove sel="/wares/ware[@id='module_par_def_disc_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_par_def_tube_01']/production[@method='default']/@time">167</replace>
   <replace sel="/wares/ware[@id='module_par_def_tube_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">113</replace>
   <remove sel="/wares/ware[@id='module_par_def_tube_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_hab_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_par_hab_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_hab_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">279</replace>
   <remove sel="/wares/ware[@id='module_par_hab_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_hab_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_par_hab_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_par_hab_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">180</replace>
   <remove sel="/wares/ware[@id='module_par_hab_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_hab_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_par_hab_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_par_hab_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">125</replace>
   <remove sel="/wares/ware[@id='module_par_hab_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_pier_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_par_pier_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_pier_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">750</replace>
   <remove sel="/wares/ware[@id='module_par_pier_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_pier_l_02']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_par_pier_l_02']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_pier_l_02']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">433</replace>
   <remove sel="/wares/ware[@id='module_par_pier_l_02']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_pier_l_03']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_par_pier_l_03']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_pier_l_03']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">866</replace>
   <remove sel="/wares/ware[@id='module_par_pier_l_03']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_prod_majadust_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_par_prod_majadust_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_prod_majadust_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">497</replace>
   <remove sel="/wares/ware[@id='module_par_prod_majadust_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_prod_majasnails_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_par_prod_majasnails_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_prod_majasnails_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">330</replace>
   <remove sel="/wares/ware[@id='module_par_prod_majasnails_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_prod_medicalsupplies_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_par_prod_medicalsupplies_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_prod_medicalsupplies_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">301</replace>
   <remove sel="/wares/ware[@id='module_par_prod_medicalsupplies_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_prod_sojabeans_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_par_prod_sojabeans_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_prod_sojabeans_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">394</replace>
   <remove sel="/wares/ware[@id='module_par_prod_sojabeans_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_prod_sojahusk_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_par_prod_sojahusk_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_prod_sojahusk_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">421</replace>
   <remove sel="/wares/ware[@id='module_par_prod_sojahusk_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_stor_container_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_par_stor_container_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_stor_container_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">165</replace>
   <remove sel="/wares/ware[@id='module_par_stor_container_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_stor_container_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_par_stor_container_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_par_stor_container_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">112</replace>
   <remove sel="/wares/ware[@id='module_par_stor_container_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_stor_container_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_par_stor_container_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_par_stor_container_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">74</replace>
   <remove sel="/wares/ware[@id='module_par_stor_container_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
   <replace sel="/wares/ware[@id='module_par_stor_landmark_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">175</replace>
   <remove sel="/wares/ware[@id='module_par_stor_landmark_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_stor_liquid_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_par_stor_liquid_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_stor_liquid_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">165</replace>
   <remove sel="/wares/ware[@id='module_par_stor_liquid_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_stor_liquid_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_par_stor_liquid_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_par_stor_liquid_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">112</replace>
   <remove sel="/wares/ware[@id='module_par_stor_liquid_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_stor_liquid_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_par_stor_liquid_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_par_stor_liquid_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">74</replace>
   <remove sel="/wares/ware[@id='module_par_stor_liquid_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_stor_solid_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_par_stor_solid_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_par_stor_solid_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">165</replace>
   <remove sel="/wares/ware[@id='module_par_stor_solid_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_stor_solid_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_par_stor_solid_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_par_stor_solid_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">112</replace>
   <remove sel="/wares/ware[@id='module_par_stor_solid_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_par_stor_solid_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_par_stor_solid_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_par_stor_solid_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">74</replace>
   <remove sel="/wares/ware[@id='module_par_stor_solid_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
   <replace sel="/wares/ware[@id='module_tel_conn_base_01']/production[@method='default']/@time">30</replace>
@@ -487,85 +901,88 @@
   <replace sel="/wares/ware[@id='module_tel_conn_vertical_02']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_tel_conn_vertical_02']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <remove sel="/wares/ware[@id='module_tel_conn_vertical_02']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_tel_def_claim_01']/production[@method='default']/@time">267</replace>
   <replace sel="/wares/ware[@id='module_tel_def_claim_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">183</replace>
   <remove sel="/wares/ware[@id='module_tel_def_claim_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_tel_def_disc_01']/production[@method='default']/@time">192</replace>
   <replace sel="/wares/ware[@id='module_tel_def_disc_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">130</replace>
   <remove sel="/wares/ware[@id='module_tel_def_disc_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_tel_def_tube_01']/production[@method='default']/@time">167</replace>
   <replace sel="/wares/ware[@id='module_tel_def_tube_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">113</replace>
   <remove sel="/wares/ware[@id='module_tel_def_tube_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_hab_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_tel_hab_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_hab_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">242</replace>
   <remove sel="/wares/ware[@id='module_tel_hab_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_hab_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_hab_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_tel_hab_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">161</replace>
   <remove sel="/wares/ware[@id='module_tel_hab_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_hab_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_tel_hab_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_tel_hab_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">114</replace>
   <remove sel="/wares/ware[@id='module_tel_hab_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_pier_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_tel_pier_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_pier_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">722</replace>
   <remove sel="/wares/ware[@id='module_tel_pier_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_pier_l_02']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_tel_pier_l_02']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_pier_l_02']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">416</replace>
   <remove sel="/wares/ware[@id='module_tel_pier_l_02']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_pier_l_03']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_tel_pier_l_03']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_pier_l_03']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">832</replace>
   <remove sel="/wares/ware[@id='module_tel_pier_l_03']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_prod_advancedcomposites_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_prod_advancedcomposites_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_prod_advancedcomposites_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">837</replace>
   <remove sel="/wares/ware[@id='module_tel_prod_advancedcomposites_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_prod_engineparts_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_prod_engineparts_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_prod_engineparts_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">525</replace>
   <remove sel="/wares/ware[@id='module_tel_prod_engineparts_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_prod_hullparts_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_prod_hullparts_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_prod_hullparts_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">818</replace>
   <remove sel="/wares/ware[@id='module_tel_prod_hullparts_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_prod_medicalsupplies_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_prod_medicalsupplies_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_prod_medicalsupplies_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">298</replace>
   <remove sel="/wares/ware[@id='module_tel_prod_medicalsupplies_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_prod_nostropoil_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_prod_nostropoil_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_prod_nostropoil_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">385</replace>
   <remove sel="/wares/ware[@id='module_tel_prod_nostropoil_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_prod_scanningarrays_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_prod_scanningarrays_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_prod_scanningarrays_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">849</replace>
   <remove sel="/wares/ware[@id='module_tel_prod_scanningarrays_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_prod_spaceweed_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_prod_spaceweed_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_prod_spaceweed_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">851</replace>
   <remove sel="/wares/ware[@id='module_tel_prod_spaceweed_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_prod_sunriseflowers_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_prod_sunriseflowers_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_prod_sunriseflowers_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">394</replace>
   <remove sel="/wares/ware[@id='module_tel_prod_sunriseflowers_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_prod_swampplant_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_prod_swampplant_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_prod_swampplant_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">851</replace>
   <remove sel="/wares/ware[@id='module_tel_prod_swampplant_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_prod_teladianium_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_prod_teladianium_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_prod_teladianium_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">66</replace>
   <remove sel="/wares/ware[@id='module_tel_prod_teladianium_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_stor_container_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_tel_stor_container_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_stor_container_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">149</replace>
   <remove sel="/wares/ware[@id='module_tel_stor_container_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_stor_container_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_stor_container_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_tel_stor_container_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">103</replace>
   <remove sel="/wares/ware[@id='module_tel_stor_container_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_stor_container_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_tel_stor_container_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_tel_stor_container_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">68</replace>
   <remove sel="/wares/ware[@id='module_tel_stor_container_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_stor_liquid_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_tel_stor_liquid_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_stor_liquid_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">149</replace>
   <remove sel="/wares/ware[@id='module_tel_stor_liquid_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_stor_liquid_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_stor_liquid_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_tel_stor_liquid_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">103</replace>
   <remove sel="/wares/ware[@id='module_tel_stor_liquid_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_stor_liquid_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_tel_stor_liquid_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_tel_stor_liquid_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">68</replace>
   <remove sel="/wares/ware[@id='module_tel_stor_liquid_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_stor_solid_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_tel_stor_solid_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_tel_stor_solid_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">149</replace>
   <remove sel="/wares/ware[@id='module_tel_stor_solid_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_stor_solid_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_tel_stor_solid_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_tel_stor_solid_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">103</replace>
   <remove sel="/wares/ware[@id='module_tel_stor_solid_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_tel_stor_solid_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_tel_stor_solid_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_tel_stor_solid_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">68</replace>
   <remove sel="/wares/ware[@id='module_tel_stor_solid_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
   <replace sel="/wares/ware[@id='module_tel_tradestation_conn_bridge_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">67</replace>
@@ -612,7 +1029,8 @@
   <replace sel="/wares/ware[@id='nividium']/price/@max">663</replace>
   <replace sel="/wares/ware[@id='nostropoil']/price/@min">28</replace>
   <replace sel="/wares/ware[@id='nostropoil']/price/@max">48</replace>
-  <replace sel="/wares/ware[@id='nostropoil']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='nostropoil']/production[@method='default']/effects/effect[@type='work']/@product">1.0</replace>
+  <add sel="/wares/ware[@id='nostropoil']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='ore']/price/@max">65</replace>
   <replace sel="/wares/ware[@id='plasmaconductors']/price/@min">863</replace>
   <replace sel="/wares/ware[@id='plasmaconductors']/price/@max">1343</replace>
@@ -622,6 +1040,7 @@
   <replace sel="/wares/ware[@id='plasmaconductors']/production[@method='default']/primary/ware[@ware='graphene']/@amount">64</replace>
   <replace sel="/wares/ware[@id='plasmaconductors']/production[@method='default']/primary/ware[@ware='superfluidcoolant']/@amount">93</replace>
   <replace sel="/wares/ware[@id='plasmaconductors']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='plasmaconductors']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='quantumtubes']/price/@min">188</replace>
   <replace sel="/wares/ware[@id='quantumtubes']/price/@max">518</replace>
   <replace sel="/wares/ware[@id='quantumtubes']/production[@method='default']/@time">600</replace>
@@ -630,6 +1049,7 @@
   <replace sel="/wares/ware[@id='quantumtubes']/production[@method='default']/primary/ware[@ware='graphene']/@amount">97</replace>
   <replace sel="/wares/ware[@id='quantumtubes']/production[@method='default']/primary/ware[@ware='superfluidcoolant']/@amount">25</replace>
   <replace sel="/wares/ware[@id='quantumtubes']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='quantumtubes']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='refinedmetals']/price/@min">69</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/price/@max">279</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/@time">300</replace>
@@ -637,23 +1057,436 @@
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/primary/ware[@ware='energycells']/@amount">180</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/primary/ware[@ware='ore']/@amount">480</replace>
   <replace sel="/wares/ware[@id='refinedmetals']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='refinedmetals']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.25</add>
   <replace sel="/wares/ware[@id='resourceprobe_01']/production[@method='closedloop']/primary/ware[@ware='energycells']/@amount">1</replace>
   <replace sel="/wares/ware[@id='resourceprobe_01']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">1</replace>
   <replace sel="/wares/ware[@id='satellite_mk1']/production[@method='closedloop']/primary/ware[@ware='energycells']/@amount">1</replace>
   <replace sel="/wares/ware[@id='satellite_mk2']/production[@method='closedloop']/primary/ware[@ware='energycells']/@amount">10</replace>
   <replace sel="/wares/ware[@id='satellite_mk2']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">5</replace>
-  <replace sel="/wares/ware[@id='scanningarrays']/price/@min">805</replace>
-  <replace sel="/wares/ware[@id='scanningarrays']/price/@max">1565</replace>
-  <replace sel="/wares/ware[@id='scanningarrays']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
-  <replace sel="/wares/ware[@id='scanningarrays']/production[@method='teladi']/effects/effect[@type='work']/@product">0.5</replace>
-  <replace sel="/wares/ware[@id='shieldcomponents']/price/@min">121</replace>
-  <replace sel="/wares/ware[@id='shieldcomponents']/price/@max">321</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/price/@min">736</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/price/@max">1686</replace>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@method='default']/effects/effect[@type='work']/@product">0.61</replace>
+  <add sel="/wares/ware[@id='scanningarrays']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
+  <replace sel="/wares/ware[@id='scanningarrays']/production[@method='teladi']/effects/effect[@type='work']/@product">0.61</replace>
+  <add sel="/wares/ware[@id='scanningarrays']/production[@method='teladi']/effects/effect[@type='work']" type="@cycle">0.35</add>
+  <replace sel="/wares/ware[@id='shieldcomponents']/price/@min">105</replace>
+  <replace sel="/wares/ware[@id='shieldcomponents']/price/@max">355</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/@time">600</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/@amount">97</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/primary/ware[@ware='energycells']/@amount">35</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/primary/ware[@ware='plasmaconductors']/@amount">10</replace>
   <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/primary/ware[@ware='quantumtubes']/@amount">10</replace>
-  <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <replace sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.52</replace>
+  <add sel="/wares/ware[@id='shieldcomponents']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
+  <add sel="/wares/ware[@id='shield_par_l_standard_01_mk1']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="77"/>
+        <ware ware="hullparts" amount="13"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_par_l_standard_01_mk2']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="11"/>
+        <ware ware="energycells" amount="136"/>
+        <ware ware="hullparts" amount="63"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_par_m_standard_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="104"/>
+        <ware ware="hullparts" amount="4"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_par_m_standard_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="89"/>
+        <ware ware="hullparts" amount="19"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_par_m_standard_02_mk1']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="104"/>
+        <ware ware="hullparts" amount="4"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_par_m_standard_02_mk2']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="89"/>
+        <ware ware="hullparts" amount="19"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_par_s_standard_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="17"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_par_s_standard_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="81"/>
+        <ware ware="hullparts" amount="3"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_par_s_standard_01_mk3']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="120"/>
+        <ware ware="hullparts" amount="15"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_par_xl_standard_01_mk1']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="12"/>
+        <ware ware="energycells" amount="170"/>
+        <ware ware="hullparts" amount="70"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_tel_l_standard_01_mk1']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="77"/>
+        <ware ware="hullparts" amount="13"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_tel_l_standard_01_mk2']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="11"/>
+        <ware ware="energycells" amount="136"/>
+        <ware ware="hullparts" amount="63"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_tel_s_standard_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="17"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_tel_s_standard_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="81"/>
+        <ware ware="hullparts" amount="3"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_tel_s_standard_01_mk3']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="120"/>
+        <ware ware="hullparts" amount="15"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='shield_tel_xl_standard_01_mk1']">
+    <production time="20" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="12"/>
+        <ware ware="energycells" amount="170"/>
+        <ware ware="hullparts" amount="70"/>
+      </primary>
+    </production>
+  </add>
+  <replace sel="/wares/ware[@id='ship_arg_l_destroyer_01_a']/price/@min">4717288</replace>
+  <replace sel="/wares/ware[@id='ship_arg_l_destroyer_01_a']/price/@average">5549750</replace>
+  <replace sel="/wares/ware[@id='ship_arg_l_destroyer_01_a']/price/@max">6382212</replace>
+  <replace sel="/wares/ware[@id='ship_arg_l_destroyer_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">2100</replace>
+  <replace sel="/wares/ware[@id='ship_arg_l_destroyer_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">5150</replace>
+  <replace sel="/wares/ware[@id='ship_arg_l_destroyer_01_b']/price/@min">5189016</replace>
+  <replace sel="/wares/ware[@id='ship_arg_l_destroyer_01_b']/price/@average">6104725</replace>
+  <replace sel="/wares/ware[@id='ship_arg_l_destroyer_01_b']/price/@max">7020434</replace>
+  <replace sel="/wares/ware[@id='ship_arg_l_destroyer_01_b']/production[@method='default']/primary/ware[@ware='energycells']/@amount">2310</replace>
+  <replace sel="/wares/ware[@id='ship_arg_l_destroyer_01_b']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">5665</replace>
+  <add sel="/wares/ware[@id='ship_arg_m_bomber_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_m_bomber_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_m_bomber_02_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_m_frigate_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_m_frigate_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_m_miner_liquid_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_m_miner_liquid_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_m_miner_solid_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_m_miner_solid_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_m_trans_container_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_m_trans_container_02_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_fighter_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_fighter_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_fighter_02_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_fighter_03_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_fighter_04_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_heavyfighter_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_heavyfighter_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_heavyfighter_02_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_miner_solid_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_scout_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_trans_container_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_arg_s_trans_container_02_b']">
+    <owner faction="alliance"/>
+  </add>
+  <replace sel="/wares/ware[@id='ship_arg_xl_carrier_01_a']/price/@min">7555863</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xl_carrier_01_a']/price/@average">8889250</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xl_carrier_01_a']/price/@max">10222638</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xl_carrier_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">3350</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xl_carrier_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">8250</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xl_carrier_01_b']/price/@min">8311449</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xl_carrier_01_b']/price/@average">9778175</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xl_carrier_01_b']/price/@max">11244901</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xl_carrier_01_b']/production[@method='default']/primary/ware[@ware='energycells']/@amount">3685</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xl_carrier_01_b']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">9075</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xs_police_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xs_police_01_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xs_police_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xs_police_01_a']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_arg_xs_police_01_a']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_fightingdrone_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_fightingdrone_01_a']/production[@method='xenon']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_fightingdrone_01_a']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_fightingdrone_01_a']/production[@method='terran']/primary/ware[@ware='metallicmicrolattice']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_fightingdrone_01_a']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_lasertower_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_lasertower_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_lasertower_01_a']/production[@method='xenon']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_lasertower_01_a']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_lasertower_01_a']/production[@method='terran']/primary/ware[@ware='metallicmicrolattice']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_lasertower_01_a']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_liquid_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_liquid_01_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_liquid_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_liquid_01_a']/production[@method='xenon']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_liquid_01_a']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_liquid_01_a']/production[@method='terran']/primary/ware[@ware='metallicmicrolattice']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_liquid_01_a']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_solid_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_solid_01_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_solid_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">10</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_solid_01_a']/production[@method='xenon']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_solid_01_a']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_solid_01_a']/production[@method='terran']/primary/ware[@ware='metallicmicrolattice']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='ship_gen_s_miningdrone_solid_01_a']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_buildingdrone_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_buildingdrone_01_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_buildingdrone_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_buildingdrone_01_a']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_buildingdrone_01_a']/production[@method='terran']/primary/ware[@ware='metallicmicrolattice']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_buildingdrone_01_a']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_cargodrone_empty_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_cargodrone_empty_01_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_cargodrone_empty_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_cargodrone_empty_01_a']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_cargodrone_empty_01_a']/production[@method='terran']/primary/ware[@ware='metallicmicrolattice']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_cargodrone_empty_01_a']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='xenon']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='xenon']/primary/ware[@ware='energycells']/@amount">35</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='terran']/primary/ware[@ware='energycells']/@amount">250</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='terran']/primary/ware[@ware='metallicmicrolattice']/@amount">12</replace>
+  <add sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='terran']/primary">
+    <ware ware="siliconcarbide" amount="1"/>
+  </add>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='closedloop']/primary/ware[@ware='energycells']/@amount">15</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_lasertower_01_a']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">3</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_repairdrone_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_repairdrone_01_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_repairdrone_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">5</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_repairdrone_01_a']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_repairdrone_01_a']/production[@method='terran']/primary/ware[@ware='metallicmicrolattice']/@amount">25</replace>
+  <replace sel="/wares/ware[@id='ship_gen_xs_repairdrone_01_a']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_01_a']/price/@min">4491613</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_01_a']/price/@average">5284250</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_01_a']/price/@max">6076887</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">2700</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">4850</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_01_b']/price/@min">4940774</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_01_b']/price/@average">5812675</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_01_b']/price/@max">6684576</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_01_b']/production[@method='default']/primary/ware[@ware='energycells']/@amount">2970</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_01_b']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">5335</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_02_a']/price/@min">4604450</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_02_a']/price/@average">5417000</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_02_a']/price/@max">6229550</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_02_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">2400</replace>
+  <replace sel="/wares/ware[@id='ship_par_l_destroyer_02_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">5000</replace>
+  <add sel="/wares/ware[@id='ship_par_m_corvette_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_m_corvette_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_m_frigate_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_m_frigate_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_m_miner_liquid_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_m_miner_liquid_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_m_miner_solid_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_m_miner_solid_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_m_trans_container_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_m_trans_container_02_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_m_trans_container_03_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_s_fighter_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_s_fighter_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_s_fighter_02_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_s_fighter_02_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_s_heavyfighter_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_s_heavyfighter_01_a']">
+    <owner faction="paranid"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_s_miner_solid_01_a']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_s_scout_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='ship_par_s_trans_container_01_b']">
+    <owner faction="alliance"/>
+  </add>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_01_a']/price/@min">7176338</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_01_a']/price/@average">8442750</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_01_a']/price/@max">9709163</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">4300</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">7750</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_01_b']/price/@min">7893971</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_01_b']/price/@average">9287025</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_01_b']/price/@max">10680079</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_01_b']/production[@method='default']/primary/ware[@ware='energycells']/@amount">4730</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_01_b']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">8525</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_02_a']/price/@min">7367800</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_02_a']/price/@average">8668000</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_02_a']/price/@max">9968200</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_02_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">3850</replace>
+  <replace sel="/wares/ware[@id='ship_par_xl_carrier_02_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">8000</replace>
+  <replace sel="/wares/ware[@id='ship_par_xs_police_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_par_xs_police_01_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_par_xs_police_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_tel_l_destroyer_01_a']/price/@min">4830125</replace>
+  <replace sel="/wares/ware[@id='ship_tel_l_destroyer_01_a']/price/@average">5682500</replace>
+  <replace sel="/wares/ware[@id='ship_tel_l_destroyer_01_a']/price/@max">6534875</replace>
+  <replace sel="/wares/ware[@id='ship_tel_l_destroyer_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">1800</replace>
+  <replace sel="/wares/ware[@id='ship_tel_l_destroyer_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">5300</replace>
+  <replace sel="/wares/ware[@id='ship_tel_l_destroyer_01_b']/price/@min">5313138</replace>
+  <replace sel="/wares/ware[@id='ship_tel_l_destroyer_01_b']/price/@average">6250750</replace>
+  <replace sel="/wares/ware[@id='ship_tel_l_destroyer_01_b']/price/@max">7188363</replace>
+  <replace sel="/wares/ware[@id='ship_tel_l_destroyer_01_b']/production[@method='default']/primary/ware[@ware='energycells']/@amount">1980</replace>
+  <replace sel="/wares/ware[@id='ship_tel_l_destroyer_01_b']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">5830</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xl_carrier_01_a']/price/@min">7747325</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xl_carrier_01_a']/price/@average">9114500</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xl_carrier_01_a']/price/@max">10481675</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xl_carrier_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">2900</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xl_carrier_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">8500</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xl_carrier_01_b']/price/@min">8522058</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xl_carrier_01_b']/price/@average">10025950</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xl_carrier_01_b']/price/@max">11529843</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xl_carrier_01_b']/production[@method='default']/primary/ware[@ware='energycells']/@amount">3190</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xl_carrier_01_b']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">9350</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xs_police_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xs_police_01_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xs_police_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xs_police_02_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xs_police_02_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xs_police_02_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xs_police_03_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xs_police_03_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_tel_xs_police_03_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">0</replace>
   <replace sel="/wares/ware[@id='silicon']/price/@max">169</replace>
   <replace sel="/wares/ware[@id='siliconwafers']/price/@min">209</replace>
   <replace sel="/wares/ware[@id='siliconwafers']/price/@max">479</replace>
@@ -662,16 +1495,31 @@
   <replace sel="/wares/ware[@id='siliconwafers']/production[@method='default']/primary/ware[@ware='energycells']/@amount">150</replace>
   <replace sel="/wares/ware[@id='siliconwafers']/production[@method='default']/primary/ware[@ware='silicon']/@amount">400</replace>
   <replace sel="/wares/ware[@id='siliconwafers']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
-  <replace sel="/wares/ware[@id='smartchips']/price/@min">43</replace>
-  <replace sel="/wares/ware[@id='smartchips']/price/@max">83</replace>
-  <replace sel="/wares/ware[@id='smartchips']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='siliconwafers']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.25</add>
+  <replace sel="/wares/ware[@id='smartchips']/price/@min">40</replace>
+  <replace sel="/wares/ware[@id='smartchips']/price/@max">90</replace>
+  <replace sel="/wares/ware[@id='smartchips']/production[@method='default']/@amount">150</replace>
+  <replace sel="/wares/ware[@id='smartchips']/production[@method='default']/effects/effect[@type='work']/@product">0.59</replace>
+  <add sel="/wares/ware[@id='smartchips']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
+  <replace sel="/wares/ware[@id='software_dockmk1']/production[@method='default']/@time">1</replace>
+  <replace sel="/wares/ware[@id='software_dockmk2']/production[@method='default']/@time">1</replace>
+  <replace sel="/wares/ware[@id='software_flightassistmk1']/production[@method='default']/@time">1</replace>
+  <replace sel="/wares/ware[@id='software_scannerlongrangemk1']/production[@method='default']/@time">1</replace>
+  <replace sel="/wares/ware[@id='software_scannerlongrangemk2']/production[@method='default']/@time">1</replace>
+  <replace sel="/wares/ware[@id='software_scannerobjectmk1']/production[@method='default']/@time">1</replace>
+  <replace sel="/wares/ware[@id='software_scannerobjectmk2']/production[@method='default']/@time">1</replace>
+  <replace sel="/wares/ware[@id='software_scannerobjectmk3']/production[@method='default']/@time">1</replace>
+  <replace sel="/wares/ware[@id='software_targetmk1']/production[@method='default']/@time">1</replace>
+  <replace sel="/wares/ware[@id='software_trademk1']/production[@method='default']/@time">1</replace>
   <replace sel="/wares/ware[@id='sojabeans']/@volume">2</replace>
   <replace sel="/wares/ware[@id='sojabeans']/price/@min">59</replace>
   <replace sel="/wares/ware[@id='sojabeans']/price/@max">89</replace>
   <replace sel="/wares/ware[@id='sojabeans']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='sojabeans']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='sojahusk']/price/@min">26</replace>
   <replace sel="/wares/ware[@id='sojahusk']/price/@max">46</replace>
-  <replace sel="/wares/ware[@id='sojahusk']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='sojahusk']/production[@method='default']/effects/effect[@type='work']/@product">1.0</replace>
+  <add sel="/wares/ware[@id='sojahusk']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='spacefuel']/@volume">1</replace>
   <replace sel="/wares/ware[@id='spacefuel']/price/@min">106</replace>
   <replace sel="/wares/ware[@id='spacefuel']/price/@max">186</replace>
@@ -680,9 +1528,11 @@
   <replace sel="/wares/ware[@id='spacefuel']/production[@method='default']/primary/ware[@ware='energycells']/@amount">50</replace>
   <replace sel="/wares/ware[@id='spacefuel']/production[@method='default']/primary/ware[@ware='water']/@amount">125</replace>
   <replace sel="/wares/ware[@id='spacefuel']/production[@method='default']/primary/ware[@ware='wheat']/@amount">100</replace>
+  <add sel="/wares/ware[@id='spacefuel']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='spaceweed']/@volume">1</replace>
   <replace sel="/wares/ware[@id='spaceweed']/price/@min">139</replace>
   <replace sel="/wares/ware[@id='spaceweed']/price/@max">219</replace>
+  <add sel="/wares/ware[@id='spaceweed']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='spices']/@volume">2</replace>
   <replace sel="/wares/ware[@id='spices']/price/@min">9</replace>
   <replace sel="/wares/ware[@id='spices']/price/@max">39</replace>
@@ -691,10 +1541,12 @@
   <replace sel="/wares/ware[@id='spices']/production[@method='default']/primary/ware[@ware='energycells']/@amount">20</replace>
   <replace sel="/wares/ware[@id='spices']/production[@method='default']/primary/ware[@ware='water']/@amount">40</replace>
   <replace sel="/wares/ware[@id='spices']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='spices']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='sunriseflowers']/@volume">2</replace>
   <replace sel="/wares/ware[@id='sunriseflowers']/price/@min">71</replace>
   <replace sel="/wares/ware[@id='sunriseflowers']/price/@max">101</replace>
   <replace sel="/wares/ware[@id='sunriseflowers']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='sunriseflowers']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='superfluidcoolant']/price/@min">60</replace>
   <replace sel="/wares/ware[@id='superfluidcoolant']/price/@max">300</replace>
   <replace sel="/wares/ware[@id='superfluidcoolant']/production[@method='default']/@time">300</replace>
@@ -702,6 +1554,7 @@
   <replace sel="/wares/ware[@id='superfluidcoolant']/production[@method='default']/primary/ware[@ware='energycells']/@amount">75</replace>
   <replace sel="/wares/ware[@id='superfluidcoolant']/production[@method='default']/primary/ware[@ware='helium']/@amount">400</replace>
   <replace sel="/wares/ware[@id='superfluidcoolant']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='superfluidcoolant']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.25</add>
   <replace sel="/wares/ware[@id='swampplant']/@volume">2</replace>
   <replace sel="/wares/ware[@id='swampplant']/price/@min">75</replace>
   <replace sel="/wares/ware[@id='swampplant']/price/@max">105</replace>
@@ -710,6 +1563,7 @@
   <replace sel="/wares/ware[@id='swampplant']/production[@method='default']/primary/ware[@ware='energycells']/@amount">27</replace>
   <replace sel="/wares/ware[@id='swampplant']/production[@method='default']/primary/ware[@ware='water']/@amount">67</replace>
   <replace sel="/wares/ware[@id='swampplant']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='swampplant']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='teladianium']/price/@min">123</replace>
   <replace sel="/wares/ware[@id='teladianium']/price/@max">363</replace>
   <replace sel="/wares/ware[@id='teladianium']/production[@method='default']/@time">300</replace>
@@ -717,15 +1571,381 @@
   <replace sel="/wares/ware[@id='teladianium']/production[@method='default']/primary/ware[@ware='energycells']/@amount">113</replace>
   <replace sel="/wares/ware[@id='teladianium']/production[@method='default']/primary/ware[@ware='ore']/@amount">700</replace>
   <replace sel="/wares/ware[@id='teladianium']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
-  <replace sel="/wares/ware[@id='turretcomponents']/price/@min">128</replace>
-  <replace sel="/wares/ware[@id='turretcomponents']/price/@max">528</replace>
+  <add sel="/wares/ware[@id='teladianium']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.25</add>
+  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk2']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">192</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk2']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">112</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk2']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">344</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk3']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">768</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk3']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">448</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_l_allround_01_mk3']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">1376</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk2']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">16</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk2']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk2']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">12</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk3']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">64</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk3']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">16</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_allround_01_mk3']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">48</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk2']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">16</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk2']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk2']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">16</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk3']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">64</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk3']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">16</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_m_combat_01_mk3']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">64</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_allround_01_mk2']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">16</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_allround_01_mk2']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_allround_01_mk2']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_allround_01_mk3']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">64</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_allround_01_mk3']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">16</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_allround_01_mk3']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">16</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_combat_01_mk2']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">4</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_combat_01_mk2']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">8</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_combat_01_mk3']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">16</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_combat_01_mk3']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">16</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_s_combat_01_mk3']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">32</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk2']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">384</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk2']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">244</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk2']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">732</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk3']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">1536</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk3']/production[@method='terran']/primary/ware[@ware='computronicsubstrate']/@amount">976</replace>
+  <replace sel="/wares/ware[@id='thruster_gen_xl_allround_01_mk3']/production[@method='closedloop']/primary/ware[@ware='hullparts']/@amount">2928</replace>
+  <replace sel="/wares/ware[@id='turretcomponents']/price/@min">105</replace>
+  <replace sel="/wares/ware[@id='turretcomponents']/price/@max">605</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/production[@method='default']/@time">600</replace>
-  <replace sel="/wares/ware[@id='turretcomponents']/production[@method='default']/@amount">57</replace>
+  <replace sel="/wares/ware[@id='turretcomponents']/production[@method='default']/@amount">62</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/production[@method='default']/primary/ware[@ware='energycells']/@amount">20</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/production[@method='default']/primary/ware[@ware='microchips']/@amount">7</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/production[@method='default']/primary/ware[@ware='quantumtubes']/@amount">7</replace>
   <replace sel="/wares/ware[@id='turretcomponents']/production[@method='default']/primary/ware[@ware='scanningarrays']/@amount">3</replace>
-  <replace sel="/wares/ware[@id='turretcomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='turretcomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.85</replace>
+  <add sel="/wares/ware[@id='turretcomponents']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
+  <add sel="/wares/ware[@id='turret_par_l_beam_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="7"/>
+        <ware ware="energycells" amount="195"/>
+        <ware ware="hullparts" amount="44"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_l_dumbfire_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="166"/>
+        <ware ware="hullparts" amount="22"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_l_guided_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="4"/>
+        <ware ware="energycells" amount="79"/>
+        <ware ware="hullparts" amount="24"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_l_laser_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="141"/>
+        <ware ware="hullparts" amount="16"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_l_mining_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="121"/>
+        <ware ware="hullparts" amount="14"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_l_plasma_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="4"/>
+        <ware ware="energycells" amount="180"/>
+        <ware ware="hullparts" amount="28"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_beam_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="110"/>
+        <ware ware="hullparts" amount="15"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_beam_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="110"/>
+        <ware ware="hullparts" amount="15"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_dumbfire_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="67"/>
+        <ware ware="hullparts" amount="7"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_dumbfire_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="67"/>
+        <ware ware="hullparts" amount="7"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_gatling_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="54"/>
+        <ware ware="hullparts" amount="7"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_gatling_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="49"/>
+        <ware ware="hullparts" amount="7"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_guided_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="75"/>
+        <ware ware="hullparts" amount="8"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_guided_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="75"/>
+        <ware ware="hullparts" amount="8"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_laser_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="33"/>
+        <ware ware="hullparts" amount="6"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_laser_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="33"/>
+        <ware ware="hullparts" amount="6"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_mining_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="123"/>
+        <ware ware="hullparts" amount="5"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_mining_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="123"/>
+        <ware ware="hullparts" amount="5"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_plasma_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="114"/>
+        <ware ware="hullparts" amount="9"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_plasma_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="114"/>
+        <ware ware="hullparts" amount="9"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_shotgun_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="49"/>
+        <ware ware="hullparts" amount="7"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_par_m_shotgun_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="54"/>
+        <ware ware="hullparts" amount="7"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_l_beam_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="7"/>
+        <ware ware="energycells" amount="195"/>
+        <ware ware="hullparts" amount="44"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_l_dumbfire_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="166"/>
+        <ware ware="hullparts" amount="22"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_l_guided_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="4"/>
+        <ware ware="energycells" amount="79"/>
+        <ware ware="hullparts" amount="24"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_l_laser_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="141"/>
+        <ware ware="hullparts" amount="16"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_l_mining_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="121"/>
+        <ware ware="hullparts" amount="14"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_l_plasma_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="4"/>
+        <ware ware="energycells" amount="180"/>
+        <ware ware="hullparts" amount="28"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_m_beam_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="110"/>
+        <ware ware="hullparts" amount="15"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_m_beam_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="2"/>
+        <ware ware="energycells" amount="110"/>
+        <ware ware="hullparts" amount="15"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_m_dumbfire_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="67"/>
+        <ware ware="hullparts" amount="7"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_m_dumbfire_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="67"/>
+        <ware ware="hullparts" amount="7"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_m_guided_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="75"/>
+        <ware ware="hullparts" amount="8"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_m_guided_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="75"/>
+        <ware ware="hullparts" amount="8"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_m_mining_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="123"/>
+        <ware ware="hullparts" amount="5"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_m_mining_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="123"/>
+        <ware ware="hullparts" amount="5"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='turret_tel_m_plasma_02_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="114"/>
+        <ware ware="hullparts" amount="9"/>
+      </primary>
+    </production>
+  </add>
   <replace sel="/wares/ware[@id='water']/price/@min">19</replace>
   <replace sel="/wares/ware[@id='water']/price/@max">109</replace>
   <replace sel="/wares/ware[@id='water']/production[@method='default']/@time">300</replace>
@@ -733,29 +1953,196 @@
   <replace sel="/wares/ware[@id='water']/production[@method='default']/primary/ware[@ware='energycells']/@amount">150</replace>
   <replace sel="/wares/ware[@id='water']/production[@method='default']/primary/ware[@ware='ice']/@amount">800</replace>
   <replace sel="/wares/ware[@id='water']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='water']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
+  <replace sel="/wares/ware[@id='waypointmarker_01']/production[@method='default']/@time">2</replace>
   <remove sel="/wares/ware[@id='waypointmarker_01']/production[@method='default']/primary/ware[@ware='energycells']"/>
-  <replace sel="/wares/ware[@id='weaponcomponents']/price/@min">150</replace>
-  <replace sel="/wares/ware[@id='weaponcomponents']/price/@max">550</replace>
+  <replace sel="/wares/ware[@id='waypointmarker_01']/production[@method='xenon']/@time">2</replace>
+  <replace sel="/wares/ware[@id='waypointmarker_01']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='waypointmarker_01']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weaponcomponents']/price/@min">120</replace>
+  <replace sel="/wares/ware[@id='weaponcomponents']/price/@max">620</replace>
   <replace sel="/wares/ware[@id='weaponcomponents']/production[@method='default']/@time">600</replace>
-  <replace sel="/wares/ware[@id='weaponcomponents']/production[@method='default']/@amount">57</replace>
+  <replace sel="/wares/ware[@id='weaponcomponents']/production[@method='default']/@amount">62</replace>
   <replace sel="/wares/ware[@id='weaponcomponents']/production[@method='default']/primary/ware[@ware='energycells']/@amount">20</replace>
   <replace sel="/wares/ware[@id='weaponcomponents']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">7</replace>
   <replace sel="/wares/ware[@id='weaponcomponents']/production[@method='default']/primary/ware[@ware='plasmaconductors']/@amount">10</replace>
-  <replace sel="/wares/ware[@id='weaponcomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <replace sel="/wares/ware[@id='weaponcomponents']/production[@method='default']/effects/effect[@type='work']/@product">0.85</replace>
+  <add sel="/wares/ware[@id='weaponcomponents']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.35</add>
+  <add sel="/wares/ware[@id='weapon_arg_m_ion_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="118"/>
+        <ware ware="hullparts" amount="9"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_arg_m_ion_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="8"/>
+        <ware ware="energycells" amount="155"/>
+        <ware ware="hullparts" amount="48"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_arg_s_ion_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="105"/>
+        <ware ware="hullparts" amount="4"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_arg_s_ion_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="66"/>
+        <ware ware="hullparts" amount="18"/>
+      </primary>
+    </production>
+  </add>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_01']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_01']/production[@method='xenon']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_01']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_01']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_02']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_02']/production[@method='xenon']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_02']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_02']/production[@method='closedloop']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_03']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_03']/production[@method='xenon']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_03']/production[@method='terran']/@time">2</replace>
+  <replace sel="/wares/ware[@id='weapon_gen_mine_03']/production[@method='closedloop']/@time">2</replace>
+  <add sel="/wares/ware[@id='weapon_gen_s_burst_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="105"/>
+        <ware ware="hullparts" amount="4"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_gen_s_burst_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="66"/>
+        <ware ware="hullparts" amount="18"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_gen_s_cannon_01_mk1']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='weapon_gen_s_cannon_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="105"/>
+        <ware ware="hullparts" amount="4"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_gen_s_cannon_01_mk2']">
+    <owner faction="alliance"/>
+  </add>
+  <add sel="/wares/ware[@id='weapon_gen_s_cannon_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="66"/>
+        <ware ware="hullparts" amount="18"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_par_m_railgun_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="118"/>
+        <ware ware="hullparts" amount="9"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_par_m_railgun_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="8"/>
+        <ware ware="energycells" amount="155"/>
+        <ware ware="hullparts" amount="48"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_par_s_railgun_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="105"/>
+        <ware ware="hullparts" amount="4"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_par_s_railgun_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="66"/>
+        <ware ware="hullparts" amount="18"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_tel_m_charge_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="1"/>
+        <ware ware="energycells" amount="118"/>
+        <ware ware="hullparts" amount="9"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_tel_m_charge_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="8"/>
+        <ware ware="energycells" amount="155"/>
+        <ware ware="hullparts" amount="48"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_tel_s_charge_01_mk1']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="energycells" amount="105"/>
+        <ware ware="hullparts" amount="4"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='weapon_tel_s_charge_01_mk2']">
+    <production time="10" amount="1" method="closedloop" name="{20206,1201}">
+      <primary>
+        <ware ware="claytronics" amount="3"/>
+        <ware ware="energycells" amount="66"/>
+        <ware ware="hullparts" amount="18"/>
+      </primary>
+    </production>
+  </add>
   <replace sel="/wares/ware[@id='wheat']/@volume">2</replace>
   <replace sel="/wares/ware[@id='wheat']/price/@min">21</replace>
   <replace sel="/wares/ware[@id='wheat']/price/@max">51</replace>
   <replace sel="/wares/ware[@id='wheat']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='wheat']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='cheltmeat']/@volume">2</replace>
   <replace sel="/wares/ware[@id='cheltmeat']/price/@min">38</replace>
   <replace sel="/wares/ware[@id='cheltmeat']/price/@max">78</replace>
   <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/@time">300</replace>
-  <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/@amount">139</replace>
+  <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/@amount">160</replace>
   <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/primary/ware[@ware='energycells']/@amount">33</replace>
   <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/primary/ware[@ware='water']/@amount">80</replace>
   <replace sel="/wares/ware[@id='cheltmeat']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
-  <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk4']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">760</replace>
-  <replace sel="/wares/ware[@id='engine_spl_s_combat_01_mk4']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">482</replace>
+  <add sel="/wares/ware[@id='cheltmeat']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
+  <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk4']/production[@method='default']/primary/ware[@ware='antimatterconverters']/@amount">174</replace>
+  <replace sel="/wares/ware[@id='engine_spl_m_combat_01_mk4']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">338</replace>
+  <replace sel="/wares/ware[@id='engine_spl_s_combat_01_mk4']/production[@method='default']/primary/ware[@ware='antimatterconverters']/@amount">74</replace>
+  <replace sel="/wares/ware[@id='engine_spl_s_combat_01_mk4']/production[@method='default']/primary/ware[@ware='engineparts']/@amount">214</replace>
   <replace sel="/wares/ware[@id='module_spl_conn_base_01']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_spl_conn_base_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_spl_conn_base_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
@@ -780,70 +2167,99 @@
   <replace sel="/wares/ware[@id='module_spl_conn_vertical_02']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_spl_conn_vertical_02']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <remove sel="/wares/ware[@id='module_spl_conn_vertical_02']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_spl_def_claim_01']/production[@method='default']/@time">270</replace>
   <replace sel="/wares/ware[@id='module_spl_def_claim_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">183</replace>
   <remove sel="/wares/ware[@id='module_spl_def_claim_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_spl_def_disc_01']/production[@method='default']/@time">205</replace>
   <replace sel="/wares/ware[@id='module_spl_def_disc_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">139</replace>
   <remove sel="/wares/ware[@id='module_spl_def_disc_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_spl_def_tube_01']/production[@method='default']/@time">205</replace>
   <replace sel="/wares/ware[@id='module_spl_def_tube_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">139</replace>
   <remove sel="/wares/ware[@id='module_spl_def_tube_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_hab_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_spl_hab_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_spl_hab_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">254</replace>
   <remove sel="/wares/ware[@id='module_spl_hab_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_hab_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_spl_hab_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_spl_hab_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">180</replace>
   <remove sel="/wares/ware[@id='module_spl_hab_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_hab_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_spl_hab_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_spl_hab_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">125</replace>
   <remove sel="/wares/ware[@id='module_spl_hab_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_pier_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_spl_pier_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_spl_pier_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">722</replace>
   <remove sel="/wares/ware[@id='module_spl_pier_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_pier_l_02']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_spl_pier_l_02']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_spl_pier_l_02']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">416</replace>
   <remove sel="/wares/ware[@id='module_spl_pier_l_02']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_pier_l_03']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_spl_pier_l_03']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_spl_pier_l_03']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">832</replace>
   <remove sel="/wares/ware[@id='module_spl_pier_l_03']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_prod_cheltmeat_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_spl_prod_cheltmeat_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_spl_prod_cheltmeat_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">387</replace>
   <remove sel="/wares/ware[@id='module_spl_prod_cheltmeat_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_prod_medicalsupplies_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_spl_prod_medicalsupplies_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_spl_prod_medicalsupplies_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">330</replace>
   <remove sel="/wares/ware[@id='module_spl_prod_medicalsupplies_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_prod_scruffinfruits_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_spl_prod_scruffinfruits_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_spl_prod_scruffinfruits_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">460</replace>
   <remove sel="/wares/ware[@id='module_spl_prod_scruffinfruits_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_stor_container_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_spl_stor_container_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_spl_stor_container_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">179</replace>
   <remove sel="/wares/ware[@id='module_spl_stor_container_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_stor_container_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_spl_stor_container_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_spl_stor_container_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">119</replace>
   <remove sel="/wares/ware[@id='module_spl_stor_container_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_stor_container_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_spl_stor_container_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_spl_stor_container_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">81</replace>
   <remove sel="/wares/ware[@id='module_spl_stor_container_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_stor_liquid_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_spl_stor_liquid_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_spl_stor_liquid_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">179</replace>
   <remove sel="/wares/ware[@id='module_spl_stor_liquid_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_stor_liquid_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_spl_stor_liquid_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_spl_stor_liquid_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">119</replace>
   <remove sel="/wares/ware[@id='module_spl_stor_liquid_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_stor_liquid_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_spl_stor_liquid_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_spl_stor_liquid_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">81</replace>
   <remove sel="/wares/ware[@id='module_spl_stor_liquid_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_stor_solid_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_spl_stor_solid_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_spl_stor_solid_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">179</replace>
   <remove sel="/wares/ware[@id='module_spl_stor_solid_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_stor_solid_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_spl_stor_solid_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_spl_stor_solid_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">119</replace>
   <remove sel="/wares/ware[@id='module_spl_stor_solid_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_spl_stor_solid_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_spl_stor_solid_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_spl_stor_solid_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">81</replace>
   <remove sel="/wares/ware[@id='module_spl_stor_solid_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
   <replace sel="/wares/ware[@id='scruffinfruits']/@volume">2</replace>
   <replace sel="/wares/ware[@id='scruffinfruits']/price/@min">14</replace>
   <replace sel="/wares/ware[@id='scruffinfruits']/price/@max">54</replace>
+  <replace sel="/wares/ware[@id='scruffinfruits']/production[@method='default']/@amount">275</replace>
   <replace sel="/wares/ware[@id='scruffinfruits']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+  <add sel="/wares/ware[@id='scruffinfruits']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
+  <replace sel="/wares/ware[@id='ship_spl_l_destroyer_01_a']/price/@min">4378775</replace>
+  <replace sel="/wares/ware[@id='ship_spl_l_destroyer_01_a']/price/@average">5151500</replace>
+  <replace sel="/wares/ware[@id='ship_spl_l_destroyer_01_a']/price/@max">5924225</replace>
+  <replace sel="/wares/ware[@id='ship_spl_l_destroyer_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">3000</replace>
+  <replace sel="/wares/ware[@id='ship_spl_l_destroyer_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">4700</replace>
+  <replace sel="/wares/ware[@id='ship_spl_l_miner_liquid_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">645</replace>
+  <replace sel="/wares/ware[@id='ship_spl_l_miner_liquid_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">1094</replace>
+  <replace sel="/wares/ware[@id='ship_spl_l_miner_solid_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">644</replace>
+  <replace sel="/wares/ware[@id='ship_spl_l_miner_solid_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">1092</replace>
+  <replace sel="/wares/ware[@id='ship_spl_l_trans_container_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">1512</replace>
+  <replace sel="/wares/ware[@id='ship_spl_l_trans_container_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">2566</replace>
+  <replace sel="/wares/ware[@id='ship_spl_m_corvette_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">188</replace>
+  <replace sel="/wares/ware[@id='ship_spl_m_corvette_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">637</replace>
+  <replace sel="/wares/ware[@id='ship_spl_m_corvette_01_b']/production[@method='default']/primary/ware[@ware='energycells']/@amount">207</replace>
+  <replace sel="/wares/ware[@id='ship_spl_m_frigate_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">241</replace>
+  <replace sel="/wares/ware[@id='ship_spl_m_frigate_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">818</replace>
+  <replace sel="/wares/ware[@id='ship_spl_m_miner_liquid_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">92</replace>
+  <replace sel="/wares/ware[@id='ship_spl_m_miner_liquid_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">105</replace>
+  <replace sel="/wares/ware[@id='ship_spl_m_miner_solid_01_a']/production[@method='default']/primary/ware[@ware='energycells']/@amount">97</replace>
+  <replace sel="/wares/ware[@id='ship_spl_m_miner_solid_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">109</replace>
+  <replace sel="/wares/ware[@id='ship_spl_m_trans_container_01_a']/production[@method='default']/primary/ware[@ware='hullparts']/@amount">143</replace>
+  <replace sel="/wares/ware[@id='ship_spl_xs_police_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_spl_xs_police_01_a']/production[@method='default']/primary/ware[@ware='dronecomponents']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_spl_xs_police_01_a']/production[@method='default']/primary/ware[@ware='smartchips']/@amount">0</replace>
   <replace sel="/wares/ware[@id='computronicsubstrate']/price/@min">8069</replace>
   <replace sel="/wares/ware[@id='computronicsubstrate']/price/@max">9319</replace>
   <replace sel="/wares/ware[@id='computronicsubstrate']/production[@method='default']/@time">300</replace>
@@ -853,6 +2269,9 @@
   <replace sel="/wares/ware[@id='computronicsubstrate']/production[@method='default']/primary/ware[@ware='ore']/@amount">1500</replace>
   <replace sel="/wares/ware[@id='computronicsubstrate']/production[@method='default']/primary/ware[@ware='silicon']/@amount">1500</replace>
   <replace sel="/wares/ware[@id='computronicsubstrate']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='computronicsubstrate']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
+  <replace sel="/wares/ware[@id='computronicsubstrate']/production[@method='recycling']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='computronicsubstrate']/production[@method='recycling']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/price/@min">44</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/price/@max">69</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/@time">300</replace>
@@ -861,6 +2280,10 @@
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/primary/ware[@ware='helium']/@amount">217</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/primary/ware[@ware='ore']/@amount">83</replace>
   <replace sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='metallicmicrolattice']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
+  <replace sel="/wares/ware[@id='module_ter_build_dockarea_m_01']/production[@method='default']/@time">649</replace>
+  <replace sel="/wares/ware[@id='module_ter_build_l_01']/production[@method='default']/@time">365</replace>
+  <replace sel="/wares/ware[@id='module_ter_build_xl_01']/production[@method='default']/@time">474</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_01']/production[@method='default']/@time">30</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_01']/production[@method='default']/primary/ware[@ware='computronicsubstrate']/@amount">1</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_base_01']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
@@ -885,43 +2308,58 @@
   <replace sel="/wares/ware[@id='module_ter_conn_vertical_02']/production[@method='default']/primary/ware[@ware='computronicsubstrate']/@amount">1</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_vertical_02']/production[@method='default']/primary/ware[@ware='energycells']/@amount">5</replace>
   <replace sel="/wares/ware[@id='module_ter_conn_vertical_02']/production[@method='default']/primary/ware[@ware='siliconcarbide']/@amount">1</replace>
-  <replace sel="/wares/ware[@id='module_ter_dock_m_01_hightech']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_hab_l_01']/production[@method='default']/@time">240</replace>
-  <replace sel="/wares/ware[@id='module_ter_hab_m_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_hab_s_01']/production[@method='default']/@time">120</replace>
-  <replace sel="/wares/ware[@id='module_ter_pier_01']/production[@method='default']/@time">240</replace>
-  <replace sel="/wares/ware[@id='module_ter_pier_02']/production[@method='default']/@time">240</replace>
-  <replace sel="/wares/ware[@id='module_ter_pier_03']/production[@method='default']/@time">240</replace>
-  <replace sel="/wares/ware[@id='module_ter_pier_04']/production[@method='default']/@time">240</replace>
-  <replace sel="/wares/ware[@id='module_ter_pier_tradestation_01']/production[@method='default']/@time">240</replace>
-  <replace sel="/wares/ware[@id='module_ter_prod_computronicsubstrate_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_prod_energycells_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_prod_medicalsupplies_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_prod_metallicmicrolattice_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_prod_proteinpaste_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_prod_siliconcarbide_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_prod_stimulants_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_prod_terranmre_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_stor_container_l_01']/production[@method='default']/@time">240</replace>
-  <replace sel="/wares/ware[@id='module_ter_stor_container_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_ter_def_claim_01']/production[@method='default']/@time">581</replace>
+  <replace sel="/wares/ware[@id='module_ter_def_disc_01']/production[@method='default']/@time">411</replace>
+  <replace sel="/wares/ware[@id='module_ter_def_tube_01']/production[@method='default']/@time">290</replace>
+  <replace sel="/wares/ware[@id='module_ter_dock_m_01_hightech']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_equip_dockarea_m_01']/production[@method='default']/@time">325</replace>
+  <replace sel="/wares/ware[@id='module_ter_equip_l_01']/production[@method='default']/@time">332</replace>
+  <replace sel="/wares/ware[@id='module_ter_equip_xl_01']/production[@method='default']/@time">238</replace>
+  <replace sel="/wares/ware[@id='module_ter_hab_l_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_hab_m_01']/production[@method='default']/@time">90</replace>
+  <replace sel="/wares/ware[@id='module_ter_hab_s_01']/production[@method='default']/@time">60</replace>
+  <replace sel="/wares/ware[@id='module_ter_pier_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_pier_02']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_pier_03']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_pier_04']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_pier_tradestation_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_prod_computronicsubstrate_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_prod_energycells_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_prod_medicalsupplies_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_prod_metallicmicrolattice_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_prod_proteinpaste_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_prod_scrap_recycler']/production[@method='default']/@time">388</replace>
+  <replace sel="/wares/ware[@id='module_ter_prod_siliconcarbide_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_prod_stimulants_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_prod_terranmre_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_stor_container_l_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_stor_container_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_ter_stor_container_m_tradestation']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_stor_container_s_01']/production[@method='default']/@time">120</replace>
-  <replace sel="/wares/ware[@id='module_ter_stor_liquid_l_01']/production[@method='default']/@time">240</replace>
-  <replace sel="/wares/ware[@id='module_ter_stor_liquid_m_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_stor_liquid_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_stor_container_s_01']/production[@method='default']/@time">60</replace>
+  <replace sel="/wares/ware[@id='module_ter_stor_liquid_l_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_stor_liquid_m_01']/production[@method='default']/@time">90</replace>
+  <replace sel="/wares/ware[@id='module_ter_stor_liquid_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_ter_stor_liquid_s_tradestation']/production[@method='default']/@time">120</replace>
-  <replace sel="/wares/ware[@id='module_ter_stor_solid_l_01']/production[@method='default']/@time">240</replace>
-  <replace sel="/wares/ware[@id='module_ter_stor_solid_m_01']/production[@method='default']/@time">180</replace>
-  <replace sel="/wares/ware[@id='module_ter_stor_solid_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_stor_solid_l_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_ter_stor_solid_m_01']/production[@method='default']/@time">90</replace>
+  <replace sel="/wares/ware[@id='module_ter_stor_solid_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='proteinpaste']/price/@min">71</replace>
   <replace sel="/wares/ware[@id='proteinpaste']/price/@max">131</replace>
   <replace sel="/wares/ware[@id='proteinpaste']/production[@method='default']/effects/effect[@type='work']/@product">0.75</replace>
+  <add sel="/wares/ware[@id='proteinpaste']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
+  <replace sel="/wares/ware[@id='ship_ter_xs_police_01_a']/production[@method='default']/@time">2</replace>
+  <replace sel="/wares/ware[@id='ship_ter_xs_police_01_a']/production[@method='default']/primary/ware[@ware='metallicmicrolattice']/@amount">0</replace>
+  <replace sel="/wares/ware[@id='ship_ter_xs_police_01_a']/production[@method='default']/primary/ware[@ware='siliconcarbide']/@amount">0</replace>
   <replace sel="/wares/ware[@id='siliconcarbide']/price/@min">1270</replace>
   <replace sel="/wares/ware[@id='siliconcarbide']/price/@max">1770</replace>
   <replace sel="/wares/ware[@id='siliconcarbide']/production[@method='default']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='siliconcarbide']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
+  <replace sel="/wares/ware[@id='siliconcarbide']/production[@method='recycling']/effects/effect[@type='work']/@product">0.5</replace>
+  <add sel="/wares/ware[@id='siliconcarbide']/production[@method='recycling']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='stimulants']/@volume">1</replace>
   <replace sel="/wares/ware[@id='stimulants']/price/@min">322</replace>
   <replace sel="/wares/ware[@id='stimulants']/price/@max">402</replace>
+  <add sel="/wares/ware[@id='stimulants']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
   <replace sel="/wares/ware[@id='terranmre']/@volume">1</replace>
   <replace sel="/wares/ware[@id='terranmre']/price/@min">48</replace>
   <replace sel="/wares/ware[@id='terranmre']/price/@max">68</replace>
@@ -930,19 +2368,23 @@
   <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/primary/ware[@ware='energycells']/@amount">75</replace>
   <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/primary/ware[@ware='proteinpaste']/@amount">75</replace>
   <replace sel="/wares/ware[@id='terranmre']/production[@method='default']/effects/effect[@type='work']/@product">1</replace>
+  <add sel="/wares/ware[@id='terranmre']/production[@method='default']/effects/effect[@type='work']" type="@cycle">0.1</add>
+  <replace sel="/wares/ware[@id='module_gen_welfare_casino_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_gen_welfare_casino_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">816</replace>
   <remove sel="/wares/ware[@id='module_gen_welfare_casino_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_pir_hab_l_01']/production[@method='default']/@time">240</replace>
+  <replace sel="/wares/ware[@id='module_pir_hab_l_01']/production[@method='default']/@time">120</replace>
   <replace sel="/wares/ware[@id='module_pir_hab_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">577</replace>
   <remove sel="/wares/ware[@id='module_pir_hab_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_pir_hab_m_01']/production[@method='default']/@time">180</replace>
+  <replace sel="/wares/ware[@id='module_pir_hab_m_01']/production[@method='default']/@time">90</replace>
   <replace sel="/wares/ware[@id='module_pir_hab_m_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">408</replace>
   <remove sel="/wares/ware[@id='module_pir_hab_m_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
-  <replace sel="/wares/ware[@id='module_pir_hab_s_01']/production[@method='default']/@time">120</replace>
+  <replace sel="/wares/ware[@id='module_pir_hab_s_01']/production[@method='default']/@time">60</replace>
   <replace sel="/wares/ware[@id='module_pir_hab_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">283</replace>
   <remove sel="/wares/ware[@id='module_pir_hab_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_pir_stor_condensate_l_01']/production[@method='default']/@time">516</replace>
   <replace sel="/wares/ware[@id='module_pir_stor_condensate_l_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">399</replace>
   <remove sel="/wares/ware[@id='module_pir_stor_condensate_l_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
+  <replace sel="/wares/ware[@id='module_pir_stor_condensate_s_01']/production[@method='default']/@time">163</replace>
   <replace sel="/wares/ware[@id='module_pir_stor_condensate_s_01']/production[@method='default']/primary/ware[@ware='claytronics']/@amount">126</replace>
   <remove sel="/wares/ware[@id='module_pir_stor_condensate_s_01']/production[@method='default']/primary/ware[@ware='hullparts']"/>
 </diff>

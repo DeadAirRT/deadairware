@@ -7,10 +7,7 @@
 			<cues>
 				<cue name="SignalFixDiscountMap" instantiate="false">
 					<conditions>
-						<check_any>
-							<event_cue_signalled cue="md.Setup.GameStart"/>
-							<event_game_loaded/>
-						</check_any>
+						<event_universe_generated/>
 					</conditions>
 					<actions>
 						<signal_cue_instantly cue="FixDiscountMap"/>

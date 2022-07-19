@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<diff>
+  <replace sel="/mdscript/cues/library/cues/cue[@name='Process']/cues/cue[@name='Analyse_Stations']/actions/do_if[@value='$ShipyardCount lt $DesiredShipyards']/set_value/@chance">25</replace>
+  <replace sel="/mdscript/cues/library/cues/cue[@name='Process']/cues/cue[@name='Analyse_Stations']/actions/do_if[@value='$WharfCount lt $DesiredWharfs']/set_value/@chance">25</replace>
+  <replace sel="/mdscript/cues/library/cues/cue[@name='Process']/cues/cue[@name='Analyse_Stations']/actions/do_if[@value='$EquipmentDockCount lt $DesiredEquipmentDocks']/set_value/@chance">25</replace>
+  <replace sel="/mdscript/cues/library/cues/cue[@name='Process']/cues/cue[@name='Analyse_Stations']/actions/do_if[@value='$TradeStationCount lt $DesiredTradeStation']/set_value/@chance">25</replace>
+  <replace sel="/mdscript/cues/library/cues/cue[@name='Process']/cues/cue[@name='Analyse_Stations']/actions/do_if[@value='$PirateBaseCount lt $DesiredPirateBase']/do_else/set_value/@chance">25</replace>
+</diff>
