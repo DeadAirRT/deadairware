@@ -82,46 +82,46 @@
   <replace sel="/modules/module[@id='prod_gen_water']/compatibilities/production/@chance">100</replace>
   <replace sel="/modules/module[@id='prod_gen_weaponcomponents']/compatibilities/limits/@production">10</replace>
   <replace sel="/modules/module[@id='prod_gen_weaponcomponents']/compatibilities/production/@chance">100</replace>
-  <replace sel="/modules/module[@id='prod_arg_meat']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_arg_meat']/compatibilities">
-    <limits production="10"/>
-  </add>
+  <replace sel="/modules/module[@id='prod_arg_meat']/compatibilities/limits/@production">10</replace>
+  <replace sel="/modules/module[@id='prod_arg_meat']/compatibilities/production[@ware='meat']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_arg_meat']/compatibilities/production[@ware='foodrations']"/>
+  <remove sel="/modules/module[@id='prod_arg_meat']/compatibilities/production[@ware='wheat']"/>
   <replace sel="/modules/module[@id='prod_arg_medicalsupplies']/compatibilities/production/@chance">100</replace>
   <add sel="/modules/module[@id='prod_arg_medicalsupplies']/compatibilities">
     <limits production="12"/>
   </add>
-  <replace sel="/modules/module[@id='prod_arg_foodrations']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_arg_foodrations']/compatibilities">
-    <limits production="12"/>
-  </add>
+  <replace sel="/modules/module[@id='prod_arg_foodrations']/compatibilities/limits/@production">12</replace>
+  <replace sel="/modules/module[@id='prod_arg_foodrations']/compatibilities/production[@ware='foodrations']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_arg_foodrations']/compatibilities/production[@ware='meat']"/>
+  <remove sel="/modules/module[@id='prod_arg_foodrations']/compatibilities/production[@ware='wheat']"/>
   <replace sel="/modules/module[@id='prod_arg_spacefuel']/compatibilities/production/@chance">80</replace>
   <add sel="/modules/module[@id='prod_arg_spacefuel']/compatibilities">
     <limits production="8"/>
   </add>
-  <replace sel="/modules/module[@id='prod_arg_wheat']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_arg_wheat']/compatibilities">
-    <limits production="10"/>
-  </add>
+  <replace sel="/modules/module[@id='prod_arg_wheat']/compatibilities/limits/@production">10</replace>
+  <replace sel="/modules/module[@id='prod_arg_wheat']/compatibilities/production[@ware='wheat']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_arg_wheat']/compatibilities/production[@ware='meat']"/>
+  <remove sel="/modules/module[@id='prod_arg_wheat']/compatibilities/production[@ware='foodrations']"/>
   <replace sel="/modules/module[@id='prod_par_majadust']/compatibilities/production/@chance">80</replace>
   <add sel="/modules/module[@id='prod_par_majadust']/compatibilities">
     <limits production="8"/>
   </add>
-  <replace sel="/modules/module[@id='prod_par_majasnails']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_par_majasnails']/compatibilities">
-    <limits production="10"/>
-  </add>
+  <replace sel="/modules/module[@id='prod_par_majasnails']/compatibilities/limits/@production">10</replace>
+  <replace sel="/modules/module[@id='prod_par_majasnails']/compatibilities/production[@ware='majasnails']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_par_majasnails']/compatibilities/production[@ware='sojabeans']"/>
+  <remove sel="/modules/module[@id='prod_par_majasnails']/compatibilities/production[@ware='sojahusk']"/>
   <replace sel="/modules/module[@id='prod_par_medicalsupplies']/compatibilities/production/@chance">100</replace>
   <add sel="/modules/module[@id='prod_par_medicalsupplies']/compatibilities">
     <limits production="12"/>
   </add>
-  <replace sel="/modules/module[@id='prod_par_sojabeans']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_par_sojabeans']/compatibilities">
-    <limits production="10"/>
-  </add>
-  <replace sel="/modules/module[@id='prod_par_sojahusk']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_par_sojahusk']/compatibilities">
-    <limits production="10"/>
-  </add>
+  <replace sel="/modules/module[@id='prod_par_sojabeans']/compatibilities/limits/@production">10</replace>
+  <replace sel="/modules/module[@id='prod_par_sojabeans']/compatibilities/production[@ware='sojabeans']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_par_sojabeans']/compatibilities/production[@ware='majasnails']"/>
+  <remove sel="/modules/module[@id='prod_par_sojabeans']/compatibilities/production[@ware='sojahusk']"/>
+  <replace sel="/modules/module[@id='prod_par_sojahusk']/compatibilities/limits/@production">10</replace>
+  <replace sel="/modules/module[@id='prod_par_sojahusk']/compatibilities/production[@ware='sojahusk']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_par_sojahusk']/compatibilities/production[@ware='majasnails']"/>
+  <remove sel="/modules/module[@id='prod_par_sojahusk']/compatibilities/production[@ware='sojabeans']"/>
   <replace sel="/modules/module[@id='prod_tel_advancedcomposites']/compatibilities/limits/@production">10</replace>
   <replace sel="/modules/module[@id='prod_tel_advancedcomposites']/compatibilities/production/@chance">100</replace>
   <replace sel="/modules/module[@id='prod_tel_engineparts']/compatibilities/production/@chance">100</replace>
@@ -138,22 +138,22 @@
   <add sel="/modules/module[@id='prod_tel_medicalsupplies']/compatibilities">
     <limits production="12"/>
   </add>
-  <replace sel="/modules/module[@id='prod_tel_nostropoil']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_tel_nostropoil']/compatibilities">
-    <limits production="12"/>
-  </add>
+  <replace sel="/modules/module[@id='prod_tel_nostropoil']/compatibilities/limits/@production">12</replace>
+  <replace sel="/modules/module[@id='prod_tel_nostropoil']/compatibilities/production[@ware='nostropoil']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_tel_nostropoil']/compatibilities/production[@ware='sunriseflowers']"/>
+  <remove sel="/modules/module[@id='prod_tel_nostropoil']/compatibilities/production[@ware='swampplant']"/>
   <replace sel="/modules/module[@id='prod_tel_spaceweed']/compatibilities/production/@chance">100</replace>
   <add sel="/modules/module[@id='prod_tel_spaceweed']/compatibilities">
     <limits production="10"/>
   </add>
-  <replace sel="/modules/module[@id='prod_tel_sunriseflowers']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_tel_sunriseflowers']/compatibilities">
-    <limits production="10"/>
-  </add>
-  <replace sel="/modules/module[@id='prod_tel_swampplant']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_tel_swampplant']/compatibilities">
-    <limits production="10"/>
-  </add>
+  <replace sel="/modules/module[@id='prod_tel_sunriseflowers']/compatibilities/limits/@production">10</replace>
+  <replace sel="/modules/module[@id='prod_tel_sunriseflowers']/compatibilities/production[@ware='sunriseflowers']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_tel_sunriseflowers']/compatibilities/production[@ware='swampplant']"/>
+  <remove sel="/modules/module[@id='prod_tel_sunriseflowers']/compatibilities/production[@ware='nostropoil']"/>
+  <replace sel="/modules/module[@id='prod_tel_swampplant']/compatibilities/limits/@production">10</replace>
+  <replace sel="/modules/module[@id='prod_tel_swampplant']/compatibilities/production[@ware='swampplant']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_tel_swampplant']/compatibilities/production[@ware='nostropoil']"/>
+  <remove sel="/modules/module[@id='prod_tel_swampplant']/compatibilities/production[@ware='sunriseflowers']"/>
   <replace sel="/modules/module[@id='prod_tel_teladianium']/compatibilities/production/@chance">100</replace>
   <add sel="/modules/module[@id='prod_tel_teladianium']/compatibilities">
     <limits production="12"/>
@@ -181,14 +181,14 @@
   <add sel="/modules/module[@id='prod_spl_medicalsupplies']/compatibilities">
     <limits production="12"/>
   </add>
-  <replace sel="/modules/module[@id='prod_spl_scruffinfruits']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_spl_scruffinfruits']/compatibilities">
+  <replace sel="/modules/module[@id='prod_spl_scruffinfruits']/compatibilities/production[@ware='scruffinfruits']/@chance">100</replace>
+  <replace sel="/modules/module[@id='prod_spl_scruffinfruits']/compatibilities/production[@ware='cheltmeat']">
     <limits production="10"/>
-  </add>
-  <replace sel="/modules/module[@id='prod_spl_cheltmeat']/compatibilities/production/@chance">100</replace>
-  <add sel="/modules/module[@id='prod_spl_cheltmeat']/compatibilities">
+  </replace>
+  <replace sel="/modules/module[@id='prod_spl_cheltmeat']/compatibilities/production[@ware='cheltmeat']/@chance">100</replace>
+  <replace sel="/modules/module[@id='prod_spl_cheltmeat']/compatibilities/production[@ware='scruffinfruits']">
     <limits production="10"/>
-  </add>
+  </replace>
   <replace sel="/modules/module[@id='prod_ter_computronicsubstrate']/compatibilities/limits/@production">4</replace>
   <replace sel="/modules/module[@id='prod_ter_computronicsubstrate']/compatibilities/production/@chance">100</replace>
   <replace sel="/modules/module[@id='prod_ter_energycells']/compatibilities/production/@chance">100</replace>
@@ -213,4 +213,20 @@
   <add sel="/modules/module[@id='prod_ter_stimulants']/compatibilities">
     <limits production="6"/>
   </add>
+  <replace sel="/modules/module[@id='prod_bor_bofu']/compatibilities/limits/@production">12</replace>
+  <replace sel="/modules/module[@id='prod_bor_bofu']/compatibilities/production[@ware='bofu']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_bor_bofu']/compatibilities/production[@ware='bogas']"/>
+  <remove sel="/modules/module[@id='prod_bor_bofu']/compatibilities/production[@ware='plankton']"/>
+  <replace sel="/modules/module[@id='prod_bor_bogas']/compatibilities/limits/@production">10</replace>
+  <replace sel="/modules/module[@id='prod_bor_bogas']/compatibilities/production[@ware='bogas']/@chance">100</replace>
+  <remove sel="/modules/module[@id='prod_bor_bogas']/compatibilities/production[@ware='bofu']"/>
+  <remove sel="/modules/module[@id='prod_bor_bogas']/compatibilities/production[@ware='plankton']"/>
+  <replace sel="/modules/module[@id='prod_bor_plankton']/compatibilities/production[@ware='plankton']/@chance">100</replace>
+  <replace sel="/modules/module[@id='prod_bor_plankton']/compatibilities/production[@ware='bofu']">
+    <limits production="10"/>
+  </replace>
+  <replace sel="/modules/module[@id='prod_bor_refinedmetals']/compatibilities/limits/@production">12</replace>
+  <replace sel="/modules/module[@id='prod_bor_refinedmetals']/compatibilities/production/@chance">100</replace>
+  <replace sel="/modules/module[@id='prod_bor_siliconwafers']/compatibilities/limits/@production">12</replace>
+  <replace sel="/modules/module[@id='prod_bor_siliconwafers']/compatibilities/production/@chance">100</replace>
 </diff>

@@ -1,9 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <diff>
-  <replace sel="/mdscript/cues/library[@name='Econ_Manager']/cues/library[@name='CheckRunningActions']/actions/set_value[@name='$Request_Commandeerable_Freighter_Release_Time']/@exact">30min</replace>
-  <replace sel="/mdscript/cues/library[@name='Econ_Manager']/cues/cue[@name='EvaluateShortages']/actions/do_if[@value='@md.FactionLogic_Economy.GlobalStorageData.$Reports']/do_if[@value='$OwnerReports']/set_value[@name='$ProductionThresholds.$request_production']/@exact">7200</replace>
-  <replace sel="/mdscript/cues/library[@name='Econ_Manager']/cues/cue[@name='EvaluateShortages']/actions/do_if[@value='@md.FactionLogic_Economy.GlobalStorageData.$Reports']/do_if[@value='$OwnerReports']/set_value[@name='$ProductionThresholds.$request_factory']/@exact">28800</replace>
-  <replace sel="/mdscript/cues/library[@name='Econ_Manager']/cues/cue[@name='EvaluateShortages']/actions/do_if[@value='@md.FactionLogic_Economy.GlobalStorageData.$Reports']/do_if[@value='$OwnerReports']/set_value[@name='$OverflowWareThreshold']/@exact">14400</replace>
-  <replace sel="/mdscript/cues/library[@name='Econ_Manager']/cues/cue[@name='Request_Factory']/actions/do_else[1]/do_else/do_if[@value='$ModuleDefinition']/do_else/find_zone/match_child/@max">4</replace>
-  <replace sel="/mdscript/cues/library[@name='Econ_Manager']/cues/cue[@name='Request_Factory']/actions/do_else[1]/do_else/do_if[@value='$Zone or @$BuildInSector']/do_if[@value='not $ProductionPlanned']/set_value/@exact">3</replace>
+  <replace sel="/mdscript/cues/library[@name='Econ_Manager']/cues/library[@name='CheckRunningActions']/actions/set_value[@exact='90min']/@exact">30min</replace>
+  <replace sel="/mdscript/cues/library[@name='Econ_Manager']/cues/cue[@name='Request_Factory']/actions/do_else[1]/do_else/do_if[@value='$ModuleDefinition']/do_else/find_zone/match_child/@max">5</replace>
+  <replace sel="/mdscript/cues/library[@name='Econ_Manager']/cues/cue[@name='Request_Factory']/actions/do_else[1]/do_else/do_if[@value='$Zone or @$BuildInSector']/do_if[@value='not $ProductionPlanned']/set_value[@exact='if $Ware.hastag.recycling then 3 else 1']/@exact">if $Ware.hastag.recycling then 3 else 5</replace>
 </diff>

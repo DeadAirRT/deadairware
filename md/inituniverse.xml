@@ -54,15 +54,15 @@
   <add sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='$tradestation?']">
     <add_tradeware object="$controllable" ware="ware.superfluidcoolant" allowbuy="true" allowsell="true" lockavgprice="true"/>
   </add>
-  <replace sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='@$gamestartstation'][2]/do_if[@value='$controllable.canequipships']/add_default_production_wares/@lowerlimit">88</replace>
-  <replace sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='@$gamestartstation'][2]/do_if[@value='$controllable.canequipships']/add_default_production_wares/@upperlimit">92</replace>
+  <replace sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='@$gamestartstation'][2]/do_if[@value='$controllable.canequipships']/add_default_production_wares/@lowerlimit">73</replace>
+  <replace sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='@$gamestartstation'][2]/do_if[@value='$controllable.canequipships']/add_default_production_wares/@upperlimit">77</replace>
   <add sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='@$gamestartstation'][2]/do_else" pos="before">
     <do_elseif value="$tradestation?">
-      <add_default_production_wares object="$controllable" lowerlimit="35" upperlimit="40" extremechance="0"/>
+      <add_default_production_wares object="$controllable" lowerlimit="48" upperlimit="52" extremechance="0"/>
     </do_elseif>
   </add>
-  <replace sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='@$gamestartstation'][2]/do_else/add_default_production_wares/@lowerlimit">58</replace>
-  <replace sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='@$gamestartstation'][2]/do_else/add_default_production_wares/@upperlimit">62</replace>
+  <replace sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='@$gamestartstation'][2]/do_else/add_default_production_wares/@lowerlimit">48</replace>
+  <replace sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='@$gamestartstation'][2]/do_else/add_default_production_wares/@upperlimit">52</replace>
   <replace sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/do_if[@value='@$gamestartstation'][2]/do_else/add_default_production_wares/@extremechance">0</replace>
   <add sel="/mdscript/cues/library[@name='InitStationActions']/actions/do_if[@value='$controllable?']/add_watchdog_units_to_masstraffic" pos="before">
     <do_if value="$tradestation?">
